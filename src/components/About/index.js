@@ -53,22 +53,16 @@ const About = () => {
           </div>
 
           <div className="col-lg-6 pt-3 pt-lg-0 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>Hami Nepal Youth Organisation is a non-profit organisation, established in 2015 A.D. and registered in 2020 A.D. (Regd.no. 609789065), which directly connects the donors and the recipients.</h3>
             <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            Hami Nepal Youth Organisation is a non-profit organisation, established in 2015 A.D. and registered in 2020 A.D. (Regd.no. 609789065), which directly connects the donors and the recipients.
             </p>
             <ul>
-              <li><i className="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i className="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i className="bx bx-check-double"></i> Voluptate repellendus pariatur reprehenderit corporis sint.</li>
-              <li><i className="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i className="bx bx-check-double"></i> Hami Nepal has a track record of producing tangible and effective assistance during the public crisis in Nepal through volunteer work and donations; our efforts and assistance were widely lauded during the crisis arising in the aftermath of the earthquake in 2015. On 25 April, 2015 an earthquake with a magnitude of 7.8 Richter scale struck Nepal along with continued aftershocks occurring throughout the nation at the intervals of 15–20 minutes. The earthquake affected a huge population of the nation with about 9,000 fatalities and nearly 22,000 injured people.</li>
+              <li><i className="bx bx-check-double"></i>Now, the coronavirus pandemic has affected every nation in the world - some more than others. The COVID-19 cases have surged in Nepal to such an extent that the healthcare system of the nation is failing. The situation is dire with inadequate bed capacity, critical oxygen and medical supply shortages ultimately leading to personal loss of close-ones.</li>
+              <li><i className="bx bx-check-double"></i> Amid this humanitarian crisis, Hami Nepal members and volunteers worked tirelessly to set up the COVID ward in Bir Hospital and National Trauma Center. In order to further ramp up health infrastructure, we have converted unused government spaces into COVID facilities and provided support to 3 different government hospitals. Hami Nepal has successfully set up 170 beds in Bir Hospital and donated 50 beds to the new building of Bir Hospital. The team has also donated high function ICU beds, portable X-ray machines among other medical supplies and equipment using the collected donations.</li>
+              <li><i className="bx bx-check-double"></i> Our team recently received 520 oxygen cylinders from our donor Shankar group and Infinity holdings. We are also working our way to receive a portable high tech medical oxygen plant from the same donor. We have also deployed 100 beds and mattresses, 270 oxygen cylinders out of 520 and medical supplies to the Sudurpaschim Province of Nepal and other places. Our donors provided us with 50,000 N95 Masks, 200 sets of PPE, 100 beds and other supplies which were then sent as aid to Sudurpaschim Province.</li>
             </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
           </div>
 
         </div>

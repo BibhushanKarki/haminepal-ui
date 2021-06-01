@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header id="header" className="fixed-top ">
+    <header id="header" className="fixed-top header-scrolled">
     <div className="container d-flex align-items-center justify-content-between">
 
       <h1 className="logo"><Link to="/">Hami Nepal</Link></h1>
