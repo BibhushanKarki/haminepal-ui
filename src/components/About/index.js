@@ -13,7 +13,7 @@ const About = () => {
                 <div className="count-box">
                   <i className="bi bi-emoji-smile"></i>
                   <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" className="purecounter"></span>
-                  <p>Happy Clients</p>
+                  <p>Happy People</p>
                 </div>
               </div>
 

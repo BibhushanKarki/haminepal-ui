@@ -9,7 +9,7 @@ const Footer = () => {
   
             <div className="col-lg-3 col-md-6">
               <div className="footer-info">
-                <h3>Dewi</h3>
+                <h3>Hami Nepal</h3>
                 <p>
                 Ranibari-27  <br/>
                 Samakhusi Kathmandu<br/><br/>
