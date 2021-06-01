@@ -4,6 +4,7 @@ import Hero from '../HeroSection'
 import Mission from '../OurMissionSection'
 import Contact from '../Contact'
 import OurWork from '../OurWork'
+import Testimonials from '../Testimonials'
 // import Preloader from '../Preloader'
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
       <About/>
       <Mission/>
       <OurWork/>
+      <Testimonials/>
       <Contact/>
       {/* <Preloader/> */}
     </div>
