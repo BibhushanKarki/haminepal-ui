@@ -3,9 +3,7 @@ import TransparencyCard from '../../components/TransparencyCard/TransparencyCard
 
 const Transparency = () => {
   return (
-    <div>
       <TransparencyCard/>
-    </div>
   )
 }
 
