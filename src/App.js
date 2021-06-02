@@ -1,16 +1,19 @@
-import './App.css';
-import Routes from './Routes'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import "./App.css";
+// import "./CustomBootstrapTheme.scss";
+import Routes from "./Routes";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-    <Header/>
-    <Routes/>
-    <Footer/>
+      <Header />
+      <div className="page-content">
+        <Routes />
+      </div>
+      <Footer />
     </>
   );
-}
+};
 
 export default App;
