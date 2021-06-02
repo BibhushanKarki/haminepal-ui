@@ -48,15 +48,15 @@ const Footer = () => {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/volunteers">Volunteers</Link>
+                  <Link to="/volunteer">Volunteers</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/about">About HamiNepal</Link>
+                  <Link to="/aboutus">About HamiNepal</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/contact">Contact Us</Link>
+                  <Link to="/contactus">Contact Us</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}

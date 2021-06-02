@@ -163,7 +163,7 @@ const SignUpSection = () => {
                   <div className="col-md-12 volunteer-map-section">
                     <iframe
                       id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      src="https://maps.google.com/maps?q=raniban,samakushi,kathmandu&t=&z=13&ie=UTF8&iwloc=&output=embed"
                       title="myFrame"
                       allowfullScreen
                     />

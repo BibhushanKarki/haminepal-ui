@@ -19,7 +19,7 @@ const VolunteerProfileCard = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-3 ">
+      <div className="container mt-3 mb-5">
         <div className="row">
           <div className="col-md-4 mb-3 ">
             <Zoom>

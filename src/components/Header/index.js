@@ -19,18 +19,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about">
+              <Link className="nav-link scrollto" to="/aboutus">
                 About
-              </a>
-            </li>
-            <li>
-              <Link className="nav-link scrollto" href="#services">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link scrollto " href="#work">
-                Our Work
               </Link>
             </li>
             <li>
@@ -38,6 +28,37 @@ const Header = () => {
                 Be Volunteer
               </Link>
             </li>
+            <li className="dropdown">
+              <Link href="#">
+                <span>Cause</span> <i className="bi bi-chevron-down"></i>
+              </Link>
+              <ul>
+                <li>
+                  <Link to="#">Covid</Link>
+                </li>
+                <li>
+                  <Link to="#">Health</Link>
+                </li>
+                <li>
+                  <Link to="#">Housing</Link>
+                </li>
+                <li>
+                  <Link to="#">Clothing</Link>
+                </li>
+                <li>
+                  <Link to="#">Food</Link>
+                </li>
+                <li>
+                  <Link to="#">Education</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link className="nav-link scrollto " to="/transparency">
+                Transparency
+              </Link>
+            </li>
+
             <li className="dropdown">
               <Link href="#">
                 <span>Events</span> <i className="bi bi-chevron-down"></i>
@@ -59,16 +80,16 @@ const Header = () => {
               </Link>
               <ul>
                 <li>
-                  <Link to="#">Covid</Link>
+                  <Link to="/covid">Covid</Link>
                 </li>
                 <li>
-                  <Link to="#">Cause</Link>
+                  <Link to="/cause">Cause</Link>
                 </li>
                 <li>
-                  <Link to="#">Volunteer</Link>
+                  <Link to="/volunteer">Volunteer</Link>
                 </li>
                 <li>
-                  <Link to="#">Administration</Link>
+                  <Link to="/donate-administration">Administration</Link>
                 </li>
               </ul>
             </li>
@@ -78,7 +99,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="getstarted" to="/sigup">
+              <Link className="nav-link scrollto" to="/signin">
+                Sign In
+              </Link>
+            </li>
+            <li>
+              <Link className="getstarted" to="/signup">
                 Join Now
               </Link>
             </li>
