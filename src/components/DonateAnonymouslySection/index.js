@@ -1,8 +1,8 @@
 import React from "react";
 import "./donateanonymously.css";
 import { Link } from "react-router-dom";
-// import haminepali from "../../assets/images/haminepalilogo1.png";
-import ThankyouForDonationForm from "../ThankyouDonationForm";
+import haminepali from "../../assets/images/haminepalilogo1.png";
+// import ThankyouForDonationForm from "../ThankyouDonationForm";
 
 const DonateAnonymouslySection = () => {
   return (
@@ -24,11 +24,7 @@ const DonateAnonymouslySection = () => {
               }}
             >
               <Link to="#" className="navbar-brand">
-                <img
-                  src=""
-                  // {haminepali}
-                  alt="logo"
-                />
+                <img src={haminepali} alt="logo" />
               </Link>
             </nav>
 

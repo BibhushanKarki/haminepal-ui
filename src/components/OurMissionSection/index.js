@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Mission = () => {
   return (
@@ -21,7 +22,7 @@ const Mission = () => {
               </div>
               <div className="card-body">
                 <h5 className="card-title">
-                  <a href="">Our Mission</a>
+                  <Link to="">Our Mission</Link>
                 </h5>
                 <p className="card-text">
                   Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
@@ -48,7 +49,7 @@ const Mission = () => {
               </div>
               <div className="card-body">
                 <h5 className="card-title">
-                  <a href="">Our Plan</a>
+                  <Link to="">Our Plan</Link>
                 </h5>
                 <p className="card-text">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -75,7 +76,7 @@ const Mission = () => {
               </div>
               <div className="card-body">
                 <h5 className="card-title">
-                  <a href="">Our Vision</a>
+                  <Link to="">Our Vision</Link>
                 </h5>
                 <p className="card-text">
                   The vision of Hami Nepal is to mobilize volunteers and impact
@@ -89,6 +90,6 @@ const Mission = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Mission
+export default Mission;

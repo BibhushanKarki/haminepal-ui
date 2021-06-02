@@ -113,7 +113,11 @@ const Footer = () => {
         </div>
         <div className="credits">
           Designed by{" "}
-          <a target="_blank" href="https://hashtechnologies.net/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://hashtechnologies.net/"
+          >
             Hash Technologies
           </a>
         </div>
