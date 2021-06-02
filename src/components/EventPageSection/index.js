@@ -55,7 +55,7 @@ const EventSection = () => {
       {currentEventData.length === 0 ? (
         <div className="container mt-5 mb-5">
           <div className="alert alert-info">
-            No {key} Events
+            No {key}
             <br />
             <button
               className="btn btn-info mt-2"

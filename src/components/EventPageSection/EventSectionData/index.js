@@ -1,6 +1,6 @@
 export const EventSectionData = [
   {
-    key: "ongoing",
+    key: "ongoing events",
     displayName: "Ongoing Events",
     data: [
       {
@@ -25,7 +25,7 @@ export const EventSectionData = [
   },
 
   {
-    key: "upcoming",
+    key: "upcoming events",
     displayName: "Upcoming Events",
     data: [
       // {
@@ -40,7 +40,7 @@ export const EventSectionData = [
   },
 
   {
-    key: "past",
+    key: "past events",
     displayName: "Past Events",
     data: [
       {
