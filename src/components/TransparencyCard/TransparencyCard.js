@@ -18,7 +18,6 @@ const TransparencyCard = () => {
     border: "2px solid gray",
   };
   return (
-    <>
       <div className="container">
         <div className="TransparencyCardContainer my-4 ">
           <div className="row d-flex justify-content-center my-4">
@@ -135,7 +134,6 @@ const TransparencyCard = () => {
       })}
       </div> */}
       </div>
-    </>
   );
 };
 
