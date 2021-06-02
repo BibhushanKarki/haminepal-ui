@@ -1,5 +1,4 @@
 import React from 'react'
-import Glightbox from "glightbox";
 
 const About = () => {
   return (
