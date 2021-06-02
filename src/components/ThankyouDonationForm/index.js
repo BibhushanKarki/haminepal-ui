@@ -1,5 +1,5 @@
 import React from "react";
-// import Verify from "../../assets/images/Verify1.png";
+import Verify from "../../assets/images/Verify1.png";
 
 const ThankyouForDonationForm = () => {
   return (
@@ -19,7 +19,7 @@ const ThankyouForDonationForm = () => {
             >
               <div className="d-flex flex-column align-items-center">
                 <img
-                  src="/assets/icon-images/verify.png"
+                  src={Verify}
                   alt="verifyicon"
                   style={{ width: "50px", height: "50px" }}
                 />

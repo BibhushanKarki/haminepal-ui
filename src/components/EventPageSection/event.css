@@ -54,15 +54,41 @@
   .card-event-section {
     border-left: none;
   }
+
+  .imageSection {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .event-card-section {
+    margin-top: none;
+  }
+
+  .imageContainer {
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
+  }
+  .sub-heading {
+    text-align: center;
+  }
+
+  .upcoming-event-section {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 360px) {
   .card-event-section {
     border-left: none;
   }
-}
-
-@media only screen and (max-width: 600px) {
+  .imageSection {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
   .imageContainer {
     text-align: center;
   }
@@ -72,25 +98,6 @@
   .sub-heading {
     text-align: center;
   }
-}
-
-@media only screen and (max-width: 360px) {
-  .imageContainer {
-    text-align: center;
-  }
-  .heading {
-    text-align: center;
-  }
-  .sub-heading {
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .upcoming-event-section {
-    text-align: center;
-  }
-
   @media only screen and (max-width: 360px) {
     .upcoming-event-section {
       text-align: center;

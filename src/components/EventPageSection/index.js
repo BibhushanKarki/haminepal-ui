@@ -82,15 +82,16 @@ const EventSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-md-8 d-flex justify-content-center align-items-center h-100">
+                <div className="col-md-8 event-card-section d-flex justify-content-center align-items-center h-100">
                   <div className="card-body">
                     <h5 className="card-title heading">{data.title}</h5>
                     <p className="card-text sub-heading">
                       {data.paragraph.substr(0, 400)}...
                       <br />
+                      <br />
                       <Link
                         to={`/event/${key}/${data.slug}`}
-                        style={{ color: "#9F1718", textDecoration: "none" }}
+                        style={{ color: "white", textDecoration: "none" }}
                         className="btn btn-info btn-sm"
                       >
                         See More

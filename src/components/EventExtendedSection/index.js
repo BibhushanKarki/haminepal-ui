@@ -72,7 +72,7 @@ const EventExtendedSection = () => {
               </div>
               <hr />
               <div className="text-center mb-5">
-                <Link to="/volunteer-signup" className="btn btn-primary mt-4 ">
+                <Link to="/volunteer-signup" className="btn btn-danger mt-4 ">
                   Volunteer
                 </Link>
                 &nbsp; &nbsp; &nbsp;
@@ -80,7 +80,7 @@ const EventExtendedSection = () => {
                   type="button"
                   data-bs-toggle="modal"
                   data-bs-target="#donateModal"
-                  className="btn btn-primary mt-4"
+                  className="btn btn-danger mt-4"
                 >
                   Donate
                 </button>
@@ -90,7 +90,7 @@ const EventExtendedSection = () => {
                   type="button"
                   data-bs-toggle="modal"
                   data-bs-target="#shareModal"
-                  className="btn btn-secondary button-secondary mt-4 "
+                  className="btn btn-primary button-secondary mt-4 "
                 >
                   Share
                 </button>

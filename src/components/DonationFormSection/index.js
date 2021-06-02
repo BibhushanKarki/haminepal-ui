@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import haminepali from "../../assets/images/haminepalilogo1.png";
+import haminepali from "../../assets/images/haminepalilogo1.png";
 import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
 import DonateAnonymouslySection from "../../components/DonateAnonymouslySection";
 
@@ -26,7 +26,7 @@ const DonationFormSection = () => {
               }}
             >
               <Link to="#" className="navbar-brand">
-                {/* <img src={haminepali} alt="logo" /> */}
+                <img src={haminepali} alt="logo" />
               </Link>
 
               <button

@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container d-flex align-items-center justify-content-between">
         {/* <h1 className="logo"><Link to="/">Hami Nepal</Link></h1> */}
         <Link to="/" className="logo">
-          <img src="assets/img/logo-only.png" alt="" className="img-fluid" />
+          <img src="/assets/img/logo-only.png" alt="" className="img-fluid" />
         </Link>
 
         <nav id="navbar" className="navbar">
