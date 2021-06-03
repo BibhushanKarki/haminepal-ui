@@ -13,7 +13,7 @@ const Mission = () => {
           >
             <div className="card">
               <img
-                src="assets/img/about-boxes-1.jpg"
+                src="/assets/img/about-boxes-1.jpg"
                 className="card-img-top"
                 alt="..."
               />
@@ -40,7 +40,7 @@ const Mission = () => {
           >
             <div className="card">
               <img
-                src="assets/img/about-boxes-2.jpg"
+                src="/assets/img/about-boxes-2.jpg"
                 className="card-img-top"
                 alt="..."
               />
@@ -67,7 +67,7 @@ const Mission = () => {
           >
             <div className="card">
               <img
-                src="assets/img/about-boxes-3.jpg"
+                src="/assets/img/about-boxes-3.jpg"
                 className="card-img-top"
                 alt="..."
               />
