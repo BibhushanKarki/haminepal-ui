@@ -62,22 +62,22 @@ const Header = () => {
                 style={{ display: isSmallDropdownActive ? "none" : "block" }}
               >
                 <li>
-                  <Link to="#">Covid</Link>
+                  <Link to="/covid">Covid</Link>
                 </li>
                 <li>
-                  <Link to="#">Health</Link>
+                  <Link to="/health">Health</Link>
                 </li>
                 <li>
-                  <Link to="#">Housing</Link>
+                  <Link to="/housing">Housing</Link>
                 </li>
                 <li>
-                  <Link to="#">Clothing</Link>
+                  <Link to="/clothing">Clothing</Link>
                 </li>
                 <li>
-                  <Link to="#">Food</Link>
+                  <Link to="/food">Food</Link>
                 </li>
                 <li>
-                  <Link to="#">Education</Link>
+                  <Link to="/education">Education</Link>
                 </li>
               </ul>
             </li>

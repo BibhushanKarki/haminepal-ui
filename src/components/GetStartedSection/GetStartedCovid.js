@@ -6,25 +6,28 @@ import "./getstarted.css";
 
 const GetStartedCovid = () => {
   return (
-    <div className="row d-flex align-items-center m-4 main-content">
-      <Fade left>
-        <div className="col-md-6 get-started-title">
-          <h1>{data.covid.title}</h1>
-          <h4 className="my-4" style={{ color: "gray" }}>
-            {data.covid.punchline}
-          </h4>
-          <GetStartedBtn buttontitle="Get Started" />
-        </div>
-      </Fade>
-      <Fade right>
-        <div className="col-md-6 text-center image-right">
-          <img
-            src={data.covid.imgCovid}
-            alt="covidimg"
-            className="imageStyle"
-          />
-        </div>
-      </Fade>
+    <div className="container">
+      <div className="row d-flex align-items-center m-4 main-content">
+        <Fade left>
+          <div className="col-md-6 get-started-title">
+            <h1>{data.covid.title}</h1>
+            <h4 className="my-4" style={{ color: "gray" }}>
+              {data.covid.punchline}
+            </h4>
+            {/* <GetStartedBtn buttontitle="Get Started" /> */}
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="col-md-6 text-center image-right">
+            <img
+              src={data.covid.imgCovid}
+              alt="covidimg"
+              className="imageStyle"
+            />
+          </div>
+        </Fade>
+      </div>
     </div>
   );
 };

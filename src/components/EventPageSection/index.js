@@ -4,7 +4,7 @@ import "./event.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { EventSectionData } from "./EventSectionData";
 import DonationFormSection from "../../components/DonationFormSection";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const EventSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -39,14 +39,14 @@ const EventSection = () => {
 
   return currentEventData ? (
     <>
-      {/* <Helmet>
+      <Helmet>
         <title>{title} - HamiNepal</title>
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-      </Helmet> */}
+      </Helmet>
       <div className="container">
         <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>{key}</h2>
       </div>
@@ -57,6 +57,7 @@ const EventSection = () => {
             <br />
             <button
               className="btn btn-info mt-2"
+              style={{ color: "white" }}
               onClick={() => history.goBack()}
             >
               Go Back
