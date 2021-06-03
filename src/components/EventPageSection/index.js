@@ -4,7 +4,7 @@ import "./event.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { EventSectionData } from "./EventSectionData";
 import DonationFormSection from "../../components/DonationFormSection";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 const EventSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -13,7 +13,7 @@ const EventSection = () => {
   const [image, setImage] = useState("");
 
   const { key } = useParams();
-  const [title, setTitle] = useState(key + " Events");
+  const [title, setTitle] = useState(key + " Projects");
 
   let currentEventData;
   let history = useHistory();
@@ -39,18 +39,16 @@ const EventSection = () => {
 
   return currentEventData ? (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>{title} - HamiNepal</title>
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-      </Helmet>
+      </Helmet> */}
       <div className="container">
-        <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>
-          {key} Events
-        </h2>
+        <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>{key}</h2>
       </div>
       {currentEventData.length === 0 ? (
         <div className="container mt-5 mb-5">

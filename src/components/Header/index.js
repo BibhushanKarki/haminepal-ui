@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import { EventSectionData } from "../EventPageSection/EventSectionData";
 
 const Header = () => {
-    const [isActive, setActive] = useState("false");
-    const [isIconActive, setIconActive] = useState("false")
-    // const [isDropdownActive, setDropdownActive] = useState("false");
-    const [isSmallDropdownActive, setSmallDropdownActive] = useState("false");
-    const handleToggle = () => {
-      setActive(!isActive);
-      setIconActive(!isIconActive);
-      };
-    const handleIconToggle=()=>{
-      setIconActive(!isIconActive);
-      setActive(!isActive);
-    }
-    // const handleDropdownToggle = () => {
-    //         setDropdownActive(!isDropdownActive);
-    // };
-    const handleSmallDropdownToggle = () => {
-            setSmallDropdownActive(!isSmallDropdownActive);
-    };
+  const [isActive, setActive] = useState("false");
+  const [isIconActive, setIconActive] = useState("false");
+  // const [isDropdownActive, setDropdownActive] = useState("false");
+  const [isSmallDropdownActive, setSmallDropdownActive] = useState("false");
+  const handleToggle = () => {
+    setActive(!isActive);
+    setIconActive(!isIconActive);
+  };
+  const handleIconToggle = () => {
+    setIconActive(!isIconActive);
+    setActive(!isActive);
+  };
+  // const handleDropdownToggle = () => {
+  //         setDropdownActive(!isDropdownActive);
+  // };
+  const handleSmallDropdownToggle = () => {
+    setSmallDropdownActive(!isSmallDropdownActive);
+  };
   return (
     <header id="header" className="fixed-top header-scrolled">
       <div className="container d-flex align-items-center justify-content-between">
@@ -62,7 +62,7 @@ const Header = () => {
                 style={{ display: isSmallDropdownActive ? "none" : "block" }}
               >
                 <li>
-                  <Link to="/covid">Covid</Link>
+                  <Link to="#">Covid</Link>
                 </li>
                 <li>
                   <Link to="#">Health</Link>
@@ -89,7 +89,7 @@ const Header = () => {
 
             <li className="dropdown">
               <Link to="#">
-                <span>Events</span>{" "}
+                <span>Projects</span>{" "}
                 <i
                   className="bi bi-chevron-down"
                   onClick={handleSmallDropdownToggle}

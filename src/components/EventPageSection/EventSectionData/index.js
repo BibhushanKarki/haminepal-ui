@@ -1,7 +1,7 @@
 export const EventSectionData = [
   {
-    key: "ongoing events",
-    displayName: "Ongoing Events",
+    key: "ongoing projects",
+    displayName: "Ongoing Projects",
     data: [
       {
         id: 1,
@@ -25,8 +25,8 @@ export const EventSectionData = [
   },
 
   {
-    key: "upcoming events",
-    displayName: "Upcoming Events",
+    key: "upcoming projects",
+    displayName: "Upcoming Projects",
     data: [
       // {
       //   id: 1,
@@ -40,8 +40,8 @@ export const EventSectionData = [
   },
 
   {
-    key: "past events",
-    displayName: "Past Events",
+    key: "past projects",
+    displayName: "Past Projects",
     data: [
       {
         id: 1,
