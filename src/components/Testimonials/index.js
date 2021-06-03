@@ -1,4 +1,10 @@
 import React from "react";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css";
+
+SwiperCore.use([Pagination, Autoplay]);
 
 const Testimonials = () => {
   return (
@@ -13,11 +19,19 @@ const Testimonials = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
+          <Swiper
+            pagination={{
+              dynamicBullets: true,
+            }}
+            className="mySwiper"
+            autoplay={{ delay: 2000 }}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="/assets/img/testimonials/testimonials-1.png"
+                  src="assets/img/testimonials/testimonials-1.png"
                   className="testimonial-img"
                   alt=""
                 />
@@ -45,12 +59,12 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div>
+            </SwiperSlide>
 
-            <div className="swiper-slide">
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="/assets/img/testimonials/testimonials-2.jpg"
+                  src="assets/img/testimonials/testimonials-2.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -67,12 +81,12 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div>
+            </SwiperSlide>
 
-            <div className="swiper-slide">
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="/assets/img/testimonials/testimonials-3.jpg"
+                  src="assets/img/testimonials/testimonials-3.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -88,12 +102,12 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div>
+            </SwiperSlide>
 
-            <div className="swiper-slide">
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="/assets/img/testimonials/testimonials-4.jpg"
+                  src="assets/img/testimonials/testimonials-4.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -105,12 +119,12 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div>
+            </SwiperSlide>
 
-            <div className="swiper-slide">
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="/assets/img/testimonials/testimonials-5.jpg"
+                  src="assets/img/testimonials/testimonials-5.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -125,10 +139,10 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="swiper-pagination"></div>
+            </SwiperSlide>
+          </Swiper>
         </div>
+        <div className="swiper-pagination"></div>
       </div>
     </section>
   );

@@ -3,9 +3,7 @@ import PrivacyPolicySection from "../../components/PrivacyPolicySection";
 
 const PrivacyPolicy = () => {
   return (
-    <>
       <PrivacyPolicySection />
-    </>
   );
 };
 
