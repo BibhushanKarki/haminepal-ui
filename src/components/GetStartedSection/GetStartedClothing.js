@@ -1,6 +1,6 @@
 import React from "react";
 import { GetStarted as data } from "./GetStartedData";
-import GetStartedBtn from "./GetStartedBtn";
+// import GetStartedBtn from "./GetStartedBtn";
 import Fade from "react-reveal/Fade";
 import "./getstarted.css";
 

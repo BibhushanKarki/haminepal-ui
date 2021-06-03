@@ -22,7 +22,7 @@ import Health from "./pages/Health/Health";
 import Education from "./pages/Education/Education";
 import Clothing from "./pages/Clothing/Clothing";
 import Housing from "./pages/Housing/Housing";
-
+import Donate_Covid from "./pages/Donate-Covid";
 import Cause from "./pages/Cause/Cause";
 import DonateAdministration from "./pages/DonateAdministration";
 
@@ -50,6 +50,7 @@ const Routes = () => {
       <Route path="/education" component={Education} />
       <Route path="/clothing" component={Clothing} />
       <Route path="/housing" component={Housing} />
+      <Route path="/donate-covid" component={Donate_Covid} />
       <Route path="/cause" component={Cause} />
       <Route path="/transparency" component={Transparency} />
       <Route path="/donate-administration" component={DonateAdministration} />

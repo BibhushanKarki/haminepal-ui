@@ -122,7 +122,7 @@ const Header = () => {
                 style={{ display: isSmallDropdownActive ? "none" : "block" }}
               >
                 <li>
-                  <Link to="/covid">Covid</Link>
+                  <Link to="/donate-covid">Covid</Link>
                 </li>
                 <li>
                   <Link to="/cause">Cause</Link>
