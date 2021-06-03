@@ -64,7 +64,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-2.jpg"
+                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t1.6435-9/41353137_1978665292156713_1139432816216375296_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=wu9mQ-mC1sIAX95D_lK&_nc_ht=scontent.fktm10-1.fna&oh=c654ae861dde767b84d0a6e20c813009&oe=60DDA408"
                   className="testimonial-img"
                   alt=""
                 />
@@ -107,7 +107,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-4.jpg"
+                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t1.6435-9/122786014_1226786601021737_7408835113369957252_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=YmDeCZ6QwBkAX8U99mK&tn=ODvmJ3lG2eZfHnBa&_nc_ht=scontent.fktm10-1.fna&oh=adf50a187968e0eadf94408d524f2108&oe=60DF27CF"
                   className="testimonial-img"
                   alt=""
                 />

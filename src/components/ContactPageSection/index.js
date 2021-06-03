@@ -7,12 +7,15 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const ContactPageContent = () => {
   const contactBanner = {
-    backgroundColor: "#9F1718",
     marginBottom: "60px",
   };
 
   const cardStyle = {
-    border: "1px solid #9F1718",
+      background: `rgba( 0, 0, 0, 0.65 )`,
+      boxShadow: `0 8px 32px 0 rgba( 31, 38, 135, 0.37 )`,
+      backdropFilter: `blur( 4px )`,
+      webkitBackdropFilter: `blur( 4px )`,
+      borderRadius: '10px'
   };
   const heading = {
     color: "#FFFFFF",
@@ -30,11 +33,11 @@ const ContactPageContent = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <div className="row" style={contactBanner}>
-        <div className="col-md-5 px-5">
+        <div className="col-lg-5 col-md-12 col-sm-12">
           <form>
-            <div className="card form-card px-5 py-5" style={cardStyle}>
+            <div className="card form-card p-5" style={cardStyle}>
               <div className="row">
                 <div className="col-md-6">
                   <input
@@ -98,7 +101,7 @@ const ContactPageContent = () => {
           </form>
         </div>
 
-        <div className="col-md-7 map-section text-center ">
+        <div className="col-lg-7 col-md-12 col-sm-12 map-section text-center " style={cardStyle}>
           <iframe
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -127,7 +130,7 @@ const ContactPageContent = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

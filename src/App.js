@@ -12,9 +12,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="page-content">
         <Routes />
-      </div>
       <Footer />
     </>
   );

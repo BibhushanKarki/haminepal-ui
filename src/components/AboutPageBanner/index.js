@@ -4,7 +4,8 @@ import "./timeline.css";
 const AboutPageBanner = () => {
   const aboutBanner = {
     marginTop: "3.5rem",
-    backgroundColor: "#9F1718",
+      background: `rgba( 0, 0, 0, 0.65 )`,
+      backdropFilter: `blur( 4px )`,
     height: "40vh",
     color: "#fff",
     borderBottom: "2px solid white",

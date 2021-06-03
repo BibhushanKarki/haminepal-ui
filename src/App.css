@@ -1,6 +1,6 @@
-.page-content {
+/* .page-content {
   margin-top: 130px;
-}
+} */
 .btn-primary,.btn-custom,#pills-tab li button.active{
   background-color:#9F1718 !important;
   color:white !important;
@@ -44,4 +44,15 @@
 }
 .btn:focus{
   box-shadow: none !important;
+}
+
+
+/* Glassmorphism */
+
+.panel {
+   background: rgba( 0, 0, 0, 0.65 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
 }

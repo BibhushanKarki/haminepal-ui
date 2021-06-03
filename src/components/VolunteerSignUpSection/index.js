@@ -9,7 +9,7 @@ const SignUpSection = () => {
           <div className="d-flex justify-content-center">
             <div className="col-md-6">
               <div
-                className="card px-5 py-3 text-center"
+                className="card px-5 py-3 text-center panel"
                 style={{
                   boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
                 }}
