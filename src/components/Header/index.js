@@ -136,7 +136,7 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="/contactus">
+              <Link className="nav-link scrollto" to="/contact">
                 Contact
               </Link>
             </li>

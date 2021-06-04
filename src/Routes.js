@@ -10,7 +10,8 @@ import VolunteerSignUp from "./pages/VolunteerSignUp";
 import VolunteerProfile from "./pages/VolunteerProfile";
 import Volunteer from "./pages/Volunteer/Volunteer";
 import StarRating from "./pages/StarRating";
-import ContactUs from "./pages/ContactUs/ContactUs";
+// import ContactUs from "./pages/ContactUs/ContactUs";
+import Contact from "./components/Contact";
 import Fundraiser from "./pages/Fundraiser/Fundraiser";
 import Transparency from "./pages/Transparency/Transparency";
 import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
@@ -39,7 +40,7 @@ const Routes = () => {
       <Route path="/volunteer-signup" component={VolunteerSignUp} />
       <Route path="/volunteer-profile" component={VolunteerProfile} />
       <Route path="/star-rating" component={StarRating} />
-      <Route path="/contactus" component={ContactUs} />
+      <Route path="/contact" component={Contact} />
       <Route path="/fundraisers" component={Fundraiser} />
       <Route path="/transparencydetail" component={TransparencyDetail} />
       {/* <Route path="/sign-in" component={SignIn} /> */}
