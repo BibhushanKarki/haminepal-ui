@@ -5,7 +5,7 @@ import "./donateCovid.css";
 
 const Covid = () => {
   return (
-    <div className="container donate-covid-container">
+    <div className="container donate-covid-container ">
       <div className="row d-flex flex-row align-items-center m-4 main-content ">
         <Fade left>
           <div className="col-md-6">

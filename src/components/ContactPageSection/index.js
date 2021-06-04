@@ -6,35 +6,53 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const ContactPageContent = () => {
-  const contactBanner = {
-    marginBottom: "60px",
-  };
+  // const contactBanner = {
+  //   marginBottom: "60px",
+  // };
 
   const cardStyle = {
-      background: `rgba( 0, 0, 0, 0.65 )`,
-      boxShadow: `0 8px 32px 0 rgba( 31, 38, 135, 0.37 )`,
-      backdropFilter: `blur( 4px )`,
-      webkitBackdropFilter: `blur( 4px )`,
-      borderRadius: '10px'
+    // background: `rgba( 0, 0, 0, 0.65 )`,
+    // boxShadow: `0 8px 32px 0 rgba( 31, 38, 135, 0.37 )`,
+    // backdropFilter: `blur( 4px )`,
+    // webkitBackdropFilter: `blur( 4px )`,
+    // borderRadius: "10px",
+
+    background: "#ffffff0d",
+    boxShadow: `rgb(31 38 135 / 37%) 0px 8px 32px 0px`,
+    backdropFilter: `blur(25px) saturate(0.5)`,
+    borderRadius: "25px",
   };
+
+  const mapStyle = {
+    background: "#ffffff0d",
+    boxShadow: `rgb(31 38 135 / 37%) 0px 8px 32px 0px `,
+    backdropFilter: `blur(4px)`,
+    borderRadius: "25px",
+    overflow: "hidden",
+    position: "relative",
+  };
+
   const heading = {
-    color: "#FFFFFF",
+    color: "#9f1718",
     fontSize: "25px",
   };
 
   const subHeading = {
-    color: "#FFFFFF",
+    color: "#354452",
     fontSize: "17px",
   };
 
   const iconStyle = {
-    color: "#ffffff",
+    color: "#354452",
     fontSize: 25,
   };
 
   return (
-    <div className="container">
-      <div className="row" style={contactBanner}>
+    <div className="container mb-5">
+      <div
+        className="row"
+        // style={contactBanner}
+      >
         <div className="col-lg-5 col-md-12 col-sm-12">
           <form>
             <div className="card form-card p-5" style={cardStyle}>
@@ -101,7 +119,10 @@ const ContactPageContent = () => {
           </form>
         </div>
 
-        <div className="col-lg-7 col-md-12 col-sm-12 map-section text-center " style={cardStyle}>
+        <div
+          className="col-lg-7 col-md-12 col-sm-12 map-section text-center "
+          style={mapStyle}
+        >
           <iframe
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"

@@ -4,7 +4,7 @@ import "./volunteersignup.css";
 const SignUpSection = () => {
   return (
     <>
-      <div className="container-sm  mt-5 mb-5">
+      <div className="container-sm  mb-5">
         <form className="row ">
           <div className="d-flex justify-content-center">
             <div className="col-md-6">
