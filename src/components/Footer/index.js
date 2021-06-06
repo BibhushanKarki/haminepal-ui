@@ -56,7 +56,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/contactus">Contact Us</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
