@@ -15,8 +15,8 @@ import Contact from "./components/Contact";
 import Fundraiser from "./pages/Fundraiser/Fundraiser";
 import Transparency from "./pages/Transparency/Transparency";
 import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
-// import SignIn from "./pages/SignIn";
-// import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import Covid from "./pages/Covid/Covid";
 import Food from "./pages/Food/Food";
 import Health from "./pages/Health/Health";
@@ -43,8 +43,8 @@ const Routes = () => {
       <Route path="/contact" component={Contact} />
       <Route path="/fundraisers" component={Fundraiser} />
       <Route path="/transparencydetail" component={TransparencyDetail} />
-      {/* <Route path="/sign-in" component={SignIn} /> */}
-      {/* <Route path="/sign-up" component={SignUp} /> */}
+      <Route path="/sign-in" component={SignIn} />
+      <Route path="/sign-up" component={SignUp} />
       <Route path="/covid" component={Covid} />
       <Route path="/food" component={Food} />
       <Route path="/health" component={Health} />

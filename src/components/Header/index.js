@@ -141,12 +141,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="/signin">
+              <Link className="nav-link scrollto" to="/sign-in">
                 Sign In
               </Link>
             </li>
             <li>
-              <Link className="getstarted" to="/signup">
+              <Link className="getstarted" to="/sign-up">
                 Join Now
               </Link>
             </li>
