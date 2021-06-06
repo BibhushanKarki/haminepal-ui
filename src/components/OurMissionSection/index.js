@@ -49,7 +49,7 @@ const Mission = () => {
               </div>
               <div className="card-body">
                 <h5 className="card-title">
-                  <Link to="">Our Plan</Link>
+                  <Link to="">Our Work</Link>
                 </h5>
                 <p className="card-text">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -76,7 +76,7 @@ const Mission = () => {
               </div>
               <div className="card-body">
                 <h5 className="card-title">
-                  <Link to="">Our Vision</Link>
+                  <Link to="">Our Objectives</Link>
                 </h5>
                 <p className="card-text">
                   The vision of Hami Nepal is to mobilize volunteers and impact

@@ -69,15 +69,33 @@ const Testimonials = () => {
                   alt=""
                 />
                 <h3>Rijesh Rajkarnikar</h3>
-                <h4>Co-Founder</h4>
+                <h4>Co-Treasurer Elect</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Rijesh Rajkarnikar is the Co-Founder of Hami Nepal and has
-                  initiated COVID-19 relief interventions. The team is working
-                  extremely hard to facilitate the health sector and looks
-                  forward to creating a ripple effect so that everyone,
-                  especially the younger generation, contributes from a personal
-                  level.
+                  Rijesh Rajkarnikar defines himself with the statement as a
+                  young individual who believes that determination, versatility
+                  and excellent group dynamics as the major components of
+                  achieving set targets. For the past 5 years, he has worked in
+                  various capacities and contributed in various fields with
+                  various organizations and enterprises in areas such as youth
+                  empowerment, community development, gender equality, social
+                  entrepreneurship, resilience, marketing, branding, operations
+                  management, disaster relief and crisis management and so on.
+                  An ambivert who is always eager to start up a conversation
+                  with new people and adapts to the provided surrounding in a
+                  short period of time. Rijesh has recently joined as an active
+                  member of Hami Nepal for Covid Crisis Management working on
+                  the field to closely understand and strategize for mitigating
+                  the problems to be faced by the Nation in the coming days. He
+                  has been responsible for planning and implementing many of the
+                  relief efforts being operated by Hami Nepal in recent days.
+                  His efforts has also been recognized by the UN volunteers
+                  Nepal. He states "The team is working extremely hard to
+                  facilitate the health sector and looks forward to creating a
+                  ripple effect so that everyone, especially the younger
+                  generation, contributes from a personal level." Rijesh was
+                  also recently elected as the Co-Treasurer of Hami Nepal by the
+                  board.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -124,18 +142,65 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-5.jpg"
+                  src="assets/img/behind-the-name/bidhan-behind-the-name.png"
                   className="testimonial-img"
                   alt=""
                 />
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Bidhan Shrestha</h3>
+                <h4>Project Lead Elect</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
-                  veniam tempor noster veniam enim culpa labore duis sunt culpa
-                  nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                  cillum quid.
+                  Bidhan Shrestha is recognized by MTV Roadies as a Roadie Real
+                  Hero and was the finalist of MTV Roadies 2019. He had been
+                  closely observing and supporting the work done by Hami Nepal
+                  since the 1st wave of COVID by spreading awareness through his
+                  social media platform which has a wide reach among the youths
+                  of Nepal. Summoned by Hami Nepal, Bidhan Shrestha has joined
+                  the COVID crisis management project as a front-line volunteer
+                  working tirelessly onfield day and night. Bidhan has displayed
+                  his heroics working around the clock to manage the 2nd wave of
+                  COVID faced by the nation. Also at the same time, he has been
+                  documenting everything to make sure positive inspiration and a
+                  sense of hope could spread throughout his social media handles
+                  in such hard times. Bidhan has also been elected as a Project
+                  Lead of Hami Nepal by the board members.
+                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="testimonial-item">
+                <img
+                  src="assets/img/behind-the-name/rupak-behind-the-name.png"
+                  className="testimonial-img"
+                  alt=""
+                />
+                <h3>Dr. Rupak B. Ghimire</h3>
+                {/* <h4>Project Lead Elect</h4> */}
+                <p>
+                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Dr. Rupak B. Ghimire is our young and enthusiastic
+                  dermatologist and hair transplant surgeon. He completed his
+                  MBBS, MD from Kathmandu University and training in basic hair
+                  transplant surgery from Satyam Hair Transplants, India and
+                  International Fellowship in Hair Transplant Surgery from Dana
+                  Plastic Surgery Clinic, South Korea. He was also an Assistant
+                  Professor at Kathmandu Medical College, Sinamangal. He has
+                  received training and attended various national and
+                  international conferences, and recieved many awards and
+                  recognitions- International Scholarship at American Academy of
+                  Dermatologists (AAD) ,WCD Scholarship Grant at World Congress
+                  of Dermatology in Milan, Italy , Health Category Winner of
+                  Ncell App Camp 2015 and many more awards and presentations to
+                  his credit. He has been a winner of Mr Nepal 2011, acted in a
+                  movie as a lead actor and many TV commercials as well. He has
+                  the first published paper in hair transplantation in Journal
+                  of Nepal Medical Association and reviewer for many
+                  international journals like Dermatologics Therapy, Balkans
+                  Medical Journal, Asian Journal of Research in Dermatological
+                  Science and more. He has been very active conducting health
+                  camps, social activism and connecting to youths.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
