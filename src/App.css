@@ -1,3 +1,8 @@
 .page-content {
   margin-top: 130px;
 }
+
+.form-check-input:checked{
+  background-color: #9f1718 ;
+  border-color: #9f1718 ;
+}

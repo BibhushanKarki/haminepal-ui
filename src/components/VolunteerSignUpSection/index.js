@@ -180,7 +180,7 @@ const SignUpSection = () => {
                         id="defaultCheck1"
                       />
                     </div>
-                    <div className="col-md-10" style={{ color: "#9f1718" }}>
+                    <div className="col-md-10" style={{ color: "#fff" }}>
                       I agree terms of service & privacy policy.
                     </div>
                   </div>
