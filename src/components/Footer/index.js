@@ -66,27 +66,19 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-3 col-md-6 footer-links">
-              <h4>Other Links</h4>
+              <h4>Learn More</h4>
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Any Link</Link>
+                  <Link to="/howitworks">How HamiNepal Works?</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Any Link</Link>
+                  <Link to="/faq">FAQ</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Any Link</Link>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Any Link</Link>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Any Link</Link>
+                  <Link to="/success-stories">Success Stories</Link>
                 </li>
               </ul>
             </div>
