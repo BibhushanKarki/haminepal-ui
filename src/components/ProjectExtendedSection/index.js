@@ -283,7 +283,7 @@ const ProjectExtendedSection = () => {
       </div>
     </>
   ) : (
-    <div className="container mt-4">
+    <div className="container" style={{ marginTop: 130, marginBottom: 50 }}>
       <div
         className="alert alert-danger d-flex align-items-center"
         role="alert"

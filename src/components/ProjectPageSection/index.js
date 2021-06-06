@@ -295,7 +295,7 @@ const ProjectSection = () => {
       })}
     </>
   ) : (
-    <div className="container mt-5 mb-5">
+    <div className="container" style={{ marginTop: 130, marginBottom: 50 }}>
       <div
         className="alert alert-danger d-flex align-items-center"
         role="alert"
