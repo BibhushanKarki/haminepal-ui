@@ -259,7 +259,7 @@ const EventExtendedSection = () => {
         <div className="row">
           {items.map((items) => {
             return (
-              <div className="col-md-3" key={items.id}>
+              <div className="col-md-12" key={items.id}>
                 <div className="card card-01">
                   <div className="profile-box">
                     <img
