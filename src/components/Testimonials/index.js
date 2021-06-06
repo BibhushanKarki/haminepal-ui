@@ -101,7 +101,7 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="testimonial-item">
                 <img
                   src="assets/img/testimonials/testimonials-3.jpg"
@@ -120,7 +120,7 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             <SwiperSlide>
               <div className="testimonial-item">
