@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { EventSectionData } from "../EventPageSection/EventSectionData";
+import { ProjectSectionData } from "../ProjectPageSection/ProjectSectionData";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
@@ -99,7 +99,7 @@ const Header = () => {
                 className={isSmallDropdownActive ? "dropdown-active" : ""}
                 style={{ display: isSmallDropdownActive ? "none" : "block" }}
               >
-                {EventSectionData.map((keyBundle) => (
+                {ProjectSectionData.map((keyBundle) => (
                   <li>
                     <Link to={`/events/${keyBundle.key}`} key={keyBundle.key}>
                       {keyBundle.displayName}

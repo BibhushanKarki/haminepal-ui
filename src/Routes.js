@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Events from "./pages/Events/Events";
-import EventExtended from "./pages/EventExtended";
+import Projects from "./pages/Projects/Projects";
+import ProjectExtended from "./pages/ProjectExtended";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import BeVolunteer from "./pages/BeVolunteer";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
@@ -32,8 +32,8 @@ const Routes = () => {
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/aboutus" component={AboutUs} />
-      <Route path="/events/:key" component={Events} />
-      <Route path="/event/:key/:slug" component={EventExtended} />
+      <Route path="/events/:key" component={Projects} />
+      <Route path="/event/:key/:slug" component={ProjectExtended} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/be-volunteer" component={BeVolunteer} />
