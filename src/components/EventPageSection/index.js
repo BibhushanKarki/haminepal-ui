@@ -13,7 +13,7 @@ const EventSection = () => {
   const [image, setImage] = useState("");
 
   const { key } = useParams();
-  const [title, setTitle] = useState(key + " Events");
+  const [title, setTitle] = useState(key + " Projects");
 
   let currentEventData;
   let history = useHistory();
@@ -48,9 +48,7 @@ const EventSection = () => {
         <meta property="og:image" content={image} />
       </Helmet>
       <div className="container">
-        <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>
-          {key} Events
-        </h2>
+        <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>{key}</h2>
       </div>
       {currentEventData.length === 0 ? (
         <div className="container mt-5 mb-5">
@@ -59,6 +57,7 @@ const EventSection = () => {
             <br />
             <button
               className="btn btn-info mt-2"
+              style={{ color: "white" }}
               onClick={() => history.goBack()}
             >
               Go Back

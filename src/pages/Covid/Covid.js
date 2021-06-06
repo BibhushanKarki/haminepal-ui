@@ -1,13 +1,12 @@
-import React from 'react'
-import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
-import GetStartedCovid from '../../components/GetStartedSection/GetStartedCovid'
+import React from "react";
+import CovidSection from "../../components/CovidSection/Covid";
+
 const Covid = () => {
   return (
-    <div>
-      <GetStartedCovid/>
-      <TopFundRaisers title="Trending Covid Fundraisers"/>
-    </div>
-  )
-}
+    <>
+      <CovidSection />
+    </>
+  );
+};
 
-export default Covid
+export default Covid;

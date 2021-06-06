@@ -67,9 +67,12 @@ const EventExtendedSection = () => {
                 alt={currentEvent.title}
                 style={{ height: 300 }}
               />
-              <div className="mt-md-3 ">
-                <p className="card-text">{currentEvent.paragraph}</p>
-              </div>
+              <div
+                className="mt-md-3 "
+                dangerouslySetInnerHTML={{
+                  __html: currentEvent.paragraph,
+                }}
+              ></div>
               <hr />
               <div className="text-center mb-5">
                 <Link to="/volunteer-signup" className="btn btn-danger mt-4 ">

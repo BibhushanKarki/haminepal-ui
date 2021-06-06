@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { EventSectionData } from "../EventPageSection/EventSectionData";
 
 const Header = () => {
+  const [isActive, setActive] = useState("false");
+  const [isIconActive, setIconActive] = useState("false");
+  // const [isDropdownActive, setDropdownActive] = useState("false");
+  const [isSmallDropdownActive, setSmallDropdownActive] = useState("false");
+  const handleToggle = () => {
+    setActive(!isActive);
+    setIconActive(!isIconActive);
+  };
+  const handleIconToggle = () => {
+    setIconActive(!isIconActive);
+    setActive(!isActive);
+  };
+  // const handleDropdownToggle = () => {
+  //         setDropdownActive(!isDropdownActive);
+  // };
+  const handleSmallDropdownToggle = () => {
+    setSmallDropdownActive(!isSmallDropdownActive);
+  };
   return (
     <header id="header" className="fixed-top header-scrolled">
       <div className="container d-flex align-items-center justify-content-between">
@@ -11,7 +29,10 @@ const Header = () => {
           <img src="/assets/img/logo-only.png" alt="" className="img-fluid" />
         </Link>
 
-        <nav id="navbar" className="navbar">
+        <nav
+          id="navbar"
+          className={isActive ? "navbar" : "navbar navbar-mobile"}
+        >
           <ul>
             <li>
               <Link className="nav-link scrollto active" to="/">
@@ -30,26 +51,33 @@ const Header = () => {
             </li>
             <li className="dropdown">
               <Link href="#">
-                <span>Cause</span> <i className="bi bi-chevron-down"></i>
+                <span>Cause</span>{" "}
+                <i
+                  className="bi bi-chevron-down"
+                  onClick={handleSmallDropdownToggle}
+                ></i>
               </Link>
-              <ul>
+              <ul
+                className={isSmallDropdownActive ? "dropdown-active" : ""}
+                style={{ display: isSmallDropdownActive ? "none" : "block" }}
+              >
                 <li>
-                  <Link to="#">Covid</Link>
+                  <Link to="/covid">Covid</Link>
                 </li>
                 <li>
-                  <Link to="#">Health</Link>
+                  <Link to="/health">Health</Link>
                 </li>
                 <li>
-                  <Link to="#">Housing</Link>
+                  <Link to="/housing">Housing</Link>
                 </li>
                 <li>
-                  <Link to="#">Clothing</Link>
+                  <Link to="/clothing">Clothing</Link>
                 </li>
                 <li>
-                  <Link to="#">Food</Link>
+                  <Link to="/food">Food</Link>
                 </li>
                 <li>
-                  <Link to="#">Education</Link>
+                  <Link to="/education">Education</Link>
                 </li>
               </ul>
             </li>
@@ -60,10 +88,17 @@ const Header = () => {
             </li>
 
             <li className="dropdown">
-              <Link href="#">
-                <span>Events</span> <i className="bi bi-chevron-down"></i>
+              <Link to="#">
+                <span>Projects</span>{" "}
+                <i
+                  className="bi bi-chevron-down"
+                  onClick={handleSmallDropdownToggle}
+                ></i>
               </Link>
-              <ul>
+              <ul
+                className={isSmallDropdownActive ? "dropdown-active" : ""}
+                style={{ display: isSmallDropdownActive ? "none" : "block" }}
+              >
                 {EventSectionData.map((keyBundle) => (
                   <li>
                     <Link to={`/events/${keyBundle.key}`} key={keyBundle.key}>
@@ -76,11 +111,18 @@ const Header = () => {
 
             <li className="dropdown">
               <Link href="#">
-                <span>Donate</span> <i className="bi bi-chevron-down"></i>
+                <span>Donate</span>{" "}
+                <i
+                  className="bi bi-chevron-down"
+                  onClick={handleSmallDropdownToggle}
+                ></i>
               </Link>
-              <ul>
+              <ul
+                className={isSmallDropdownActive ? "dropdown-active" : ""}
+                style={{ display: isSmallDropdownActive ? "none" : "block" }}
+              >
                 <li>
-                  <Link to="/covid">Covid</Link>
+                  <Link to="/donate-covid">Covid</Link>
                 </li>
                 <li>
                   <Link to="/cause">Cause</Link>
@@ -94,7 +136,7 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link className="nav-link scrollto" href="#contact">
+              <Link className="nav-link scrollto" to="/contact">
                 Contact
               </Link>
             </li>
@@ -109,7 +151,14 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <i
+            className={
+              isIconActive
+                ? "bi mobile-nav-toggle bi-list"
+                : "bi mobile-nav-toggle bi-x"
+            }
+            onClick={(handleToggle, handleIconToggle)}
+          ></i>
         </nav>
       </div>
     </header>

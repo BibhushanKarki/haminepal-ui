@@ -23,28 +23,4 @@ export const EventExtendedSectionData = [
     name: "Malala Yousafzai",
     position: "Lead Volunteer",
   },
-  {
-    id: 5,
-    image: "/img/pic2.jpg",
-    name: "Malala Yousafzai",
-    position: "Lead Volunteer",
-  },
-  {
-    id: 6,
-    image: "/img/pic2.jpg",
-    name: "Malala Yousafzai",
-    position: "Lead Volunteer",
-  },
-  {
-    id: 7,
-    image: "/img/pic2.jpg",
-    name: "Malala Yousafzai",
-    position: "Lead Volunteer",
-  },
-  {
-    id: 8,
-    image: "/img/pic2.jpg",
-    name: "Malala Yousafzai",
-    position: "Lead Volunteer",
-  },
 ];

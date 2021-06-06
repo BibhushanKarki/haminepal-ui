@@ -1,8 +1,71 @@
-.page-content {
+.page-content > div {
   margin-top: 130px;
 }
 
+<<<<<<< HEAD
 .form-check-input:checked{
   background-color: #9f1718 ;
   border-color: #9f1718 ;
 }
+=======
+.page-content > div.home-page {
+  margin-top: 0px;
+}
+
+.btn-primary,
+.btn-custom,
+#pills-tab li button.active {
+  background-color: #9f1718 !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+}
+.btn {
+  border: 2px solid transparent !important;
+}
+.btn:hover {
+  background-color: white !important;
+  color: #9f1718 !important;
+  border: 2px solid #9f1718 !important;
+}
+.btn-plain {
+  background-color: #fff !important;
+  color: #9f1718 !important;
+  border: 2px solid #9f1718 !important;
+}
+.button-secondary {
+  background-color: #55acee !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+}
+
+.btn-plain:hover {
+  background-color: #9f1718 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.btn-donation {
+  background-color: #fff !important;
+  padding: 0.5rem;
+  pointer-events: none !important;
+}
+.btn-donation-red {
+  background-color: #9f1718 !important;
+  color: #fff !important;
+  padding: 0.5rem;
+  pointer-events: none !important;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+
+/* Glassmorphism */
+
+.panel {
+  background: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+>>>>>>> 813f96384ed004aa45fd2d18946d888e94e6962a

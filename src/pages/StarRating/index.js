@@ -3,9 +3,7 @@ import StarRatingSection from "../../components/StarRatingSection";
 
 const StarRating = () => {
   return (
-    <>
       <StarRatingSection />
-    </>
   );
 };
 
