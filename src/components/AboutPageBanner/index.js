@@ -69,7 +69,7 @@ const AboutPageBanner = () => {
             <div className="timeline-badge info">
               <i className="fa fa-check-square-o"></i>
             </div>
-            <div className="timeline-panel">
+            <div className="timeline-panel panel">
               <div className="timeline-heading">
                 <h4 className="timeline-title">After Earthquake</h4>
               </div>
@@ -89,7 +89,7 @@ const AboutPageBanner = () => {
             <div className="timeline-badge success">
               <i className="fa fa-thumbs-o-up"></i>
             </div>
-            <div className="timeline-panel">
+            <div className="timeline-panel panel">
               <div className="timeline-heading">
                 <h4 className="timeline-title">Mental Health Campaigns</h4>
               </div>
@@ -105,7 +105,7 @@ const AboutPageBanner = () => {
             <div className="timeline-badge">
               <i className="fa fa-check-square-o"></i>
             </div>
-            <div className="timeline-panel">
+            <div className="timeline-panel panel">
               <div className="timeline-heading">
                 <h4 className="timeline-title">Earthquake</h4>
                 <p>
@@ -126,7 +126,7 @@ const AboutPageBanner = () => {
             <div className="timeline-badge warning">
               <i className="fa fa-check-square-o"></i>
             </div>
-            <div className="timeline-panel">
+            <div className="timeline-panel panel">
               <div className="timeline-heading">
                 <h4 className="timeline-title">Donations Received</h4>
               </div>
@@ -139,7 +139,7 @@ const AboutPageBanner = () => {
             <div className="timeline-badge danger">
               <i className="fa fa-check-square-o"></i>
             </div>
-            <div className="timeline-panel">
+            <div className="timeline-panel panel">
               <div className="timeline-heading">
                 <h4 className="timeline-title">Food Distribution</h4>
               </div>

@@ -13,7 +13,7 @@
       position: absolute;
       content: " ";
       width: 3px;
-      background-color: #eeeeee;
+      background-color: #9f1718;
       left: 50%;
       margin-left: -1.5px;
   }
@@ -46,6 +46,7 @@
       .timeline > li > .timeline-panel {
           width: 46%;
           float: left;
+          color:#fff;
           border: 1px solid #d4d4d4;
           border-radius: 2px;
           padding: 20px;

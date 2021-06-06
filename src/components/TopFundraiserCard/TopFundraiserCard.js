@@ -15,13 +15,13 @@ const TopFundraiserCard = ({ title }) => {
         </div>
       </div>
 
-      {/* <!-- Topic Cards --> */}
+      {/* <!-- Topic Cards --> */} 
       <div id="cards_landscape_wrap-2">
         <div className="container">
           <div className="row">
             {data.map((data, key) => {
               return (
-                <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div className="col-xs-8 col-sm-6 col-md-6 col-lg-3" key={key}>
                   <div className="card-flyer">
                     <div className="text-box">
                       <div className="image-box">
