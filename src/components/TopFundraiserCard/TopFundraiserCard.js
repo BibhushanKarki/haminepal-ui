@@ -7,7 +7,7 @@ import "./top-fundraiser.css";
 const TopFundraiserCard = ({ title }) => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container">
         <div className="row ">
           <div className="top-fundraiser-heading">
             <h2>{title}</h2>
