@@ -1,4 +1,4 @@
-export const EventSectionData = [
+export const ProjectSectionData = [
   {
     key: "ongoing projects",
     displayName: "Ongoing Projects",
@@ -35,7 +35,7 @@ export const EventSectionData = [
         thumbnailImage: "/img/covid-icon.png",
         image: "/img/covid-crisis.png",
         title: "Preparation for 3rd Wave of COVID-19 ",
-        paragraph: `<p>The second wave was a sudden blow for Nepal as no preparation was made from the side of the government in case of another COVID-19 crisis.The lack of hospital beds, proper medical facility and critical oxygen supply took more lives than the virus itself. However, Hami Nepal team has personally learned from the second wave that we can’t just stay praying that no such thing happens again. Therefore, we are planning to expand outside the Kathmandu Valley with the intention to help as many people as we can without any expectation.</p>
+        paragraph: `The second wave was a sudden blow for Nepal as no preparation was made from the side of the government in case of another COVID-19 crisis.The lack of hospital beds, proper medical facility and critical oxygen supply took more lives than the virus itself. However, Hami Nepal team has personally learned from the second wave that we can’t just stay praying that no such thing happens again. Therefore, we are planning to expand outside the Kathmandu Valley with the intention to help as many people as we can without any expectation.
         
         `,
       },

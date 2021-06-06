@@ -1,45 +1,45 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import "./event-extended.css";
-import { EventExtendedSectionData as items } from "./EventExtendedSectionData";
-import { EventSectionData } from "../EventPageSection/EventSectionData";
+import "./project-extended.css";
+import { ProjectExtendedSectionData as items } from "./ProjectExtendedSectionData";
+import { ProjectSectionData } from "../../components/ProjectPageSection/ProjectSectionData";
 import DonationFormSection from "../DonationFormSection";
 import { Helmet } from "react-helmet";
 
-const EventExtendedSection = () => {
+const ProjectExtendedSection = () => {
   const [inputValue, setInputValue] = useState("");
   const { key, slug } = useParams();
 
-  const currentKeyBundle = EventSectionData.filter(
+  const currentKeyBundle = ProjectSectionData.filter(
     (keyBundle) => keyBundle.key === key
   )[0];
 
-  let currentEvent;
+  let currentProject;
 
   if (currentKeyBundle) {
-    currentEvent = currentKeyBundle.data.filter(
-      (event) => event.slug === slug
+    currentProject = currentKeyBundle.data.filter(
+      (project) => project.slug === slug
     )[0];
   }
 
-  return currentEvent ? (
+  return currentProject ? (
     <>
       <Helmet>
-        <title>{currentEvent.title} - HamiNepal</title>
+        <title>{currentProject.title} - HamiNepal</title>
         <meta
           property="og:url"
-          content={`http://haminepal.org/event/${key}/${currentEvent.slug}`}
+          content={`http://haminepal.org/event/${key}/${currentProject.slug}`}
         />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={currentEvent.title} />
+        <meta property="og:title" content={currentProject.title} />
         <meta
           property="og:description"
-          content={`${currentEvent.paragraph.substr(0, 100)}...`}
+          content={`${currentProject.paragraph.substr(0, 100)}...`}
         />
         <meta
           property="og:image"
-          content={`http://haminepal.org/${currentEvent.image}
+          content={`http://haminepal.org/${currentProject.image}
         `}
         />
       </Helmet>
@@ -58,19 +58,19 @@ const EventExtendedSection = () => {
                   className="card-title text-center"
                   style={{ fontWeight: "bold", fontSize: 25 }}
                 >
-                  {currentEvent.title}
+                  {currentProject.title}
                 </h5>
               </div>
               <img
                 className="card-img-top image-container"
-                src={currentEvent.image}
-                alt={currentEvent.title}
+                src={currentProject.image}
+                alt={currentProject.title}
                 style={{ height: 300 }}
               />
               <div
                 className="mt-md-3 "
                 dangerouslySetInnerHTML={{
-                  __html: currentEvent.paragraph,
+                  __html: currentProject.paragraph,
                 }}
               ></div>
               <hr />
@@ -301,11 +301,11 @@ const EventExtendedSection = () => {
           <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
         </svg>
         <div style={{ textTransform: "capitalize" }}>
-          Event {slug} Not Found under {key}.
+          Project {slug} Not Found under {key}.
         </div>
       </div>
     </div>
   );
 };
 
-export default EventExtendedSection;
+export default ProjectExtendedSection;

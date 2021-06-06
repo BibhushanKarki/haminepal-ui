@@ -1,4 +1,4 @@
-export const EventExtendedSectionData = [
+export const ProjectExtendedSectionData = [
   {
     id: 1,
     image: "/img/kabita.png",
