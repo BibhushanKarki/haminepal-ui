@@ -69,10 +69,10 @@ const ProjectSection = () => {
       )}
       {currentProjectData.map((data) => {
         return (
-          <div className="row mt-5 mb-5 px-5" key={data.id}>
-            <div className="card card-event-section mb-3">
+          <div className="row my-5 px-5" key={data.id}>
+            <div className="card card-event-section col-lg-12 mb-3">
               <div className="row no-gutters">
-                <div className="col-md-2">
+                <div className="col-lg-2">
                   <div className="imageContainer d-flex justify-content-center align-items-center h-100">
                     <img
                       src={data.thumbnailImage}
@@ -81,7 +81,7 @@ const ProjectSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-md-8 event-card-section d-flex justify-content-center align-items-center h-100">
+                <div className="col-lg-8 event-card-section d-flex justify-content-center align-items-center">
                   <div className="card-body">
                     <h5 className="card-title heading">{data.title}</h5>
                     <p className="card-text sub-heading">
@@ -98,7 +98,7 @@ const ProjectSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-2 ">
+                <div className="col-lg-2 ">
                   <div className="card-body d-flex flex-column align-items-center justify-content-evenly h-100 p-0">
                     <Link
                       to="/volunteer-signup"
@@ -111,7 +111,7 @@ const ProjectSection = () => {
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#donateModal"
-                      className="btn btn-danger w-100"
+                      className="btn btn-danger w-100 my-md-2 my-sm-2 my-xs-2"
                     >
                       Donate
                     </button>
