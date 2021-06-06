@@ -20,21 +20,21 @@ const Footer = () => {
                   <br />
                 </p>
                 <div className="social-links mt-3">
-                  <Link to="#" className="twitter">
+                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="twitter">
                     <i className="bx bxl-twitter"></i>
-                  </Link>
-                  <Link to="#" className="facebook">
+                  </a>
+                  <a href="https://www.facebook.com/groups/769317927136629" target="_blank" rel="noopener noreferrer" className="facebook">
                     <i className="bx bxl-facebook"></i>
-                  </Link>
-                  <Link to="#" className="instagram">
+                  </a>
+                  <a href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg" target="_blank" rel="noopener noreferrer" className="instagram">
                     <i className="bx bxl-instagram"></i>
-                  </Link>
-                  <Link to="#" className="google-plus">
+                  </a>
+                  <a href="https://www.skype.com/en/" target="_blank" rel="noopener noreferrer" className="google-plus">
                     <i className="bx bxl-skype"></i>
-                  </Link>
-                  <Link to="#" className="linkedin">
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin">
                     <i className="bx bxl-linkedin"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
