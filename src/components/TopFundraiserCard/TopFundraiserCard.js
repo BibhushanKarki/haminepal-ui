@@ -10,12 +10,12 @@ const TopFundraiserCard = ({ title }) => {
       <div className="container">
         <div className="row ">
           <div className="top-fundraiser-heading">
-            <h2>{title}</h2>
+            <h2>Top Fundraisers</h2>
           </div>
         </div>
       </div>
 
-      {/* <!-- Topic Cards --> */} 
+      {/* <!-- Topic Cards --> */}
       <div id="cards_landscape_wrap-2">
         <div className="container">
           <div className="row">
