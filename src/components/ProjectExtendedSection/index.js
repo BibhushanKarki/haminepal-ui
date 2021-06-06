@@ -51,6 +51,7 @@ const ProjectExtendedSection = () => {
               style={{
                 border: "none",
                 boxShadow: "#f8f8f8 1px 1px 10px 0px",
+                backgroundColor: "#ffffff61",
               }}
             >
               <div className="card-body">
@@ -68,7 +69,7 @@ const ProjectExtendedSection = () => {
                 style={{ height: 300 }}
               />
               <div
-                className="mt-md-3 "
+                className="mt-3 "
                 dangerouslySetInnerHTML={{
                   __html: currentProject.paragraph,
                 }}
