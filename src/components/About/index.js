@@ -72,6 +72,7 @@ const About = () => {
             <a
               href="https://www.youtube.com/watch?v=bPny2PNWFxc&ab_channel=dekhapadhi"
               className="glightbox play-btn mb-4"
+              rel="noopener noreferrer"
             ></a>
           </div>
 

@@ -30,8 +30,7 @@ const VolunteerProfileCard = () => {
                 >
                   <img
                     src={data.profilePic}
-                    className="my-3"
-                    className="profile-style"
+                    className="my-3 profile-style"
                     alt="pp"
                   />
 

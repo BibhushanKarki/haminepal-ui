@@ -47,7 +47,6 @@ const Conatct = () => {
           <div className="col-lg-6 mt-4 mt-lg-0">
             <form
               action="forms/contact.php"
-              method="post"
               role="form"
               className="php-email-form"
             >
