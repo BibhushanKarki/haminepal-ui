@@ -22,10 +22,10 @@ const Testimonials = () => {
           <Swiper
             pagination={{
               dynamicBullets: true,
+              clickable: true
             }}
             className="mySwiper"
             autoplay={{ delay: 2000 }}
-            pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
           >
             <SwiperSlide>
