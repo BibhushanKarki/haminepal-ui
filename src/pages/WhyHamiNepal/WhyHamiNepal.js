@@ -22,8 +22,8 @@ const WhyHamiNepal = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-12 d-flex justify-content-center mt-n4">
-        <div class="card col-md-8">
+      <div className="row d-flex justify-content-center" style={{marginTop:'-2rem'}}>
+        <div class="card col-9">
           <div class="card-body p-4">
             <p class="card-text" style={{ color: "#9F1718" }}>
               Hami Nepal has been connecting hundreds of volunteers to local
