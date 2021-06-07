@@ -20,19 +20,44 @@ const Footer = () => {
                   <br />
                 </p>
                 <div className="social-links mt-3">
-                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="twitter">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="twitter"
+                  >
                     <i className="bx bxl-twitter"></i>
                   </a>
-                  <a href="https://www.facebook.com/groups/769317927136629" target="_blank" rel="noopener noreferrer" className="facebook">
+                  <a
+                    href="https://www.facebook.com/groups/769317927136629"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="facebook"
+                  >
                     <i className="bx bxl-facebook"></i>
                   </a>
-                  <a href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg" target="_blank" rel="noopener noreferrer" className="instagram">
+                  <a
+                    href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram"
+                  >
                     <i className="bx bxl-instagram"></i>
                   </a>
-                  <a href="https://www.skype.com/en/" target="_blank" rel="noopener noreferrer" className="google-plus">
+                  <a
+                    href="https://www.skype.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="google-plus"
+                  >
                     <i className="bx bxl-skype"></i>
                   </a>
-                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin"
+                  >
                     <i className="bx bxl-linkedin"></i>
                   </a>
                 </div>
@@ -71,6 +96,10 @@ const Footer = () => {
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/howitworks">How HamiNepal Works?</Link>
+                </li>
+                <li>
+                  <i className="bx bx-chevron-right"></i>{" "}
+                  <Link to="/whyhaminepal">Wny HamiNepal</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}

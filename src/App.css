@@ -1,9 +1,9 @@
 .page-content > div {
   margin-top: 130px;
 }
-.form-check-input:checked{
-  background-color: #9f1718 ;
-  border-color: #9f1718 ;
+.form-check-input:checked {
+  background-color: #9f1718;
+  border-color: #9f1718;
 }
 .page-content > div.home-page {
   margin-top: 0px;
@@ -65,8 +65,8 @@
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
 }
-@media (max-width:576px){
-  .my-xs-2{
-    margin:0.5rem 0;
+@media (max-width: 576px) {
+  .my-xs-2 {
+    margin: 0.5rem 0;
   }
 }
