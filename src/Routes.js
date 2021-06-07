@@ -26,6 +26,7 @@ import Housing from "./pages/Housing/Housing";
 import Donate_Covid from "./pages/Donate-Covid";
 import Cause from "./pages/Cause/Cause";
 import DonateAdministration from "./pages/DonateAdministration";
+import SuccessStories from "./pages/SuccessStories/SuccessStories";
 
 const Routes = () => {
   return (
@@ -55,6 +56,7 @@ const Routes = () => {
       <Route path="/cause" component={Cause} />
       <Route path="/transparency" component={Transparency} />
       <Route path="/donate-administration" component={DonateAdministration} />
+      <Route path="/success-stories" component={SuccessStories} />
     </Switch>
   );
 };
