@@ -66,24 +66,24 @@ const Mission = () => {
             data-aos-delay="300"
           >
             <div className="card">
-              <img
-                src="/assets/img/about-boxes-3.jpg"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-icon">
-                <i className="ri-movie-2-line"></i>
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">
-                  <Link to="">Our Objectives</Link>
-                </h5>
-                <p className="card-text">
-                  The vision of Hami Nepal is to mobilize volunteers and impact
-                  local communities through sustainable growth and empowering
-                  its community members.
-                </p>
-              </div>
+              <Link to="/our-objectives">
+                <img
+                  src="/assets/img/about-boxes-3.jpg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-icon">
+                  <i className="ri-movie-2-line"></i>
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">Our Objectives</h5>
+                  <p className="card-text">
+                    The vision of Hami Nepal is to mobilize volunteers and
+                    impact local communities through sustainable growth and
+                    empowering its community members.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -29,6 +29,7 @@ import DonateAdministration from "./pages/DonateAdministration";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
+import OurObjective from "./pages/OurObjective";
 
 const Routes = () => {
   return (
@@ -61,6 +62,7 @@ const Routes = () => {
       <Route path="/howitworks" component={HowItWorks} />
       <Route path="/whyhaminepal" component={WhyHamiNepal} />
       <Route path="/success-stories" component={SuccessStories} />
+      <Route path="/our-objectives" component={OurObjective} />
     </Switch>
   );
 };
