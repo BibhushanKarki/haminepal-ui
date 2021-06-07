@@ -26,6 +26,8 @@ import Housing from "./pages/Housing/Housing";
 import Donate_Covid from "./pages/Donate-Covid";
 import Cause from "./pages/Cause/Cause";
 import DonateAdministration from "./pages/DonateAdministration";
+import HowItWorks from "./pages/HowItWorks/HowItWorks";
+import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 
 const Routes = () => {
@@ -56,6 +58,8 @@ const Routes = () => {
       <Route path="/cause" component={Cause} />
       <Route path="/transparency" component={Transparency} />
       <Route path="/donate-administration" component={DonateAdministration} />
+      <Route path="/howitworks" component={HowItWorks} />
+      <Route path="/whyhaminepal" component={WhyHamiNepal} />
       <Route path="/success-stories" component={SuccessStories} />
     </Switch>
   );
