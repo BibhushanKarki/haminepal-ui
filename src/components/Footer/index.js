@@ -99,7 +99,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/whyhaminepal">Wny HamiNepal</Link>
+                  <Link to="/whyhaminepal">Why HamiNepal</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}

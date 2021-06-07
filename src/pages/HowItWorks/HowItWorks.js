@@ -28,7 +28,10 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-12 d-flex justify-content-center mt-n4">
+      <div
+        className="col-md-12 d-flex justify-content-center "
+        style={{ marginTop: "-2rem" }}
+      >
         <div className="card col-md-8">
           <div className="card-body p-4">
             <p className="card-text" style={{ color: "#9F1718" }}>
