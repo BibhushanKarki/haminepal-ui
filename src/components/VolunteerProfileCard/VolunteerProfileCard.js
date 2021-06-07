@@ -11,7 +11,7 @@ const VolunteerProfileCard = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="container mt-3">
         <div className="row">
           <div className="col-md-12 volunteer-profile-heading">
@@ -54,7 +54,7 @@ const VolunteerProfileCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
