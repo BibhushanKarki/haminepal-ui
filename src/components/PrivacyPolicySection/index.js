@@ -26,7 +26,7 @@ const PrivacyPolicySection = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <div className="row">
           <div className="privacy-heading col-md-12">
             <div className="col-sm-12 col-lg-3 col-md-4">
@@ -38,7 +38,7 @@ const PrivacyPolicySection = () => {
         </div>
       </div>
 
-      <div className="container my-5">
+      <div className="container mt-3 my-5">
         <div className="row">
           <Slide bottom>
             <div className="col-md-12">
@@ -55,7 +55,7 @@ const PrivacyPolicySection = () => {
             </div>
           </Slide>
         </div>
-        <div className="row">
+        <div className="row mt-3">
           <Slide bottom>
             <div className="col-md-12">
               {items.map((items, key) => {
