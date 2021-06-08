@@ -34,10 +34,10 @@ const DonateAdministrationSection = () => {
         </div>
         </div>
 
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center mt-4">
         <div className="col-10">
-          <div className="section-content-paragraph text-center" style={sectionContent}>
-            <p style={contentParaghaph} key={data.id}>
+          <div className="section-content-paragraph text-center" >
+            <p  key={data.id}>
               {data.paragraph}
             </p>
           </div>
