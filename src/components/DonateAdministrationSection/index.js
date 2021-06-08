@@ -4,7 +4,6 @@ import { DonateAdministrationData as data } from "./DonateAdministrationData";
 
 const DonateAdministrationSection = () => {
   const donateSection = {
-    marginTop: "3.5rem",
     color: "#9F1718",
     borderBottom: "2px solid white",
   };
@@ -17,14 +16,9 @@ const DonateAdministrationSection = () => {
     fontWeight: "bold",
   };
 
-  const sectionContent = {
-    marginTop: "50px",
-    marginBottom: "30px",
-  };
-
-  const contentParaghaph = {
-    marginTop: "5px",
-  };
+  // const contentParaghaph = {
+  //   marginTop: "5px",
+  // };
   return (
     <div classNAme="container donate-administration-container">
       <div className="row" style={donateSection}>
@@ -38,7 +32,7 @@ const DonateAdministrationSection = () => {
             </h1>
           </div>
         </div>
-      </div>
+        </div>
 
       <div className="row d-flex justify-content-center">
         <div className="col-10">
@@ -48,7 +42,7 @@ const DonateAdministrationSection = () => {
             </p>
           </div>
         </div>
-      </div>
+        </div>
 
       <div className="row mb-4">
         <div className="col-md-12 d-flex justify-content-center">

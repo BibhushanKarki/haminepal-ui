@@ -15,6 +15,7 @@ const TransparencyCard = () => {
     height: "55px",
     padding: "1rem",
     fontSize: "20px",
+    color:"black",
     border: "2px solid gray",
   };
   return (

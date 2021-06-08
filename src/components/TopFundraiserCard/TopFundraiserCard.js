@@ -7,10 +7,10 @@ import "./top-fundraiser.css";
 const TopFundraiserCard = ({ title }) => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container">
         <div className="row ">
           <div className="top-fundraiser-heading">
-            <h2>{title}</h2>
+            <h2>Top Fundraisers</h2>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ const TopFundraiserCard = ({ title }) => {
           <div className="row">
             {data.map((data, key) => {
               return (
-                <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div className="col-xs-8 col-sm-6 col-md-6 col-lg-3" key={key}>
                   <div className="card-flyer">
                     <div className="text-box">
                       <div className="image-box">

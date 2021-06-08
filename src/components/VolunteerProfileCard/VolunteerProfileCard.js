@@ -11,7 +11,7 @@ const VolunteerProfileCard = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="container mt-3">
         <div className="row">
           <div className="col-md-12 volunteer-profile-heading">
@@ -30,8 +30,7 @@ const VolunteerProfileCard = () => {
                 >
                   <img
                     src={data.profilePic}
-                    className="my-3"
-                    className="profile-style"
+                    className="my-3 profile-style"
                     alt="pp"
                   />
 
@@ -55,7 +54,7 @@ const VolunteerProfileCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

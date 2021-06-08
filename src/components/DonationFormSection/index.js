@@ -1,12 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import haminepali from "../../assets/images/haminepalilogo1.png";
 import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
 import DonateAnonymouslySection from "../../components/DonateAnonymouslySection";
-
 import "./donationform.css";
 
 const DonationFormSection = () => {
+  const [number, setNumber] = useState('');
+
+  const onChange = (e) => {
+    const re = /^[0-9\b]+$/;
+    if (e.target.value === '' || re.test(e.target.value)) {
+       setNumber({value: e.target.value})
+    }
+  }
+
   return (
     <>
       {/* <!-- Modal --> */}
@@ -64,7 +72,7 @@ const DonationFormSection = () => {
                         <div className="col-md-6">
                           <input
                             type="text"
-                            className="form-control"
+                            className="form-control formStyle"
                             placeholder="Firstname"
                             name="firstname"
                             required
@@ -73,7 +81,7 @@ const DonationFormSection = () => {
                         <div className="col-md-6 card-input-section">
                           <input
                             type="text"
-                            className="form-control "
+                            className="form-control formStyle"
                             placeholder="LastName"
                             name="lastname"
                             required
@@ -84,7 +92,7 @@ const DonationFormSection = () => {
                         <div className="col-md-6">
                           <input
                             type="email"
-                            className="form-control"
+                            className="form-control formStyle"
                             placeholder="Email-Address"
                             name="email"
                             required
@@ -93,7 +101,9 @@ const DonationFormSection = () => {
                         <div className="col-md-6 card-input-section">
                           <input
                             type="number"
-                            className="form-control "
+                            onChange={onChange}
+                            value={number}
+                            className="form-control formStyle"
                             placeholder="Phone Number"
                             name="phone"
                             required
@@ -105,7 +115,7 @@ const DonationFormSection = () => {
                         <div className="col-md-12">
                           <input
                             type="text"
-                            className="form-control"
+                            className="form-control formStyle"
                             placeholder="Street Address"
                             name="streetaddress"
                             required
@@ -116,7 +126,7 @@ const DonationFormSection = () => {
                         <div className="col-md-6">
                           <input
                             type="text"
-                            className="form-control"
+                            className="form-control formStyle"
                             placeholder="City"
                             name="city"
                             required
@@ -125,7 +135,7 @@ const DonationFormSection = () => {
                         <div className="col-md-6 card-input-section">
                           <input
                             type="text"
-                            className="form-control "
+                            className="form-control formStyle"
                             placeholder="State/Province/Region"
                             name="state"
                             required
@@ -137,7 +147,9 @@ const DonationFormSection = () => {
                         <div className="col-md-6">
                           <input
                             type="number"
-                            className="form-control "
+                            onChange={onChange}
+                            value={number}
+                            className="form-control formStyle"
                             placeholder="Zip/Postal code"
                             name="zipcode"
                             required
@@ -146,7 +158,7 @@ const DonationFormSection = () => {
                         <div className="col-md-6 card-input-section">
                           <input
                             type="text"
-                            className="form-control "
+                            className="form-control formStyle"
                             placeholder="Country"
                             name="country"
                             required
@@ -159,14 +171,16 @@ const DonationFormSection = () => {
                         style={{ backgroundColor: "#9f1718" }}
                       >
                         <div className="col-md-12">
-                          <h5>Donation Details</h5>
+                          <h5 className="text-white my-1">Donation Details</h5>
                         </div>
                       </div>
                       <div className="row mt-3">
                         <div className="col-md-12">
                           <input
                             type="number"
-                            className="form-control "
+                            onChange={onChange}
+                            value={number}
+                            className="form-control formStyle"
                             placeholder="Donation Amount"
                             name="donation amt"
                             required
@@ -176,7 +190,7 @@ const DonationFormSection = () => {
                       <div className="row mt-3">
                         <div className="col-md-12">
                           <textarea
-                            className="form-control "
+                            className="form-control formStyle"
                             placeholder="Message"
                             name="message"
                             required

@@ -5,7 +5,7 @@ import Slide from "react-reveal/Slide";
 
 const PrivacyPolicySection = () => {
   const privacyH1 = {
-    borderBottom: "3px solid #9F1718",
+    textDecoration: "underline",
     textAlign: "center",
     fontSize: "30px",
     fontWeight: "bold",
@@ -26,11 +26,11 @@ const PrivacyPolicySection = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <div className="row">
           <div className="privacy-heading col-md-12">
-            <div className="col-md-2">
-              <h1 className="pb-2" style={privacyH1}>
+            <div className="col-sm-12 col-lg-3 col-md-4">
+              <h1 className="pb-2 text-start" style={privacyH1}>
                 Privacy Policy
               </h1>
             </div>
@@ -38,7 +38,7 @@ const PrivacyPolicySection = () => {
         </div>
       </div>
 
-      <div className="container mt-5 mb-5">
+      <div className="container mt-3 my-5">
         <div className="row">
           <Slide bottom>
             <div className="col-md-12">
@@ -55,16 +55,13 @@ const PrivacyPolicySection = () => {
             </div>
           </Slide>
         </div>
-      </div>
-
-      <div className="container mb-3">
-        <div className="row">
+        <div className="row mt-3">
           <Slide bottom>
             <div className="col-md-12">
               {items.map((items, key) => {
                 return (
                   <div key={key}>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-sm-12">
                       <h1 className="mt-3 pb-2" style={sectionHeadingh1}>
                         {items.question}
                       </h1>

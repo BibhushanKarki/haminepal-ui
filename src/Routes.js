@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Events from "./pages/Events/Events";
-import EventExtended from "./pages/EventExtended";
+import Projects from "./pages/Projects/Projects";
+import ProjectExtended from "./pages/ProjectExtended";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import BeVolunteer from "./pages/BeVolunteer";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
@@ -15,8 +15,8 @@ import Contact from "./components/Contact";
 import Fundraiser from "./pages/Fundraiser/Fundraiser";
 import Transparency from "./pages/Transparency/Transparency";
 import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
-// import SignIn from "./pages/SignIn";
-// import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import Covid from "./pages/Covid/Covid";
 import Food from "./pages/Food/Food";
 import Health from "./pages/Health/Health";
@@ -26,14 +26,18 @@ import Housing from "./pages/Housing/Housing";
 import Donate_Covid from "./pages/Donate-Covid";
 import Cause from "./pages/Cause/Cause";
 import DonateAdministration from "./pages/DonateAdministration";
+import HowItWorks from "./pages/HowItWorks/HowItWorks";
+import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
+import SuccessStories from "./pages/SuccessStories/SuccessStories";
+import OurObjective from "./pages/OurObjective";
 
 const Routes = () => {
   return (
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/aboutus" component={AboutUs} />
-      <Route path="/events/:key" component={Events} />
-      <Route path="/event/:key/:slug" component={EventExtended} />
+      <Route path="/events/:key" component={Projects} />
+      <Route path="/event/:key/:slug" component={ProjectExtended} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/be-volunteer" component={BeVolunteer} />
@@ -43,8 +47,8 @@ const Routes = () => {
       <Route path="/contact" component={Contact} />
       <Route path="/fundraisers" component={Fundraiser} />
       <Route path="/transparencydetail" component={TransparencyDetail} />
-      {/* <Route path="/sign-in" component={SignIn} /> */}
-      {/* <Route path="/sign-up" component={SignUp} /> */}
+      <Route path="/sign-in" component={SignIn} />
+      <Route path="/sign-up" component={SignUp} />
       <Route path="/covid" component={Covid} />
       <Route path="/food" component={Food} />
       <Route path="/health" component={Health} />
@@ -55,6 +59,10 @@ const Routes = () => {
       <Route path="/cause" component={Cause} />
       <Route path="/transparency" component={Transparency} />
       <Route path="/donate-administration" component={DonateAdministration} />
+      <Route path="/howitworks" component={HowItWorks} />
+      <Route path="/whyhaminepal" component={WhyHamiNepal} />
+      <Route path="/success-stories" component={SuccessStories} />
+      <Route path="/our-objectives" component={OurObjective} />
     </Switch>
   );
 };
