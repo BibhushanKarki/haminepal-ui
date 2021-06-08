@@ -1,7 +1,7 @@
 export const ProjectExtendedSectionData = [
   {
     id: 1,
-    image: "/img/kabita.png",
+    image: "/img/volunteers/kabita.png",
     name: "Kabita Shrestha",
     position: `Being a registered nurse, she have been working continuously in hospitals to serve for Covid Patients.
          she have also been giving health education to mild covid positive cases about home management of covid, 
@@ -10,7 +10,7 @@ export const ProjectExtendedSectionData = [
   },
   {
     id: 2,
-    image: "/img/ronish.png",
+    image: "/img/volunteers/ronish.png",
     name: "Ronish Tamrakar ",
     position: `My name is Ronish Tamrakar. Age 20. Currently doing bachelors.Given the countless challenges presented by the pandemic,
        solidarity expressed through volunteering is encouraging. I have been volunteering with Hami Nepal. I gain a sense of achievement 
@@ -20,7 +20,7 @@ export const ProjectExtendedSectionData = [
   },
   {
     id: 3,
-    image: "/img/apson.png",
+    image: "/img/volunteers/apson.png",
     name: "Apson Chhetti ",
     position: `Since childhood, I have always known that when I would grow up I could make use of my natural ability to empathize with others and my strong desire 
     to help people ease their pain. This is why, since my highschool days I made the decision to start doing 
@@ -36,12 +36,18 @@ export const ProjectExtendedSectionData = [
   },
   {
     id: 4,
-    image: "/img/prasant.png",
+    image: "/img/volunteers/prasant.png",
     name: "Prashant Kanaujiya",
     position: `Hello! I am Prashant Kanaujiya from Chhetrapati, Kathmandu. I joined the team during th
      first wave of covid and the first lockdown in the country in 2020. Since then, it has been a thrilling 
      experience working during the pandemic for the people. My motive of joining the organization is to serve 
      for the people as I can, humbly and selflessly. My dedication and the people in the organization is what keeps me going 
     and continue to achieve goals.  Looking forward into a great future with Hami Nepal.`,
+  },
+  {
+    id: 5,
+    image: "/img/volunteers/archana.jpg",
+    name: "Archana Shrestha",
+    position: `This is me, Archana Shrestha from Nepal. I am a fashion designer by profession and also an active volunteer at Haminepal working with the purpose 'For the people, by the people'. I love to travel and experience new things. Life has always given me many opportunities and lessons to learn, which made me more thoughtful and bold. I am also a zoophilist. The sole purpose of my life has always been to give more and expect less.`,
   },
 ];
