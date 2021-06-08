@@ -26,7 +26,7 @@ const DonateAdministrationSection = () => {
     marginTop: "5px",
   };
   return (
-    <>
+    <div classNAme="container donate-administration-container">
       <div className="row" style={donateSection}>
         <div className="donate-adminstration-heading col-md-12 d-flex justify-content-center flex-column align-items-center">
           <div className="col-md-3" style={hrline}>
@@ -40,28 +40,24 @@ const DonateAdministrationSection = () => {
         </div>
       </div>
 
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="section-content-paragraph" style={sectionContent}>
-                  <p style={contentParaghaph} key={data.id}>
-                    {data.paragraph}
-                  </p>
-            </div>
+      <div className="row d-flex justify-content-center">
+        <div className="col-10">
+          <div className="section-content-paragraph text-center" style={sectionContent}>
+            <p style={contentParaghaph} key={data.id}>
+              {data.paragraph}
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="container mb-5">
-        <div className="row ">
-          <div className="col-md-12 d-flex justify-content-center">
-            <Link to="#" className="btn btn-primary mt-4 ">
-              Donate To Motivate
-            </Link>
-          </div>
+      <div className="row mb-4">
+        <div className="col-md-12 d-flex justify-content-center">
+          <Link to="#" className="btn btn-primary mt-4 ">
+            Donate To Motivate
+          </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

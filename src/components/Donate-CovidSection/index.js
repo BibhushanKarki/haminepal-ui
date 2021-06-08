@@ -8,7 +8,7 @@ const Covid = () => {
     <div className="container donate-covid-container ">
       <div className="row d-flex flex-row align-items-center m-4 main-content ">
         <Fade left>
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-12">
             <div className="section-content-paragraph">
               {data.map((data) => {
                 return (
@@ -21,7 +21,7 @@ const Covid = () => {
           </div>
         </Fade>
         <Fade right>
-          <div className="col-md-6 text-center image-right">
+          <div className="col-lg-6 col-md-12 text-center image-right">
             <img
               src="/img/donatedby.jpg"
               alt="donationimg"
