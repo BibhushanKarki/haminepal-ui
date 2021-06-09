@@ -25,10 +25,9 @@ const Mission = () => {
                   <Link to="">Our Mission</Link>
                 </h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                  tempor ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.{" "}
+                  The organisation is currently working solely in the field
+                  COVID-19 in order to provide medical relief to individuals as
+                  well as medical institutions.
                 </p>
               </div>
             </div>
@@ -52,10 +51,9 @@ const Mission = () => {
                   <Link to="">Our Vision</Link>
                 </h5>
                 <p className="card-text">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                  illo inventore veritatis et quasi architecto beatae vitae
-                  dicta sunt explicabo.{" "}
+                  The vision of Hami Nepal is to mobilize volunteers and impact
+                  local communities through sustainable growth and empowering
+                  its community members.
                 </p>
               </div>
             </div>
@@ -77,7 +75,8 @@ const Mission = () => {
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">
-                    <Link to="/objectives">Our Objectives</Link></h5>
+                    <Link to="/objectives">Our Objectives</Link>
+                  </h5>
                   <p className="card-text">
                     The vision of Hami Nepal is to mobilize volunteers and
                     impact local communities through sustainable growth and
