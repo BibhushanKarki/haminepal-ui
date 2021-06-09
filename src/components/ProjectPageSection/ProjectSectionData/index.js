@@ -9,7 +9,7 @@ export const ProjectSectionData = [
         thumbnailImage: "/img/oxygen-plant-icon.png",
         image: "/img/oxygen-plant.jpg",
         title: "Importing An Oxygen Plant ",
-        paragraph: `Our team has already finalised to import an oxygen plant and we are conducting thorough research on which hospital will be hugely benefited with the provided oxygen plant. The research is conducted so that the Hami Nepal organisation could identify which hospital will make better use of the equipment without any profit-making. The oxygen plant will probably end the oxygen shortage in the hospital as the plant will provide enough oxygen for patients in the hospital having capacity of approx. 50 beds. Also, the oxygen plant has capacity to fill approx. 50 oxygen cylinders (7000 liter per cylinder) per day using a compressor. 
+        paragraph: `Our team has already finalised to import an oxygen plant and we are conducting through research on which hospital will be hugely benefited with the provided oxygen plant. The research is conducted so that the Hami Nepal organisation could identify which hospital will make better use of the equipment without any profit-making. The oxygen plant will probably end the oxygen shortage in the hospital as the plant will provide enough oxygen for patients in the hospital having capacity of approx. 50 beds. Also, the oxygen plant has capacity to fill approx. 50 oxygen cylinders (7000 liter per cylinder) per day using a compressor. 
         These cylinders can be further sent to other people or hospitals that are in need of oxygen. 
         `,
       },
