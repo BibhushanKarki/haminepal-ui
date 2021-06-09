@@ -50,4 +50,11 @@ export const ProjectExtendedSectionData = [
     name: "Archana Shrestha",
     position: `This is me, Archana Shrestha from Nepal. I am a fashion designer by profession and also an active volunteer at Haminepal working with the purpose 'For the people, by the people'. I love to travel and experience new things. Life has always given me many opportunities and lessons to learn, which made me more thoughtful and bold. I am also a zoophilist. The sole purpose of my life has always been to give more and expect less.`,
   },
+
+  {
+    id: 6,
+    image: "/img/volunteers/bishal.jpg",
+    name: "Bishal Shrestha",
+    position: `I am Bishal Shrestha from lazimpat, Kathmandu. I joined the team during the earthquake of 2015 and since then I am actively participating in every campaign of Hami Nepal.It has been a thrilling experience working with Hami Nepal for the people.My reason for joining the organization is to serve for the people as I can, humbly and selflessly and to bring the change in the society.I believe together we can make a difference.My dedication and the people in the organization is what keeps me motivated and continue to achieve goals.Hoping for great future with Hami Nepal team.`,
+  },
 ];
