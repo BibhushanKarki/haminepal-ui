@@ -5,6 +5,7 @@ import Mission from "../OurMissionSection";
 import Contact from "../Contact";
 import OurWork from "../OurWork";
 import Testimonials from "../Testimonials";
+import DownloadApp from '../DownloadApp/DownloadApp'
 // import Preloader from '../Preloader'
 import "./main.css";
 
@@ -16,6 +17,7 @@ const Main = () => {
       <Mission />
       <OurWork />
       <Testimonials />
+      <DownloadApp />
       <Contact />
       {/* <Preloader/> */}
     </div>
