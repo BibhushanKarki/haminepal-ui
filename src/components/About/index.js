@@ -82,11 +82,11 @@ const About = () => {
               established in 2015 A.D. and registered in 2020 A.D. (Regd.no.
               609789065), which directly connects the donors and the recipients.
             </h3>
-            <p className="fst-italic">
+            {/* <p className="fst-italic">
               Hami Nepal Youth Organisation is a non-profit organisation,
               established in 2015 A.D. and registered in 2020 A.D. (Regd.no.
               609789065), which directly connects the donors and the recipients.
-            </p>
+            </p> */}
             <ul>
               <li>
                 <i className="bx bx-check-double"></i> Hami Nepal has a track
