@@ -84,10 +84,39 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-
+@media (max-width: 768px) {
+  .downloadDesc p {
+    font-size: 12px;
+  }
+  .downloadDesc h5 {
+    font-size: 18px !important;
+  }
+  .downloadDesc h4 {
+    font-size: 18px !important;
+  }
+  
+}
+@media (max-width: 630px) {
+  .downloadApp {
+    flex-direction: column !important;
+  }
+  .downloadApp img{
+    padding: 1rem;
+  }
+  .downloadDesc {
+    margin-top: 1rem;
+  }
+  .downloadDesc h5{
+    letter-spacing:2px;
+  }
+  .downloadDesc h5,.downloadDesc h4,.downloadDesc p{
+    text-align: center;
+  }
+}
 
 @media (max-width:576px){
   .my-xs-2{
     margin:0.5rem 0;
   }
 }
+

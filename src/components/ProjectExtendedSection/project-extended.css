@@ -6,7 +6,7 @@
 .card-01:hover {
   transform: scale(1.05);
   transition: all 1s ease;
-  z-index: 999;
+  z-index: 10;
 }
 .card-01 .height-fix {
   height: 455px;

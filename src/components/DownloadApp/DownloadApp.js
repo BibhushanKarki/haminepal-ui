@@ -12,8 +12,8 @@ const DownloadApp = () => {
   };
   return (
     <div className="row d-flex justify-content-center mt-5">
-      <div className="col-md-8 d-flex align-items-center downloadApp">
-        <div className="col-md-6 ">
+      <div className="col-lg-8 d-flex align-items-center downloadApp">
+        <div className=" col-md-6 mx-sm-2 ">
           <img
             src={imglink}
             alt="appdownload"
@@ -22,16 +22,19 @@ const DownloadApp = () => {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="downloadDesc mx-4 mx-sm-3 col-md-6">
+        <div className="downloadDesc mx-4 col-md-6 ">
           <h4 className="fw-bold text-uppercase">Coming Soon</h4>
-          <h5 className="fw-bold" style={{color:'#9F1718'}}>HamiNepal App</h5>
-          <p className="fw-bold">Start and manage fundraisers, engage with
-            supporters, and discover important causes — all 
-            on the go</p>
-            <div className="storeBtn d-flex">
-              <img src={appstore} alt="appstore" style={storeStyle}/>
-              <img src={playstore} alt="playstore" style={storeStyle}/>
-            </div>
+          <h5 className="fw-bold" style={{ color: "#9F1718" }}>
+            HamiNepal App
+          </h5>
+          <p className="fw-bold">
+            Start and manage fundraisers, engage with supporters, and discover
+            important causes — all on the go
+          </p>
+          <div className="storeBtn d-flex">
+            <img src={appstore} alt="appstore" style={storeStyle} />
+            <img src={playstore} alt="playstore" style={storeStyle} />
+          </div>
         </div>
       </div>
     </div>

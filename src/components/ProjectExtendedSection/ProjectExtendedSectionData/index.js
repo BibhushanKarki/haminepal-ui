@@ -1,7 +1,7 @@
 export const ProjectExtendedSectionData = [
   {
     id: 1,
-    image: "/img/volunteers/kabita.png",
+    image: "/img/volunteers/kabita.png", 
     name: "Kabita Shrestha",
     position: `Being a registered nurse, she have been working continuously in hospitals to serve for Covid Patients.
          she have also been giving health education to mild covid positive cases about home management of covid, 
