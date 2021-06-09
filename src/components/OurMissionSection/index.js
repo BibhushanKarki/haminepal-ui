@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const Mission = () => {
   return (
@@ -64,7 +65,7 @@ const Mission = () => {
             data-aos-delay="300"
           >
             <div className="card">
-              <Link to="/our-objectives">
+              <Link to="/objectives">
                 <img
                   src="/assets/img/about-boxes-3.jpg"
                   className="card-img-top"
@@ -73,10 +74,8 @@ const Mission = () => {
                 <div className="card-icon">
                   <i className="ri-movie-2-line"></i>
                 </div>
-                <div className="card-body">
-                  <h5 className="card-title">
-                    <Link to="/objectives">Our Objectives</Link>
-                  </h5>
+                <div className="card-body our-objective">
+                  <h5 className="card-title ">Our Objectives</h5>
                   <p className="card-text">
                     Our main objective is to help anyone in need without any
                     hesitations and expectation of payback.
