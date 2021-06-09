@@ -16,7 +16,7 @@ export const ProjectExtendedSectionData = [
        solidarity expressed through volunteering is encouraging. I have been volunteering with Hami Nepal. I gain a sense of achievement 
        and satisfaction in my role. What we are doing is to make a positive difference in the time of crisis and to help cope with the depressing 
        news people are hearing every day via media.I am thoroughly impressed with volunteering strategies, energetic team and swift actions during 
-       emergencies of our team.`,
+       emergencies of our team. `,
   },
   {
     id: 3,
