@@ -63,7 +63,7 @@ const Routes = () => {
       <Route path="/howitworks" component={HowItWorks} />
       <Route path="/whyhaminepal" component={WhyHamiNepal} />
       <Route path="/success-stories" component={SuccessStories} />
-      <Route path="/our-objectives" component={OurObjective} />
+      <Route path="/objectives" component={OurObjective} />
       <Route path="/faq" component={Faq} />
     </Switch>
   );
