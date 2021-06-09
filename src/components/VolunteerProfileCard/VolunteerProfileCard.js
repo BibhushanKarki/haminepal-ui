@@ -14,8 +14,9 @@ const VolunteerProfileCard = () => {
     <div>
       <div className="container mt-3">
         <div className="row">
-          <div className="col-md-12 volunteer-profile-heading">
+          <div className="col-md-12 volunteer-profile-heading d-flex justify-content-between">
             <h2 className="heading-volunteer">Our Volunteer's Profile</h2>
+            <Link to="/how-to-be-a-volunteer"><AppButton buttontext="How to be a Volunteer?"/></Link>
           </div>
         </div>
       </div>
