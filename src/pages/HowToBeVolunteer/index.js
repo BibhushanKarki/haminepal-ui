@@ -1,5 +1,5 @@
 import React from "react";
-import BeVolunteerSection from "../../components/BeVolunteerSection";
+import BeVolunteerSection from "../../components/HowToBeVolunteerSection";
 
 const BeVolunteer = () => {
   return (
