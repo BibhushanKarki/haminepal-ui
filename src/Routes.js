@@ -30,41 +30,45 @@ import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import OurObjective from "./pages/OurObjective";
+import DonationErrorPage from "./pages/DonationErrorPage";
+import DonationSuccessPage from "./pages/DonationSuccessPage";
 
 const Routes = () => {
-  return (
-    <Switch>
-      <Route path="/" component={Home} exact />
-      <Route path="/aboutus" component={AboutUs} />
-      <Route path="/events/:key" component={Projects} />
-      <Route path="/event/:key/:slug" component={ProjectExtended} />
-      <Route path="/privacy-policy" component={PrivacyPolicy} />
-      <Route path="/volunteer" component={Volunteer} />
-      <Route path="/be-volunteer" component={BeVolunteer} />
-      <Route path="/volunteer-signup" component={VolunteerSignUp} />
-      <Route path="/volunteer-profile" component={VolunteerProfile} />
-      <Route path="/star-rating" component={StarRating} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/fundraisers" component={Fundraiser} />
-      <Route path="/transparencydetail" component={TransparencyDetail} />
-      <Route path="/sign-in" component={SignIn} />
-      <Route path="/sign-up" component={SignUp} />
-      <Route path="/covid" component={Covid} />
-      <Route path="/food" component={Food} />
-      <Route path="/health" component={Health} />
-      <Route path="/education" component={Education} />
-      <Route path="/clothing" component={Clothing} />
-      <Route path="/housing" component={Housing} />
-      <Route path="/donate-covid" component={Donate_Covid} />
-      <Route path="/cause" component={Cause} />
-      <Route path="/transparency" component={Transparency} />
-      <Route path="/donate-administration" component={DonateAdministration} />
-      <Route path="/howitworks" component={HowItWorks} />
-      <Route path="/whyhaminepal" component={WhyHamiNepal} />
-      <Route path="/success-stories" component={SuccessStories} />
-      <Route path="/our-objectives" component={OurObjective} />
-    </Switch>
-  );
+    return (
+        <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/events/:key" component={Projects} />
+            <Route path="/event/:key/:slug" component={ProjectExtended} />
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
+            <Route path="/volunteer" component={Volunteer} />
+            <Route path="/be-volunteer" component={BeVolunteer} />
+            <Route path="/volunteer-signup" component={VolunteerSignUp} />
+            <Route path="/volunteer-profile" component={VolunteerProfile} />
+            <Route path="/star-rating" component={StarRating} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/fundraisers" component={Fundraiser} />
+            <Route path="/transparencydetail" component={TransparencyDetail} />
+            <Route path="/sign-in" component={SignIn} />
+            <Route path="/sign-up" component={SignUp} />
+            <Route path="/covid" component={Covid} />
+            <Route path="/food" component={Food} />
+            <Route path="/health" component={Health} />
+            <Route path="/education" component={Education} />
+            <Route path="/clothing" component={Clothing} />
+            <Route path="/housing" component={Housing} />
+            <Route path="/donate-covid" component={Donate_Covid} />
+            <Route path="/cause" component={Cause} />
+            <Route path="/transparency" component={Transparency} />
+            <Route path="/donate-administration" component={DonateAdministration} />
+            <Route path="/howitworks" component={HowItWorks} />
+            <Route path="/whyhaminepal" component={WhyHamiNepal} />
+            <Route path="/success-stories" component={SuccessStories} />
+            <Route path="/our-objectives" component={OurObjective} />
+            <Route path="/donation/success" component={DonationSuccessPage} />
+            <Route path="/donation/error" component={DonationErrorPage} />
+        </Switch>
+    );
 };
 
 export default Routes;
