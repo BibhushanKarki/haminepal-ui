@@ -8,7 +8,7 @@ SwiperCore.use([Pagination, Autoplay]);
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="testimonials">
+    <section id="testimonials" className="testimonials mb-4">
       <div className="container" data-aos="zoom-in">
         <div className="section-title">
           <h2>Behind The Name</h2>
