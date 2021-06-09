@@ -35,9 +35,7 @@ const Conatct = () => {
                   <i className="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
                   <p>
-                    +977 9808543667
-                    <br />
-                    +977 9845628191
+                    +977 9808543667, +977 9845628191
                   </p>
                 </div>
               </div>
