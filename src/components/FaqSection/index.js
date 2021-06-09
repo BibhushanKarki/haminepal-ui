@@ -1,8 +1,7 @@
 import React from "react";
-import "./faq.css";
 
 const FaqSection = () => {
-  const donateSection = {
+  const faqSection = {
     color: "#9F1718",
     borderBottom: "2px solid white",
   };
@@ -11,20 +10,17 @@ const FaqSection = () => {
     borderBottom: "3px solid #9F1718",
   };
 
-  const donateAdministrationheading = {
+  const faqheading = {
     fontWeight: "bold",
   };
 
   return (
     <div>
       <div className="container mb-5">
-        <div className="row" style={donateSection}>
-          <div className="donate-adminstration-heading col-md-12 d-flex justify-content-center flex-column align-items-center">
+        <div className="row" style={faqSection}>
+          <div className="faq-heading col-md-12 d-flex justify-content-center flex-column align-items-center">
             <div className="col-md-2" style={hrline}>
-              <h1
-                className="pb-1 text-center"
-                style={donateAdministrationheading}
-              >
+              <h1 className="pb-1 text-center" style={faqheading}>
                 FAQs
               </h1>
             </div>
