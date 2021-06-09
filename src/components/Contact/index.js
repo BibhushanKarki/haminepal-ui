@@ -25,8 +25,8 @@ const Conatct = () => {
                   <h3>Email Us</h3>
                   <p>
                     info@haminepal.org
-                    <br />
-                    info@haminepal.org
+                    {/* <br />
+                    info@haminepal.org */}
                   </p>
                 </div>
               </div>
