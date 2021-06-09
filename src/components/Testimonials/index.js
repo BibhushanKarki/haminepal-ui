@@ -35,7 +35,7 @@ const Testimonials = () => {
                   className="testimonial-img"
                   alt=""
                 />
-                <h3>Sadan Gurung</h3>
+                <h3>Sudan Gurung</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -101,7 +101,7 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
 
-            {/* <SwiperSlide>
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
                   src="assets/img/testimonials/testimonials-3.jpg"
@@ -120,9 +120,9 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </SwiperSlide> */}
+            </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="testimonial-item">
                 <img
                   src="assets/img/behind-the-name/behind-the-name-4.jpg"
@@ -137,7 +137,7 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             <SwiperSlide>
               <div className="testimonial-item">

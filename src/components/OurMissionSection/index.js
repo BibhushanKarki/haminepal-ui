@@ -77,7 +77,7 @@ const Mission = () => {
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">
-                    <Link to="/">Our Objectives</Link></h5>
+                    <Link to="/objectives">Our Objectives</Link></h5>
                   <p className="card-text">
                     The vision of Hami Nepal is to mobilize volunteers and
                     impact local communities through sustainable growth and
