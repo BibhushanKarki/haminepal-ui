@@ -41,7 +41,7 @@ const Routes = () => {
       <Route path="/event/:key/:slug" component={ProjectExtended} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/volunteer" component={Volunteer} />
-      <Route path="/how-to-be-volunteer" component={BeVolunteer} />
+      <Route path="/how-to-be-a-volunteer" component={BeVolunteer} />
       <Route path="/volunteer-signup" component={VolunteerSignUp} />
       <Route path="/volunteer-profile" component={VolunteerProfile} />
       <Route path="/star-rating" component={StarRating} />
