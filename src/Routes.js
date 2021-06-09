@@ -5,7 +5,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Projects from "./pages/Projects/Projects";
 import ProjectExtended from "./pages/ProjectExtended";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import BeVolunteer from "./pages/BeVolunteer";
+import BeVolunteer from "./pages/HowToBeVolunteer";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
 import VolunteerProfile from "./pages/VolunteerProfile";
 import Volunteer from "./pages/Volunteer/Volunteer";
@@ -41,7 +41,7 @@ const Routes = () => {
       <Route path="/event/:key/:slug" component={ProjectExtended} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/volunteer" component={Volunteer} />
-      <Route path="/be-volunteer" component={BeVolunteer} />
+      <Route path="/how-to-be-volunteer" component={BeVolunteer} />
       <Route path="/volunteer-signup" component={VolunteerSignUp} />
       <Route path="/volunteer-profile" component={VolunteerProfile} />
       <Route path="/star-rating" component={StarRating} />
