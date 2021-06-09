@@ -41,21 +41,24 @@ const OurObjectiveSection = () => {
         <div className="container mt-3">
           <div className="row">
             <div className="col-md-12">
-              <p>
-                Transparency in funds collection and distribution through the
-                real-time update system.{" "}
-              </p>
-              <p>The global platform for volunteer participation.</p>
-              <p>
-                Empowering and Impacting people in need through social welfare.{" "}
-              </p>
-              <p>Humanitarian Action and long-term development programs.</p>
-              <p>
-                Zero Administrative cost, i.e., 100 % fund allocation to the
-                people in need.
-              </p>
-              <p>Efficient allocation of funds, volunteers, and resources.</p>
-              <p>Mobilization of Aid workers and response team.</p>
+              <ul style={{listStyle:'none'}} className="objective-list">
+                <li>
+                  Transparency in funds collection and distribution through the
+                  real-time update system.{" "}
+                </li>
+                <li>The global platform for volunteer participation.</li>
+                <li>
+                  Empowering and Impacting people in need through social
+                  welfare.{" "}
+                </li>
+                <li>Humanitarian Action and long-term development programs.</li>
+                <li>
+                  Zero Administrative cost, i.e., 100 % fund allocation to the
+                  people in need.
+                </li>
+                <li>Efficient allocation of funds, volunteers, and resources.</li>
+                <li>Mobilization of Aid workers and response team.</li>
+              </ul>
             </div>
           </div>
         </div>

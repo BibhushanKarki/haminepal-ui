@@ -69,6 +69,18 @@
   border-radius: 10px;
 }
 
+.objective-list li::before{
+  content: "";
+  background-image: url(https://openmoji.org/data/color/svg/2764.svg);
+  background-size: contain;
+  display: inline-table;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top:0.45em;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
 
 /* input number arrows hide */
 
