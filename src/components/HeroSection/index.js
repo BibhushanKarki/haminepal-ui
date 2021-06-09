@@ -12,7 +12,7 @@ const Hero = () => {
         </h2>
         <div className="d-flex">
           <Link to="#" className="btn-get-started scrollto">
-            Start Fundraising
+            Donate
           </Link>
           <a
             href="https://www.youtube.com/watch?v=bPny2PNWFxc"
