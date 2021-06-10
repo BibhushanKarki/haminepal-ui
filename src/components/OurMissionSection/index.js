@@ -13,24 +13,23 @@ const Mission = () => {
             data-aos-delay="100"
           >
             <div className="card">
-              <img
-                src="/img/mission/mission2.jpg"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-icon">
-                <i className="ri-brush-4-line"></i>
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">
-                  <Link to="">Our Mission</Link>
-                </h5>
-                <p className="card-text">
-                  The organisation is currently working solely in the field
-                  COVID-19 in order to provide medical relief to individuals as
-                  well as medical institutions.
-                </p>
-              </div>
+              <Link to="/objectives">
+                <img
+                  src="/img/mission/mission2.jpg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-icon">
+                  <i className="ri-brush-4-line"></i>
+                </div>
+                <div className="card-body our-objective">
+                  <h5 className="card-title">Our Mission</h5>
+                  <p className="card-text">
+                    Hami Nepal is formed by individuals who prioritize humanity
+                    above all and recruit volunteers accordingly.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <div
@@ -39,24 +38,25 @@ const Mission = () => {
             data-aos-delay="200"
           >
             <div className="card">
-              <img
-                src="/img/mission/mission3.jpg"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-icon">
-                <i className="ri-calendar-check-line"></i>
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">
-                  <Link to="">Our Vision</Link>
-                </h5>
-                <p className="card-text">
-                  The vision of Hami Nepal is to mobilize volunteers and impact
-                  local communities through sustainable growth and empowering
-                  its community members.
-                </p>
-              </div>
+              <Link to="/objectives">
+                <img
+                  src="/img/mission/mission3.jpg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-icon">
+                  <i className="ri-calendar-check-line"></i>
+                </div>
+                <div className="card-body our-objective">
+                  <h5 className="card-title">Our Vision</h5>
+                  <p className="card-text">
+                    Hami Nepal's vision is to upgrade the health facilities
+                    available in every corner of Nepal as we believe basic
+                    health rights should not be a luxury that the average Nepali
+                    citizen cannot afford.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <div

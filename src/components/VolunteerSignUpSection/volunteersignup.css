@@ -6,16 +6,16 @@
   font-size: 23px;
   color: #fff;
 }
-.form-control{ 
-  background:transparent;
-  color:white;
+.form-control {
+  background: transparent;
+  color: white;
 }
 .form-control:focus {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fff;
-    outline: 0;
-    box-shadow: 0 0 0 1px rgb(255 255 255) !important;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 1px rgb(255 255 255) !important;
 }
 .separator::before,
 .separator::after {
@@ -41,7 +41,7 @@
   object-fit: cover;
   overflow: hidden;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
   .volunteer-map-section iframe {
     width: 400px;
@@ -50,13 +50,49 @@
   .card .input-section {
     margin-top: 15px;
   }
-}
+} */
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
   .volunteer-map-section iframe {
     width: 300px;
   }
   .card .input-section {
     margin-top: 15px;
+  }
+} */
+
+@media (max-width: 575.98px) {
+  .volunteer-map-section iframe {
+    width: 300px;
+  }
+  .card .input-section {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .volunteer-map-section iframe {
+    width: 300px;
+  }
+  .card .input-section {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .volunteer-map-section iframe {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .volunteer-map-section iframe {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .volunteer-map-section iframe {
+    width: 250px;
   }
 }
