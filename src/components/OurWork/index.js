@@ -169,8 +169,11 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>
+                Donated about 150 hospital beds to 3 different Government
+                hospitals
+              </h4>
+              <p>Volunteer</p>
               <a
                 href="/assets/img/portfolio/portfolio-6.jpg"
                 data-gallery="portfolioGallery"

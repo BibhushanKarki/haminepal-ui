@@ -1,5 +1,5 @@
 import React from "react";
-
+import img from "../../assets/images/howitworks.jpg";
 const HowItWorks = () => {
   const titleStyle = {
     marginTop: "4rem",
@@ -12,7 +12,7 @@ const HowItWorks = () => {
   };
   const howImgStyle = {
     width: "95vw",
-    height: "250px",
+    height: "500px",
     objectFit: "cover",
     objectPosition: "center center",
   };
@@ -51,8 +51,32 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
+      <div className="howitworks col-lg-12 my-4 d-flex justify-content-center w-100">
+        <ul style={{ listStyle: "none" }}>
+          <li>
+            Users can see how much amount is collected for the cause, how much
+            amount has been donated for the cause, and how much amount is
+            remaining.
+          </li>
+          <li>
+            As per their interest users can donate to a specific cause even. If
+            he/she wants to donate only for their school then users have that
+            right to donate only what they want.
+          </li>
+          <li>Users can also donate to multiple causes if they wish.</li>
+          <li>
+            The event section will have the various events covered where users
+            can check into the events and donate for the selective cause.
+          </li>
+          <li>
+            Users can see victim's information like their personal phone number
+            and address where users can directly contact victims and donate
+            directly.
+          </li>
+        </ul>
+      </div>
       <div className="text-center mt-2">
-        <img src="https://bit.ly/2Rs9Yil" alt="" style={howImgStyle} />
+        <img src={img} alt="" style={howImgStyle} />
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ SwiperCore.use([Pagination, Autoplay]);
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="testimonials">
+    <section id="testimonials" className="testimonials mb-4">
       <div className="container" data-aos="zoom-in">
         <div className="section-title">
           <h2>Behind The Name</h2>
@@ -31,11 +31,11 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-1.png"
+                  src="/assets/img/behind-the-name/behind-the-name-1.png"
                   className="testimonial-img"
                   alt=""
                 />
-                <h3>Sadan Gurung</h3>
+                <h3>Sudan Gurung</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -64,7 +64,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-2.jpg"
+                  src="/assets/img/behind-the-name/behind-the-name-2.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -101,10 +101,10 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
 
-            {/* <SwiperSlide>
+            <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-3.jpg"
+                  src="/assets/img/testimonials/testimonials-3.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -120,9 +120,9 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </SwiperSlide> */}
+            </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="testimonial-item">
                 <img
                   src="assets/img/behind-the-name/behind-the-name-4.jpg"
@@ -137,12 +137,12 @@ const Testimonials = () => {
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-5.png"
+                  src="/assets/img/behind-the-name/behind-the-name-5.png"
                   className="testimonial-img"
                   alt=""
                 />
@@ -172,7 +172,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-6.png"
+                  src="/assets/img/behind-the-name/behind-the-name-6.png"
                   className="testimonial-img"
                   alt=""
                 />

@@ -48,7 +48,7 @@ const TransparencyCard = () => {
             {data.map((data, key) => {
               return (
                 <div
-                  className="col-md-4 mb-3 d-flex justify-content-center"
+                  className="col-lg-4 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center"
                   key={key}
                 >
                   <Zoom>

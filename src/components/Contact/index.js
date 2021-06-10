@@ -2,7 +2,7 @@ import React from "react";
 
 const Conatct = () => {
   return (
-    <section id="contact" className="contact mt-5">
+    <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
         <div className=" section-title">
           <h2>Contact</h2>
@@ -25,8 +25,8 @@ const Conatct = () => {
                   <h3>Email Us</h3>
                   <p>
                     info@haminepal.org
-                    <br />
-                    info@haminepal.org
+                    {/* <br />
+                    info@haminepal.org */}
                   </p>
                 </div>
               </div>
@@ -35,9 +35,7 @@ const Conatct = () => {
                   <i className="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
                   <p>
-                    +977 9808543667
-                    <br />
-                    +977 9845628191
+                    +977 9808543667, +977 9845628191
                   </p>
                 </div>
               </div>

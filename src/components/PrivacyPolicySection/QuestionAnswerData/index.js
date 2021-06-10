@@ -2,7 +2,7 @@ export const QuestionAnswerData = [
   {
     question: "Who are we?",
     answer:
-      "we’re Hami Nepal, Nepal’s charity dedicated to helping everyone make most of later life.",
+      "We’re Hami Nepal, Nepal’s charity dedicated to helping everyone make most of later life.",
   },
 
   {

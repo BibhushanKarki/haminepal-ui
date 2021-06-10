@@ -1,7 +1,7 @@
 export const ProjectExtendedSectionData = [
   {
     id: 1,
-    image: "/img/volunteers/kabita.png",
+    image: "/img/volunteers/kabita.png", 
     name: "Kabita Shrestha",
     position: `Being a registered nurse, she have been working continuously in hospitals to serve for Covid Patients.
          she have also been giving health education to mild covid positive cases about home management of covid, 
@@ -16,7 +16,7 @@ export const ProjectExtendedSectionData = [
        solidarity expressed through volunteering is encouraging. I have been volunteering with Hami Nepal. I gain a sense of achievement 
        and satisfaction in my role. What we are doing is to make a positive difference in the time of crisis and to help cope with the depressing 
        news people are hearing every day via media.I am thoroughly impressed with volunteering strategies, energetic team and swift actions during 
-       emergencies of our team.`,
+       emergencies of our team. `,
   },
   {
     id: 3,
@@ -49,5 +49,12 @@ export const ProjectExtendedSectionData = [
     image: "/img/volunteers/archana.jpg",
     name: "Archana Shrestha",
     position: `This is me, Archana Shrestha from Nepal. I am a fashion designer by profession and also an active volunteer at Haminepal working with the purpose 'For the people, by the people'. I love to travel and experience new things. Life has always given me many opportunities and lessons to learn, which made me more thoughtful and bold. I am also a zoophilist. The sole purpose of my life has always been to give more and expect less.`,
+  },
+
+  {
+    id: 6,
+    image: "/img/volunteers/bishal.jpg",
+    name: "Bishal Shrestha",
+    position: `I am Bishal Shrestha from lazimpat, Kathmandu. I joined the team during the earthquake of 2015 and since then I am actively participating in every campaign of Hami Nepal.It has been a thrilling experience working with Hami Nepal for the people.My reason for joining the organization is to serve for the people as I can, humbly and selflessly and to bring the change in the society.I believe together we can make a difference.My dedication and the people in the organization is what keeps me motivated and continue to achieve goals.Hoping for great future with Hami Nepal team.`,
   },
 ];

@@ -1,20 +1,19 @@
-.donate-covid-container {
+.donate-covid-container ,.donate-administration-container{
   margin-bottom: 50px;
 }
 
 .imageStyle {
-  width: 500px;
-  height: 570px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
 }
 
-@media only screen and (max-width: 1325px) {
+/* @media only screen and (max-width: 1325px) {
   .imageStyle {
     width: 500px;
     height: 570px;
     object-fit: cover;
   }
-}
+} */
 
 @media only screen and (max-width: 1064px) {
   /* .get-started-title {
@@ -24,11 +23,11 @@
   .get-started-title h1 {
     font-size: "20px";
   } */
-  .image-right {
+  /* .image-right {
     margin-top: 50px;
     object-fit: cover;
     height: 500px;
-  }
+  } */
 
   .imageStyle {
     width: 100%;

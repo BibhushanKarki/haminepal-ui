@@ -40,11 +40,6 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav-link scrollto" to="/aboutus">
-                About
-              </Link>
-            </li>
-            <li>
               <Link className="nav-link scrollto" to="/volunteer-signup">
                 Be Volunteer
               </Link>
@@ -81,12 +76,6 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link className="nav-link scrollto " to="/transparency">
-                Transparency
-              </Link>
-            </li>
-
             <li className="dropdown">
               <Link to="#">
                 <span>Projects</span>{" "}
@@ -134,6 +123,16 @@ const Header = () => {
                   <Link to="/donate-administration">Administration</Link>
                 </li>
               </ul>
+            </li>
+            <li>
+              <Link className="nav-link scrollto " to="/transparency">
+                Transparency
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-link scrollto" to="/aboutus">
+                About
+              </Link>
             </li>
             <li>
               <Link className="nav-link scrollto" to="/contact">

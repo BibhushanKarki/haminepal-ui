@@ -5,7 +5,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Projects from "./pages/Projects/Projects";
 import ProjectExtended from "./pages/ProjectExtended";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import BeVolunteer from "./pages/BeVolunteer";
+import BeVolunteer from "./pages/HowToBeVolunteer";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
 import VolunteerProfile from "./pages/VolunteerProfile";
 import Volunteer from "./pages/Volunteer/Volunteer";
@@ -23,6 +23,7 @@ import Health from "./pages/Health/Health";
 import Education from "./pages/Education/Education";
 import Clothing from "./pages/Clothing/Clothing";
 import Housing from "./pages/Housing/Housing";
+import Faq from "./pages/Faq";
 import Donate_Covid from "./pages/Donate-Covid";
 import Cause from "./pages/Cause/Cause";
 import DonateAdministration from "./pages/DonateAdministration";
@@ -72,7 +73,7 @@ const Routes = () => {
             <Route path="/our-objectives" component={OurObjective} />
             <ProtectedRoute path="/donation/success" component={DonationSuccessPage} condition={donationIsSet} />
             <ProtectedRoute path="/donation/error" component={DonationErrorPage} condition={donationIsSet} />
-
+            <Route path="/faq" component={Faq} />
         </Switch>
     );
 };

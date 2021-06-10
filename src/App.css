@@ -69,6 +69,33 @@
   border-radius: 10px;
 }
 
+.objective-list li::before{
+  content: "";
+  background-image: url(https://openmoji.org/data/color/svg/2764.svg);
+  background-size: contain;
+  display: inline-table;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top:0.45em;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.howitworks li{
+  font-size: 1.15em;
+}
+.howitworks li::before{ 
+  content: "";
+  background-image: url(https://dw-iconusers.flaticon.com/17164/17164051/1623270889030.svg?token=exp=1623271806~hmac=a700e2694d2c622005809347f8d945a8);
+  background-size: contain;
+  display: inline-table;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top:0.45em;
+  margin-right: 0.75rem;
+  margin-bottom: 1rem;
+}
 
 /* input number arrows hide */
 
@@ -84,10 +111,39 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-
+@media (max-width: 768px) {
+  .downloadDesc p {
+    font-size: 12px;
+  }
+  .downloadDesc h5 {
+    font-size: 18px !important;
+  }
+  .downloadDesc h4 {
+    font-size: 18px !important;
+  }
+  
+}
+@media (max-width: 630px) {
+  .downloadApp {
+    flex-direction: column !important;
+  }
+  .downloadApp img{
+    padding: 1rem;
+  }
+  .downloadDesc {
+    margin-top: 1rem;
+  }
+  .downloadDesc h5{
+    letter-spacing:2px;
+  }
+  .downloadDesc h5,.downloadDesc h4,.downloadDesc p{
+    text-align: center;
+  }
+}
 
 @media (max-width:576px){
   .my-xs-2{
     margin:0.5rem 0;
   }
 }
+
