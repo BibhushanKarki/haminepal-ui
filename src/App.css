@@ -193,4 +193,9 @@ input[type=number] {
     margin:0.5rem 0;
   }
 }
+@media (max-width:392){
+  .page-content .comm{
+    flex-direction:column !important;
+  }
+}
 

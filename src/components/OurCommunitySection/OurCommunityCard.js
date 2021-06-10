@@ -11,13 +11,13 @@ const OurCommunityCard = () => {
     return (
       <div className="row">
 
-      <div className="col-md-12 d-flex flex-row align-items-center justify-content-between my-3" >
-        <div className="col-md-3"></div>
-        <div className="col-md-4">
+      <div className="col-md-12 d-flex flex-row comm align-items-center justify-content-between my-3" >
+        <div className="col-lg-3 col-sm-2"></div>
+        <div className="col-lg-6 col-sm-6">
               <div className="search"> <i className="fa fa-search"></i> <input type="text" className="form-control" placeholder="Have a question? Ask Now"/> <button className="btn btn-primary">Search</button> 
               </div>
           </div>
-          <div className="col-md-3 d-flex justify-content-end mx-3">
+          <div className="col-lg-3 d-flex justify-content-end mx-3">
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#askQuestion">Ask Question</button>
           </div>
            {/* Modal  */}
@@ -45,7 +45,7 @@ const OurCommunityCard = () => {
         className="col-md-12 d-flex flex-column  mb-4 align-items-center"
         style={{ backgroundColor: "#ffeaea73" }}
       >
-            <div className="col-md-5">
+            <div className="col-lg-5 col-md-8 col-sm-10 mx-2">
               <div className="card main-card my-4 panel">
                 <div className="card m-3 p-3">
                   <div className="d-flex align-items-center">
@@ -71,7 +71,7 @@ const OurCommunityCard = () => {
                   </div>
                 </div>
                 <div className="card comment-card m-3 p-3">
-                  <div className="f-flex flex-row">
+                  <div className="d-flex flex-row">
                     <img
                       style={profilePicStyle}
                       src="https://i.stack.imgur.com/l60Hf.png"
@@ -84,7 +84,7 @@ const OurCommunityCard = () => {
                       style={{ borderRadius: "22px" }}
                     />
                   </div>
-                  <div className="d-flex my-4">
+                  <div className="d-flex align-items-center my-4">
                     <img
                       style={profilePicStyle}
                       src={data.commenterPic}
@@ -100,7 +100,7 @@ const OurCommunityCard = () => {
                       <p className="m-0">{data.comment}</p>
                     </div>
                   </div>
-                  <div className="d-flex mb-4">
+                  <div className="d-flex align-items-center mb-4">
                     <img
                       style={profilePicStyle}
                       src={data.commenterPic}
