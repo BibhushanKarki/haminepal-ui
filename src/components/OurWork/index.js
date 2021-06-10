@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link } from 'react-router-dom'
 const OurWork = () => {
   return (
     <section id="portfolio" className="portfolio">
@@ -44,13 +44,13 @@ const OurWork = () => {
               >
                 <i className="bx bx-plus"></i>
               </a>
-              <a
-                href="portfolio-details.html"
+              <Link
+                to="/work-details"
                 className="details-link"
                 title="More Details"
               >
                 <i className="bx bx-link"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -61,23 +61,23 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>World Environment Day</h4>
+              <p>Awareness</p>
               <a
                 href="assets/img/portfolio/portfolio-2.jpg"
                 data-gallery="portfolioGallery"
                 className="portfolio-lightbox preview-link"
-                title="Web 3"
+                title="World Environment Day"
               >
                 <i className="bx bx-plus"></i>
               </a>
-              <a
-                href="portfolio-details.html"
+              <Link
+                to="/work-details"
                 className="details-link"
-                title="More Details"
+                title="Awareness"
               >
                 <i className="bx bx-link"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -98,13 +98,13 @@ const OurWork = () => {
               >
                 <i className="bx bx-plus"></i>
               </a>
-              <a
-                href="portfolio-details.html"
+              <Link
+                to="/work-details"
                 className="details-link"
                 title="More Details"
               >
                 <i className="bx bx-link"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -115,8 +115,8 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
+              <h4>Helping people during COVID</h4>
+              <p>Social Work</p>
               <a
                 href="/assets/img/portfolio/portfolio-4.jpg"
                 data-gallery="portfolioGallery"
@@ -125,13 +125,13 @@ const OurWork = () => {
               >
                 <i className="bx bx-plus"></i>
               </a>
-              <a
-                href="portfolio-details.html"
+              <Link
+                to="/work-details"
                 className="details-link"
                 title="More Details"
               >
                 <i className="bx bx-link"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -142,8 +142,8 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
+              <h4>Distributing Masks</h4>
+              <p>Awareness</p>
               <a
                 href="assets/img/portfolio/portfolio-5.jpg"
                 data-gallery="portfolioGallery"
@@ -152,13 +152,13 @@ const OurWork = () => {
               >
                 <i className="bx bx-plus"></i>
               </a>
-              <a
-                href="portfolio-details.html"
+              <Link
+                to="/work-details"
                 className="details-link"
                 title="More Details"
               >
                 <i className="bx bx-link"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -182,13 +182,13 @@ const OurWork = () => {
               >
                 <i className="bx bx-plus"></i>
               </a>
-              <a
-                href="portfolio-details.html"
+              <Link
+                to="/work-details"
                 className="details-link"
                 title="More Details"
               >
                 <i className="bx bx-link"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -199,8 +199,8 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
+              <h4>Oxygen Cylinder Donation</h4>
+              <p>Social Work</p>
               <a
                 href="/assets/img/portfolio/portfolio-7.jpg"
                 data-gallery="portfolioGallery"
@@ -226,8 +226,8 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
+              <h4>Providing Ambulance to people in need</h4>
+              <p>Social Work</p>
               <a
                 href="/assets/img/portfolio/portfolio-8.jpg"
                 data-gallery="portfolioGallery"
@@ -253,13 +253,13 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>Donating Equipments</h4>
+              <p>Social Work</p>
               <a
                 href="/assets/img/portfolio/portfolio-9.jpg"
                 data-gallery="portfolioGallery"
                 className="portfolio-lightbox preview-link"
-                title="Web 3"
+                title="World Environment Day"
               >
                 <i className="bx bx-plus"></i>
               </a>

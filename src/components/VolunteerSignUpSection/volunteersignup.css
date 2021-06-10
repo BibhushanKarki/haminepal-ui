@@ -31,7 +31,9 @@
 .separator:not(:empty)::after {
   margin-left: 0.25em;
 }
-
+.volunteer-map-section {
+  overflow:hidden;
+}
 .volunteer-map-section iframe {
   border: 0;
   width: 540px;
