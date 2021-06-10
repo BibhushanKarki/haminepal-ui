@@ -99,10 +99,15 @@ const OurObjectiveSection = () => {
           <div className="row">
             <div className="col-md-12">
               <h4>
+                Our main objective is to help anyone in need without any
+                hesitations and expectation of payback.
+              </h4>
+              <p>
+                {" "}
                 The vision of Hami Nepal is to mobilize volunteers and impact
                 local communities through sustainable growth and empowering its
                 community members.
-              </h4>
+              </p>
             </div>
           </div>
         </div>
