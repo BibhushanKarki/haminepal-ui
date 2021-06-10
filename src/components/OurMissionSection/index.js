@@ -14,7 +14,7 @@ const Mission = () => {
           >
             <div className="card">
               <img
-                src="/assets/img/about-boxes-1.jpg"
+                src="/img/mission/mission2.jpg"
                 className="card-img-top"
                 alt="..."
               />

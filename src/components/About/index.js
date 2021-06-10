@@ -68,7 +68,7 @@ const About = () => {
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <img src="/assets/img/about.jpg" className="img-fluid" alt="" />
+            <img src="/img/mission/about.jpg" className="img-fluid" alt="" />
             <a
               href="https://www.youtube.com/watch?v=bPny2PNWFxc&ab_channel=dekhapadhi"
               className="glightbox play-btn mb-4"
