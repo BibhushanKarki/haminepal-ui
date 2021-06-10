@@ -7,7 +7,7 @@ const imglink =
 const DownloadApp = () => {
   const storeStyle = {
     width: "160px",
-    heigh: "50px",
+    height: "50px",
     marginRight: "1rem",
   };
   return (

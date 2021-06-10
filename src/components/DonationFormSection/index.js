@@ -66,7 +66,7 @@ const DonationFormSection = ({ slug, type }) => {
     }
 
     const handlePayWithEsewa = () => {
-        let path = "https://merchant.esewa.com.np";
+        let path = "https://esewa.com";
 
         let params = {
             tAmt: donation.donation_amount,
