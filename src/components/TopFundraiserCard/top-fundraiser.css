@@ -49,6 +49,7 @@
   -ms-transition: all 0.9s ease;
   width: 100%;
   height: 200px;
+  object-fit: contain;
 }
 
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img {
