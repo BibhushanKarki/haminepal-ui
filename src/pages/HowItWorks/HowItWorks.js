@@ -1,5 +1,5 @@
 import React from "react";
-import img from '../../assets/images/howitworks.jpg'
+import img from "../../assets/images/howitworks.jpg";
 const HowItWorks = () => {
   const titleStyle = {
     marginTop: "4rem",
@@ -76,11 +76,7 @@ const HowItWorks = () => {
         </ul>
       </div>
       <div className="text-center mt-2">
-        <img
-          src={img}
-          alt=""
-          style={howImgStyle}
-        />
+        <img src={img} alt="" style={howImgStyle} />
       </div>
     </section>
   );
