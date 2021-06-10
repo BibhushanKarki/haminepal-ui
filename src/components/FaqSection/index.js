@@ -226,8 +226,7 @@ const FaqSection = () => {
                     Hami Nepal accepts 'cash donation' as well as 'kind
                     donation'. If someone wish to donate in 'kind donation', you
                     can contact our team. If you wish to donate in 'cash
-                    donation', then here's list of where you can donate: (Please
-                    add account details)
+                    donation', then here's list of where you can donate:
                   </div>
                 </div>
               </div>
@@ -252,7 +251,7 @@ const FaqSection = () => {
                 >
                   <div class="accordion-body">
                     Users can check how much amount donation has been spent,
-                    Bill must be generated for every expenditure spend on the
+                    Bill will be generated for every expenditure spend on the
                     cause, and also the list of the overall expenses will be
                     displayed if the user clicks on the expenses.
                   </div>
