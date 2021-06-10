@@ -192,10 +192,18 @@ input[type=number] {
   .my-xs-2{
     margin:0.5rem 0;
   }
+  .comm{
+    margin:0 !important;
+  }
+  .comm .justify-content-start{
+    justify-content: center !important;
+    margin-top:1rem; 
+  }
 }
-@media (max-width:392){
+@media (max-width:600px){
   .page-content .comm{
     flex-direction:column !important;
+
   }
 }
 

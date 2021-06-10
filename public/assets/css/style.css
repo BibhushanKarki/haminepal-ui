@@ -548,7 +548,14 @@ section {
   color: #5c8eb0;
   font-family: "Poppins", sans-serif;
 }
-
+.section-title h2::before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ff8664;
+    margin: 4px 10px;
+}
 .section-title h2::after {
   content: "";
   width: 120px;

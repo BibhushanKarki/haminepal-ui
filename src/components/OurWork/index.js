@@ -4,7 +4,7 @@ const OurWork = () => {
   return (
     <section id="portfolio" className="portfolio">
       <div className="container" data-aos="fade-up">
-        <div className="section-title">
+        <div className="section-title text-center">
           <h2>Our Work</h2>
           <p>Check our Works</p>
         </div>

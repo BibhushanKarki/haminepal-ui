@@ -10,21 +10,19 @@ const OurCommunityCard = () => {
     }
     return (
       <div className="row">
-        <div className="col-md-12 d-flex flex-row comm align-items-center justify-content-between my-3">
-          <div className="col-lg-3 col-sm-2"></div>
-          <div className="col-lg-6 col-sm-6">
+        <div className="row d-flex flex-row comm align-items-center justify-content-around mx-4 w-100">
+          <div className="col-lg-6 col-md-8 col-sm-10 ">
             <div className="search">
-              {" "}
-              <i className="fa fa-search"></i>{" "}
+              <i className="fa fa-search"></i>
               <input
                 type="text"
                 className="form-control"
                 placeholder="Have a question? Ask Now"
-              />{" "}
+              />
               <button className="btn btn-primary">Search</button>
             </div>
           </div>
-          <div className="col-lg-3 d-flex justify-content-end mx-3">
+          <div className="col-lg-3 col-md-3  col-sm-4 mt-sm-2 d-flex justify-content-start mx-3">
             <button
               type="button"
               className="btn btn-primary"
@@ -34,52 +32,52 @@ const OurCommunityCard = () => {
               Ask Question
             </button>
           </div>
-          {/* Modal  */}
-          <div
-            className="modal fade"
-            id="askQuestion"
-            tabIndex="-1"
-            aria-labelledby="askQuestionLabel"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <div
-                  className="modal-header d-flex justify-content-center text-center"
-                  style={{ position: "relative", borderBottom: "0" }}
-                >
-                  <img
-                    src="/img/ask.svg"
-                    alt="img"
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain",
-                    }}
-                  />
-                  <button
-                    className="btn-close m-0"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                    style={{ position: "absolute", top: "10px", right: "10px" }}
-                  ></button>
+        </div>
+        {/* Modal  */}
+        <div
+          className="modal fade"
+          id="askQuestion"
+          tabIndex="-1"
+          aria-labelledby="askQuestionLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div
+                className="modal-header d-flex justify-content-center text-center"
+                style={{ position: "relative", borderBottom: "0" }}
+              >
+                <img
+                  src="/img/ask.svg"
+                  alt="img"
+                  style={{
+                    width: "150px",
+                    height: "150px",
+                    objectFit: "contain",
+                  }}
+                />
+                <button
+                  className="btn-close m-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style={{ position: "absolute", top: "10px", right: "10px" }}
+                ></button>
+              </div>
+              <div className="modal-body">
+                <div className="form-floating">
+                  <textarea
+                    name="description"
+                    defaultValue=""
+                    className="form-control"
+                    placeholder="Your Question"
+                    id="floatingTextarea2"
+                    style={{ height: "100px" }}
+                  ></textarea>
+                  <label htmlFor="floatingTextarea2">Ask Your Question</label>
                 </div>
-                <div className="modal-body">
-                  <div className="form-floating">
-                    <textarea
-                      name="description"
-                      defaultValue=""
-                      className="form-control"
-                      placeholder="Your Question"
-                      id="floatingTextarea2"
-                      style={{ height: "100px" }}
-                    ></textarea>
-                    <label htmlFor="floatingTextarea2">Ask Your Question</label>
-                  </div>
-                </div>
-                <div className="modal-footer">
-                  <AppButton buttontext="Add Question" />
-                </div>
+              </div>
+              <div className="modal-footer">
+                <AppButton buttontext="Add Question" />
               </div>
             </div>
           </div>
@@ -88,7 +86,7 @@ const OurCommunityCard = () => {
           className="col-md-12 d-flex flex-column  mb-4 align-items-center"
           style={{ backgroundColor: "#ffeaea73" }}
         >
-          <div className="col-lg-5 col-md-8 col-sm-10 mx-2">
+          <div className="col-lg-5 col-md-8  mx-2">
             <div className="card main-card my-4 panel">
               <div className="card m-3 p-3">
                 <div className="d-flex align-items-center">
