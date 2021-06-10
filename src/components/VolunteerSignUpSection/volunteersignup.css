@@ -39,7 +39,7 @@
   object-fit: cover;
   overflow: hidden;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
   .volunteer-map-section iframe {
     width: 400px;
@@ -48,7 +48,7 @@
   .card .input-section {
     margin-top: 15px;
   }
-}
+} */
 
 /* @media only screen and (max-width: 360px) {
   .volunteer-map-section iframe {
@@ -78,6 +78,12 @@
 }
 
 @media (max-width: 991.98px) {
+  .volunteer-map-section iframe {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1199.98px) {
   .volunteer-map-section iframe {
     width: 250px;
   }
