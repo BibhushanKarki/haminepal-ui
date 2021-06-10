@@ -26,9 +26,17 @@ const Mission = () => {
                   <Link to="">Our Mission</Link>
                 </h5>
                 <p className="card-text">
-                  The organisation is currently working solely in the field
-                  COVID-19 in order to provide medical relief to individuals as
-                  well as medical institutions.
+                  Hami Nepal is formed by individuals who prioritize humanity
+                  above all and recruit volunteers accordingly. So far our
+                  entire team has been working as an emergency response team; to
+                  date, Hami Nepal has specialized in crisis management and
+                  disaster relief. As per the expertise that we have gained, our
+                  priorities are to work for the betterment of the health sector
+                  of Nepal, besides this Hami Nepal at the core will always be
+                  an emergency response at the same time. Our vision as a team
+                  is to spread our services throughout Nepal for which we are
+                  expanding our chapters outside of Kathmandu which shall be
+                  governed by the central board itself.
                 </p>
               </div>
             </div>
@@ -52,9 +60,16 @@ const Mission = () => {
                   <Link to="">Our Vision</Link>
                 </h5>
                 <p className="card-text">
-                  The vision of Hami Nepal is to mobilize volunteers and impact
-                  local communities through sustainable growth and empowering
-                  its community members.
+                  Hami Nepal's vision is to upgrade the health facilities
+                  available in every corner of Nepal as we believe basic health
+                  rights should not be a luxury that the average Nepali citizen
+                  cannot afford. Our future projects and plan will be in this
+                  periphery and not only limiting our organization to this but
+                  Hami Nepal will also continue to work in every area of
+                  injustice.
+                  {/* The vision of Hami Nepal is to mobilize volunteers
+                  and impact local communities through sustainable growth and
+                  empowering its community members. */}
                 </p>
               </div>
             </div>
