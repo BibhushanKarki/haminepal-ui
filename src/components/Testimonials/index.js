@@ -31,7 +31,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-1.png"
+                  src="/assets/img/behind-the-name/behind-the-name-1.png"
                   className="testimonial-img"
                   alt=""
                 />
@@ -64,7 +64,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-2.jpg"
+                  src="/assets/img/behind-the-name/behind-the-name-2.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -104,7 +104,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-3.jpg"
+                  src="/assets/img/testimonials/testimonials-3.jpg"
                   className="testimonial-img"
                   alt=""
                 />
@@ -142,7 +142,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-5.png"
+                  src="/assets/img/behind-the-name/behind-the-name-5.png"
                   className="testimonial-img"
                   alt=""
                 />
@@ -172,7 +172,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="testimonial-item">
                 <img
-                  src="assets/img/behind-the-name/behind-the-name-6.png"
+                  src="/assets/img/behind-the-name/behind-the-name-6.png"
                   className="testimonial-img"
                   alt=""
                 />
