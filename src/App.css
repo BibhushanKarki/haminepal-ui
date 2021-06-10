@@ -96,6 +96,50 @@
   margin-right: 0.75rem;
   margin-bottom: 1rem;
 }
+.comment-card{
+  background-color: #9f1717f1;
+}
+.comment-form{
+  width:85% !important;
+  display: inline !important;
+}
+
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+  height: 50px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+  color: black !important;
+}
+.search input::placeholder{
+  color:black !important;
+}
+.search input:focus::placeholder{
+  color:black !important;
+}
+.search input:focus {
+  box-shadow: none;
+  border-color: #9f1718;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 110px;
+}
+
 
 /* input number arrows hide */
 
