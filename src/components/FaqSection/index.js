@@ -233,7 +233,7 @@ const FaqSection = () => {
                     <ul>
                       <li>Account Name : Hami Nepal</li>
                       <li>Account No : 00609261410013</li>
-                      <li>Himalaya Bank Limited</li>
+                      <li>Himalaya Bank Limited, Pulchowk</li>
                     </ul>
                     <h5>eSewa:</h5>
                     <ul>
