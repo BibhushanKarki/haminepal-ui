@@ -5,11 +5,10 @@ const SignUpSection = () => {
   return (
     <>
       <div className="container-sm  mb-5">
-        <form className="row ">
-          <div className="d-flex justify-content-center">
-            <div className="col-md-6">
+        <form className="row d-flex justify-content-center mx-2">
+            <div className="col-lg-8 col-sm-12 col-md-12">
               <div
-                className="card px-5 py-3 text-center panel"
+                className="card px-4 py-3 px-sm-2 text-center panel"
                 style={{
                   boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
                 }}
@@ -17,7 +16,7 @@ const SignUpSection = () => {
                 <div className="card-title mt-3 separator">Sign Up</div>
                 <hr />
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-lg-6">
                     <input
                       type="text"
                       className="form-control"
@@ -26,7 +25,7 @@ const SignUpSection = () => {
                       required
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-6">
                     <input
                       type="text"
                       className="form-control input-section"
@@ -37,7 +36,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="number"
                       className="form-control"
@@ -48,7 +47,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="text"
                       className="form-control"
@@ -59,7 +58,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="number"
                       className="form-control"
@@ -70,7 +69,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="password"
                       className="form-control"
@@ -81,12 +80,12 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row  mt-5">
-                  <div className="col-md-12 separator ">
+                  <div className="col-lg-12 separator ">
                     Additional Information
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="number"
                       className="form-control"
@@ -97,7 +96,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="text"
                       className="form-control"
@@ -108,7 +107,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <input
                       type="text"
                       className="form-control"
@@ -119,7 +118,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-3">
-                  <div className="col-md-6">
+                  <div className="col-lg-6">
                     <input
                       type="text"
                       className="form-control"
@@ -128,7 +127,7 @@ const SignUpSection = () => {
                       required
                     />
                   </div>
-                  <div className="col-md-6 ">
+                  <div className="col-lg-6 ">
                     <input
                       type="text"
                       className="form-control input-section"
@@ -140,7 +139,7 @@ const SignUpSection = () => {
                 </div>
 
                 <div className="row mt-3">
-                  <div className="col-md-6">
+                  <div className="col-lg-6">
                     <input
                       type="text"
                       className="form-control"
@@ -149,7 +148,7 @@ const SignUpSection = () => {
                       required
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-6">
                     <input
                       type="text"
                       className="form-control input-section"
@@ -160,7 +159,7 @@ const SignUpSection = () => {
                   </div>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-md-12 volunteer-map-section">
+                  <div className="col-lg-12 volunteer-map-section">
                     <iframe
                       id="gmap_canvas"
                       src="https://maps.google.com/maps?q=raniban,samakushi,kathmandu&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -171,8 +170,8 @@ const SignUpSection = () => {
                 </div>
 
                 <div className="row mt-3">
-                  <div className="col-md-12 d-flex flex-row">
-                    <div className="col-md-2">
+                  <div className="col-lg-12 d-flex flex-row">
+                    <div className="col-lg-2">
                       <input
                         className="form-check-input "
                         type="checkbox"
@@ -180,14 +179,14 @@ const SignUpSection = () => {
                         id="defaultCheck1"
                       />
                     </div>
-                    <div className="col-md-10" style={{ color: "#fff" }}>
+                    <div className="col-lg-10" style={{ color: "#fff" }}>
                       I agree terms of service & privacy policy.
                     </div>
                   </div>
                 </div>
 
                 <div className="row mt-4 mb-3">
-                  <div className="col-md-12">
+                  <div className="col-lg-12">
                     <button type="submit" className=" btn btn-primary">
                       Submit
                     </button>
@@ -195,8 +194,7 @@ const SignUpSection = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+         </form>
       </div>
     </>
   );

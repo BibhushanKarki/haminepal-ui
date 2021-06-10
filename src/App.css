@@ -86,7 +86,7 @@
 }
 .howitworks li::before{ 
   content: "";
-  background-image: url(https://dw-iconusers.flaticon.com/17164/17164051/1623270889030.svg?token=exp=1623271806~hmac=a700e2694d2c622005809347f8d945a8);
+  background-image: url(https://openmoji.org/data/color/svg/1F449-1F3FB.svg);
   background-size: contain;
   display: inline-table;
   width: 1.5em;
