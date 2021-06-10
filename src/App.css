@@ -81,6 +81,21 @@
   margin-right: 0.5rem;
   margin-bottom: 1rem;
 }
+.howitworks li{
+  font-size: 1.15em;
+}
+.howitworks li::before{ 
+  content: "";
+  background-image: url(https://dw-iconusers.flaticon.com/17164/17164051/1623270889030.svg?token=exp=1623271806~hmac=a700e2694d2c622005809347f8d945a8);
+  background-size: contain;
+  display: inline-table;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top:0.45em;
+  margin-right: 0.75rem;
+  margin-bottom: 1rem;
+}
 
 /* input number arrows hide */
 
