@@ -180,6 +180,9 @@ input[type=number] {
   .downloadDesc h5{
     letter-spacing:2px;
   }
+  .storeBtn {
+    justify-content:center;
+  }
   .downloadDesc h5,.downloadDesc h4,.downloadDesc p{
     text-align: center;
   }
