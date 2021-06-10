@@ -13,7 +13,7 @@ const Mission = () => {
             data-aos-delay="100"
           >
             <div className="card">
-              <Link to="/objectives">
+              <Link to="/our-objectives">
                 <img
                   src="/img/mission/mission2.jpg"
                   className="card-img-top"
@@ -38,7 +38,7 @@ const Mission = () => {
             data-aos-delay="200"
           >
             <div className="card">
-              <Link to="/objectives">
+              <Link to="/our-objectives">
                 <img
                   src="/img/mission/mission3.jpg"
                   className="card-img-top"
@@ -65,7 +65,7 @@ const Mission = () => {
             data-aos-delay="300"
           >
             <div className="card">
-              <Link to="/objectives">
+              <Link to="/our-objectives">
                 <img
                   src="/img/mission/mission1.jpg"
                   className="card-img-top"
