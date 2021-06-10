@@ -16,12 +16,14 @@ const BeVolunteerSection = () => {
                 requirements.
               </p>
 
-              <p>• Name </p>
-              <p>• Level of Expertise</p>
-              <p>• Qualification</p>
-              <p>•Availability of Transportation </p>
-              <p>• Contact Number</p>
-              <p>• Geo Locations</p>
+              <ul type="square">
+                <li>Name</li>
+                <li>Level of Expertise</li>
+                <li> Qualification</li>
+                <li>Availability of Transportation </li>
+                <li>Contact Number</li>
+                <li>Geo Locations</li>
+              </ul>
 
               {/* To get register as a volunteer user needs to fill a form first
                 which includes name, number, expertise in the field, and
@@ -85,13 +87,14 @@ const BeVolunteerSection = () => {
             <h2 style={{ fontWeight: "bold", color: "#9F1718" }}>
               Safety measures for staff and volunteers
             </h2>
-            <p>Safety measures for staff and volunteers</p>
-            <p>
-              • locally-relevant protective and preventative guidance relating
-              to health risks, including the risks associated with COVID-19,
-            </p>
-            <p>• access to a dedicated medical team by phone and email,</p>
-            <p>• a full medical briefing during the onboarding process.</p>
+            <ul type="square">
+              <li>
+                locally-relevant protective and preventative guidance relating
+                to health risks, including the risks associated with COVID-19,
+              </li>
+              <li>access to a dedicated medical team by phone and email,</li>
+              <li> a full medical briefing during the onboarding process.</li>
+            </ul>
           </div>
         </div>
       </div>
