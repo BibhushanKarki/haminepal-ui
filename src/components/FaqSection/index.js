@@ -227,6 +227,24 @@ const FaqSection = () => {
                     donation'. If someone wish to donate in 'kind donation', you
                     can contact our team. If you wish to donate in 'cash
                     donation', then here's list of where you can donate:
+                    <br />
+                    <br />
+                    <h5>Bank Details:</h5>
+                    <ul>
+                      <li>Account Name : Hami Nepal</li>
+                      <li>Account No : 00609261410013</li>
+                      <li>Himalaya Bank Limited</li>
+                    </ul>
+                    <h5>eSewa:</h5>
+                    <ul>
+                      <li>Go to Search Bar</li>
+                      <li>Search for Hami Nepal </li>
+                      <li>Youth Organization</li>
+                    </ul>
+                    <h5>Khalti:</h5>
+                    <ul>
+                      <li>9818134226(Pragya Bajracharya)</li>
+                    </ul>
                   </div>
                 </div>
               </div>
