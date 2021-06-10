@@ -39,14 +39,14 @@ const ProjectSection = () => {
 
   return currentProjectData ? (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>{title} - HamiNepal</title>
         <meta property="og:url" content={url} />
           <meta property="og:type" content="article" />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-      </Helmet>
+      </Helmet> */}
       <div className="container">
         <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>{key}</h2>
       </div>

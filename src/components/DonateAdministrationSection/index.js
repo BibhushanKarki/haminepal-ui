@@ -16,6 +16,13 @@ const DonateAdministrationSection = () => {
     fontWeight: "bold",
   };
 
+  const ImgStyle = {
+    width: "80vw",
+    height: "450px",
+    objectFit: "cover",
+    objectPosition: "center center",
+  };
+
   // const contentParaghaph = {
   //   marginTop: "5px",
   // };
@@ -32,23 +39,31 @@ const DonateAdministrationSection = () => {
             </h1>
           </div>
         </div>
-        </div>
+      </div>
 
       <div className="row d-flex justify-content-center mt-4">
         <div className="col-10">
-          <div className="section-content-paragraph text-center" >
-            <p  key={data.id}>
-              {data.paragraph}
-            </p>
+          <div className="section-content-paragraph text-center">
+            <p key={data.id}>{data.paragraph}</p>
           </div>
         </div>
-        </div>
+      </div>
 
-      <div className="row mb-4">
+      <div className="row mb-5">
         <div className="col-md-12 d-flex justify-content-center">
           <Link to="#" className="btn btn-primary mt-4 ">
             Donate To Motivate
           </Link>
+        </div>
+      </div>
+
+      <div className="row mb-5">
+        <div className="text-center ">
+          <img
+            src="/img/administration/administration1.jpg"
+            alt="administration"
+            style={ImgStyle}
+          />
         </div>
       </div>
     </div>
