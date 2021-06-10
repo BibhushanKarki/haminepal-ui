@@ -67,7 +67,7 @@ const Mission = () => {
             <div className="card">
               <Link to="/objectives">
                 <img
-                  src="/assets/img/about-boxes-3.jpg"
+                  src="/img/mission/mission1.jpg"
                   className="card-img-top"
                   alt="..."
                 />
