@@ -40,7 +40,7 @@ const Mission = () => {
           >
             <div className="card">
               <img
-                src="/assets/img/about-boxes-2.jpg"
+                src="/img/mission/mission3.jpg"
                 className="card-img-top"
                 alt="..."
               />
