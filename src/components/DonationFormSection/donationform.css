@@ -51,3 +51,14 @@
     text-align: center;
   }
 }
+
+.pay-with.form-check input[type="radio"] {
+    display: block;
+    margin-right: 5px;
+}
+.pay-with label img {
+    width: 140px;
+}
+.form-control.formStyle {
+    color: black;
+}
