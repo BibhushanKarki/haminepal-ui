@@ -231,6 +231,33 @@ const FaqSection = () => {
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEight"
+                  >
+                    How to check expenses?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Users can check how much amount donation has been spent,
+                    Bill must be generated for every expenditure spend on the
+                    cause, and also the list of the overall expenses will be
+                    displayed if the user clicks on the expenses.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

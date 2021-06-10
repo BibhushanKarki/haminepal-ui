@@ -25,13 +25,15 @@ const BeVolunteerSection = () => {
                 <li>Geo Locations</li>
               </ul>
 
-              {/* To get register as a volunteer user needs to fill a form first
-                which includes name, number, expertise in the field, and
-                location. Once the form will be filled by the user for
-                volunteer, their geo-location will be tracked so that
-                notification will be sent to their specific mobile number in
-                case if there is an emergency call out.
-              </p> */}
+              <p>
+                Once the users fill up the following requirements the data
+                filled by the users will be send to executive team of
+                HamiNepal.org for verification, the expertise checks overall
+                data filled by the users and if found authentic the confirmation
+                for being Volunteer must be sent to Volunteers Mobile Number and
+                once the user accepts him/her as a volunteer the Geo location
+                will be tracked for the further emergency call out
+              </p>
             </div>
           </div>
         </div>
