@@ -15,12 +15,13 @@ export const donate = (formData) => (dispatch) => {
     });
 
     try {
-        localStorage.setItem('donation', JSON.stringify(formData));
+        localStorage.setItem('donation', JSON.stringify({ ...formData, time: (new Date()).getTime() }));
 
         dispatch({
             type: DONATION_SUCCESS,
             payload: formData,
         });
+
     } catch (e) {
         dispatch({
             type: DONATION_ERROR,
@@ -36,7 +37,7 @@ export const clearDonation = () => (dispatch) => {
     });
 
     try {
-        localStorage.setItem('donation', JSON.stringify({}));
+        localStorage.setItem('donation', null);
 
         dispatch({
             type: DONATION_SUCCESS,
@@ -58,8 +59,8 @@ export const uploadDonation = (amount) => (dispatch) => {
 
     try {
         DonationService.uploadDonation({
-            amount,
-            ...JSON.parse(localStorage.getItem('donation'))
+            ...JSON.parse(localStorage.getItem('donation')),
+            domation_amount: amount,
         }).then(resp => {
             dispatch({
                 type: UPLOAD_DONATION_SUCCESS,

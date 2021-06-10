@@ -23,12 +23,12 @@ const DonationFormSection = ({ slug, type }) => {
 
     const donationSchema = Joi.object({
         first_name: Joi.string()
-            .pattern(/[^a-zA-Z]/)
+            .pattern(/^[A-Za-z]+$/)
             .min(3)
             .max(30)
             .required(),
         last_name: Joi.string()
-            .pattern(/[^a-zA-Z]/)
+            .pattern(/^[A-Za-z]+$/)
             .min(3)
             .max(30)
             .required(),
@@ -66,7 +66,7 @@ const DonationFormSection = ({ slug, type }) => {
     }
 
     const handlePayWithEsewa = () => {
-        let path = "https://uat.esewa.com.np/epay/main";
+        let path = "https://merchant.esewa.com.np";
 
         let params = {
             tAmt: donation.donation_amount,
@@ -74,10 +74,10 @@ const DonationFormSection = ({ slug, type }) => {
             txAmt: 0,
             psc: 0,
             pdc: 0,
-            scd: "EPAYTEST",
+            scd: "NP-ES-NEPALI",
             pid: makeRandomString(20),
-            su: 'https://test.com/donation/success',
-            fu: 'https://test.com/donation/error',
+            su: 'https://hami-nepali-newui.netlify.app/donation/success',
+            fu: 'https://hami-nepali-newui.netlify.app/donation/error',
         }
 
         let form = document.createElement("form");

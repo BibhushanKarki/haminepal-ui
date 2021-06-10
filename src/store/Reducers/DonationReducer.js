@@ -20,7 +20,6 @@ const initialState = {
 
 export default function (state = initialState, action) {
     const { type, payload } = action;
-    console.log(type, payload)
     switch (type) {
         case DONATION:
             return {
@@ -55,12 +54,14 @@ export default function (state = initialState, action) {
                 uploadDonationData: {},
             }
         case UPLOAD_DONATION_SUCCESS:
+            localStorage.setItem('donation', null)
             return {
                 ...state,
                 uploadDonationSuccess: true,
                 uploadDonationLoading: false,
                 uploadDonationError: '',
                 uploadDonationData: { ...payload },
+                donationData: {}
             };
         case UPLOAD_DONATION_ERROR:
             return {

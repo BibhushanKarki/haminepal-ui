@@ -1,15 +1,20 @@
 import React, { useEffect } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
+
 import { uploadDonation } from "../../store/Actions/DonationActions";
 
-const DonationSuccessPage = () => {
+import queryString from 'query-string';
+
+const DonationSuccessPage = ({ location }) => {
     const dispatch = useDispatch();
 
-    const { uploadDonationLoading, uploadDonationError, uploadDonationSuccess } = useSelector(state => state.donation);
+    const { uploadDonationLoading, uploadDonationError, uploadDonationSuccess, uploadDonationData } = useSelector(state => state.donation);
+
+    var parsed = queryString.parse(location.search);
 
     useEffect(() => {
-        dispatch(uploadDonation())
+        dispatch(uploadDonation(parsed.amt))
     }, []);
 
     return (
@@ -29,10 +34,10 @@ const DonationSuccessPage = () => {
             </div> : ''}
 
             {uploadDonationSuccess ? <div className="alert alert-success" role="alert">
-                <h4 className="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <h4 className="alert-heading">Thank you!</h4>
+                <p className="mb-0">Your donation was successful.</p>
                 <hr />
-                <p className="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                <pre>{JSON.stringify(uploadDonationData.data, null, 2)}</pre>
             </div> : ''}
         </div>
     );

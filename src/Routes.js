@@ -33,7 +33,12 @@ import OurObjective from "./pages/OurObjective";
 import DonationErrorPage from "./pages/DonationErrorPage";
 import DonationSuccessPage from "./pages/DonationSuccessPage";
 
+import ProtectedRoute from './utils/ProtectedRoute';
+
 const Routes = () => {
+    const donationIsSet = JSON.parse(localStorage.getItem('donation')) ? true : false;
+    console.log(donationIsSet, 'donation is set', JSON.parse(localStorage.getItem('donation')))
+
     return (
         <Switch>
             <Route path="/" component={Home} exact />
@@ -65,8 +70,9 @@ const Routes = () => {
             <Route path="/whyhaminepal" component={WhyHamiNepal} />
             <Route path="/success-stories" component={SuccessStories} />
             <Route path="/our-objectives" component={OurObjective} />
-            <Route path="/donation/success" component={DonationSuccessPage} />
-            <Route path="/donation/error" component={DonationErrorPage} />
+            <ProtectedRoute path="/donation/success" component={DonationSuccessPage} condition={donationIsSet} />
+            <ProtectedRoute path="/donation/error" component={DonationErrorPage} condition={donationIsSet} />
+
         </Switch>
     );
 };
