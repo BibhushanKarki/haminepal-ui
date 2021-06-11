@@ -159,6 +159,26 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+@media (max-width:1325px){
+  .navbar > ul > li {
+    white-space: nowrap;
+    padding: 8px 5px;
+}
+#header>div{
+  margin:0 !important;
+}
+}
+@media (max-width:990px){
+  .navbar > ul > li {
+    white-space: nowrap;
+    padding: 8px 12px;
+}
+#header>div{
+  margin-right: auto !important;
+margin-left: auto !important;
+}
+}
+
 @media (max-width: 768px) {
   .downloadDesc p {
     font-size: 12px;
