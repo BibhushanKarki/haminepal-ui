@@ -189,7 +189,7 @@ const Header = () => {
             id="navbarNavDropdown"
           >
             <ul
-              className="navbar-nav"
+              className="navbar-nav w-100 justify-content-end"
               style={{ display: !isNavCollapsed ? "none" : "flex" }}
             >
               <li className="nav-item">

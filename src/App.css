@@ -11,6 +11,18 @@
     color: #9f1718 !important;
     border-color: #9f1718 !important;
 }
+.navbar li{
+  margin:0 0.5rem;
+}
+.navbar .dropdown ul{
+  left:8px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #9f1718;
+}
+.navbar .dropdown ul li:active:hover > a {
+    color: #fff;
+}
 .form-check-input:checked {
   background-color: #9f1718;
   border-color: #9f1718;
@@ -170,13 +182,18 @@ input[type=number] {
     white-space: nowrap;
     padding: 8px 5px;
 }
+@media (max-width:1190px){
+  .navbar li{
+  margin:0 !important;
+}
+}
 #header>div{
   margin:0 !important;
 }
 }
 @media (max-width:992px){
-.nav-item{ 
-  margin:0.5rem 0;
+.collapse.show ul>li{ 
+  margin:0.5rem 0 !important;
 }
 }
 @media (max-width:990px){
