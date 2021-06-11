@@ -1,6 +1,10 @@
 .page-content > div {
   margin-top: 130px;
 }
+.page-content #contact {
+    padding: 120px 0;
+    overflow: hidden;
+}
 .form-check-input:checked {
   background-color: #9f1718;
   border-color: #9f1718;
@@ -187,7 +191,12 @@ input[type=number] {
     text-align: center;
   }
 }
+@media (max-width:600px){
+  .page-content .comm{
+    flex-direction:column !important;
 
+  }
+}
 @media (max-width:576px){
   .my-xs-2{
     margin:0.5rem 0;
@@ -200,10 +209,24 @@ input[type=number] {
     margin-top:1rem; 
   }
 }
-@media (max-width:600px){
-  .page-content .comm{
-    flex-direction:column !important;
-
+@media (max-width:456px){
+  .section-title h2::after,.section-title h2::before{
+    width:60px;
   }
 }
+@media(max-width:365px){
+  .section-title p{
+    font-size:28px;
+  }
+  #hero h1 {
+    font-size: 20px;
+    line-height: 28px;
+}
+#hero h2 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+}
+
 
