@@ -315,7 +315,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/tranparency">
+                <Link className="nav-link" to="/transparency">
                   Transparency
                 </Link>
               </li>
