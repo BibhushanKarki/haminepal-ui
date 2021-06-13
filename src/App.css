@@ -165,6 +165,13 @@
   width: 110px;
 }
 
+.donation-details{ 
+  width: 100%;
+  justify-content:space-around;
+  transform: translateY(100px);
+}
+
+
 
 /* input number arrows hide */
 
