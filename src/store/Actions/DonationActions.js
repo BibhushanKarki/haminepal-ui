@@ -60,7 +60,7 @@ export const uploadDonation = (amount) => (dispatch) => {
     try {
         DonationService.uploadDonation({
             ...JSON.parse(localStorage.getItem('donation')),
-            domation_amount: amount,
+            donation_amount: amount,
         }).then(resp => {
             dispatch({
                 type: UPLOAD_DONATION_SUCCESS,

@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import haminepali from "../../assets/images/haminepalilogo1.png";
 import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
 import DonateAnonymouslySection from "../../components/DonateAnonymouslySection";
 import "./donationform.css";
 import { useDispatch, useSelector } from "react-redux";
-import { donate } from "../../store/Actions/DonationActions";
-
+import { clearDonation, donate, uploadDonation } from "../../store/Actions/DonationActions";
+import KhaltiCheckout from "khalti-checkout-web";
 import Joi from "joi";
+import axios from "axios";
 
 const DonationFormSection = ({ slug, type }) => {
     const [donation, setDonation] = useState({
@@ -96,6 +97,40 @@ const DonationFormSection = ({ slug, type }) => {
         form.submit();
     }
 
+    const handlePayWithKhalti = () => {
+        let khaltiConfig = {
+            // replace this key with yours
+            "publicKey": "test_public_key_abe3db04d5e9417a952f8b202d70ff96",
+            "productIdentity": makeRandomString(20),
+            "productName": slug,
+            "productUrl": "https://hami-nepali-newui.netlify.app/",
+            "eventHandler": {
+                onSuccess({ amount, token }) {
+                    console.log(donation)
+                    dispatch(donate({
+                        ...donation,
+                        KHALTI_TOKEN: token
+                    }));
+                    dispatch(uploadDonation(amount / 100)); // BECAUSE KHALTI AMOUNT IS IN PAISA SO CONVERTING TO RUPPEE
+                },
+                // onError handler is optional
+                onError(error) {
+                    console.log(error);
+                    // handle errors
+                    // dispatch(clearDonation())
+                },
+                onClose() {
+                    console.log('widget is closing');
+                }
+            },
+            "paymentPreference": ["KHALTI", "EBANKING", "MOBILE_BANKING", "CONNECT_IPS", "SCT"],
+        };
+
+        let checkout = new KhaltiCheckout(khaltiConfig);
+
+        checkout.show({ amount: donation.donation_amount * 100 }); // BECAUSE KHALTI EXPECTS AMOUNT IN PAISAS SO CONVERTING USER INPUT OF RUPPEE TO PAISA
+    }
+
     const handleDonationSubmission = e => {
         e.preventDefault();
 
@@ -125,6 +160,7 @@ const DonationFormSection = ({ slug, type }) => {
                         handlePayWithEsewa();
                         break;
                     case 'KHALTI':
+                        handlePayWithKhalti();
                         break;
                     case 'GOFUNDME':
                         break;
