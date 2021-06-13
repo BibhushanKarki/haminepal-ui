@@ -1,30 +1,32 @@
 .page-content > div {
   margin-top: 130px;
 }
-.navbar-light .navbar-nav .nav-link,.navbar-light .navbar-nav .nav-link:focus {
-    color: white;
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: white;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #f37474;
+  color: #f37474;
 }
 .navbar-toggler {
-    color: #fff !important;
-    border-color: #fff !important;
+  color: #fff !important;
+  border-color: #fff !important;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
-.navbar li{
-  margin:0 0.5rem;
+.navbar li {
+  margin: 0 0.5rem;
 }
-.navbar .dropdown ul{
-  left:8px;
+.navbar .dropdown ul {
+  left: 8px;
 }
-.dropdown-item.active, .dropdown-item:active {
-    background-color: #9f1718;
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #9f1718;
 }
 .navbar .dropdown ul li:active:hover > a {
-    color: #fff;
+  color: #fff;
 }
 .form-check-input:checked {
   background-color: #9f1718;
@@ -81,7 +83,7 @@
   box-shadow: none !important;
 }
 
-.TransparencyCardContainer input::placeholder{
+.TransparencyCardContainer input::placeholder {
   color: rgb(159, 23, 24) !important;
 }
 /* Glassmorphism */
@@ -94,7 +96,7 @@
   border-radius: 10px;
 }
 
-.objective-list li::before{
+.objective-list li::before {
   content: "";
   background-image: url(https://openmoji.org/data/color/svg/2764.svg);
   background-size: contain;
@@ -102,14 +104,14 @@
   width: 1.5em;
   height: 1.5em;
   position: relative;
-  top:0.45em;
+  top: 0.45em;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
 }
-.howitworks li{
+.howitworks li {
   font-size: 1.15em;
 }
-.howitworks li::before{ 
+.howitworks li::before {
   content: "";
   background-image: url(https://openmoji.org/data/color/svg/1F449-1F3FB.svg);
   background-size: contain;
@@ -117,22 +119,21 @@
   width: 1.5em;
   height: 1.5em;
   position: relative;
-  top:0.45em;
+  top: 0.45em;
   margin-right: 0.75rem;
   margin-bottom: 1rem;
 }
-.comment-card{
+.comment-card {
   background-color: #9f1717f1;
 }
-.comment-form{
-  width:85% !important;
+.comment-form {
+  width: 85% !important;
   display: inline !important;
 }
 
-
 .search {
   position: relative;
-  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
 }
 
 .search input {
@@ -141,11 +142,11 @@
   border: 2px solid #d6d4d4;
   color: black !important;
 }
-.search input::placeholder{
-  color:black !important;
+.search input::placeholder {
+  color: black !important;
 }
-.search input:focus::placeholder{
-  color:black !important;
+.search input:focus::placeholder {
+  color: black !important;
 }
 .search input:focus {
   box-shadow: none;
@@ -165,13 +166,15 @@
   width: 110px;
 }
 
-.donation-details{ 
+.donation-details {
   width: 100%;
-  justify-content:space-around;
+  justify-content: space-around;
   transform: translateY(100px);
 }
 
-
+.nav-item .getStarted:hover {
+  color: #d6d4d4 !important;
+}
 
 /* input number arrows hide */
 
@@ -183,41 +186,41 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-@media (max-width:1325px){
+@media (max-width: 1325px) {
   .navbar > ul > li {
     white-space: nowrap;
     padding: 8px 5px;
-}
-@media (max-width:1190px){
-  .navbar li{
-  margin:0 !important;
-}
-}
-#header>div{
-  margin:0 !important;
-}
-}
-@media (max-width:992px){
-  .collapsing ul>li{
-      margin:0.5rem 0 !important;
   }
-.collapse.show ul>li{ 
-  margin:0.5rem 0 !important;
+  @media (max-width: 1190px) {
+    .navbar li {
+      margin: 0 !important;
+    }
+  }
+  #header > div {
+    margin: 0 !important;
+  }
 }
+@media (max-width: 992px) {
+  .collapsing ul > li {
+    margin: 0.5rem 0 !important;
+  }
+  .collapse.show ul > li {
+    margin: 0.5rem 0 !important;
+  }
 }
-@media (max-width:990px){
+@media (max-width: 990px) {
   .navbar > ul > li {
     white-space: nowrap;
     padding: 8px 12px;
-}
-#header>div{
-  margin-right: auto !important;
-margin-left: auto !important;
-}
+  }
+  #header > div {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -230,75 +233,74 @@ margin-left: auto !important;
   .downloadDesc h4 {
     font-size: 18px !important;
   }
-  
 }
 @media (max-width: 630px) {
   .downloadApp {
     flex-direction: column !important;
   }
-  .downloadApp img{
+  .downloadApp img {
     padding: 1rem;
-    height:auto !important;
+    height: auto !important;
   }
   .downloadDesc {
     margin-top: 1rem;
   }
-  .downloadDesc h5{
-    letter-spacing:2px;
+  .downloadDesc h5 {
+    letter-spacing: 2px;
   }
   .storeBtn {
-    justify-content:center;
+    justify-content: center;
   }
-  .downloadDesc h5,.downloadDesc h4,.downloadDesc p{
+  .downloadDesc h5,
+  .downloadDesc h4,
+  .downloadDesc p {
     text-align: center;
   }
 }
-@media (max-width:600px){
-  .page-content .comm,.donation-details{
-    flex-direction:column !important;
-
+@media (max-width: 600px) {
+  .page-content .comm,
+  .donation-details {
+    flex-direction: column !important;
   }
-  .donation-details{
-    align-items:center;
+  .donation-details {
+    align-items: center;
   }
-  .donation-details>button{
+  .donation-details > button {
     width: 200px;
   }
-  .donation-details button:nth-child(2){
-    margin:2rem 0;
+  .donation-details button:nth-child(2) {
+    margin: 2rem 0;
   }
-  
 }
-@media (max-width:576px){
-  .my-xs-2{
-    margin:0.5rem 0;
+@media (max-width: 576px) {
+  .my-xs-2 {
+    margin: 0.5rem 0;
   }
-  .comm{
-    margin:0 !important;
+  .comm {
+    margin: 0 !important;
   }
-  .comm .justify-content-start{
+  .comm .justify-content-start {
     justify-content: center !important;
-    margin-top:1rem; 
+    margin-top: 1rem;
   }
 }
-@media (max-width:456px){
-  .section-title h2::after,.section-title h2::before{
-    width:60px;
+@media (max-width: 456px) {
+  .section-title h2::after,
+  .section-title h2::before {
+    width: 60px;
   }
 }
-@media(max-width:365px){
-  .section-title p{
-    font-size:28px;
+@media (max-width: 365px) {
+  .section-title p {
+    font-size: 28px;
   }
   #hero h1 {
     font-size: 18px;
     line-height: 26px;
-}
-#hero h2 {
+  }
+  #hero h2 {
     font-size: 15px;
     line-height: 21px;
     margin: 0 5px 30px 5px;
+  }
 }
-}
-
-
