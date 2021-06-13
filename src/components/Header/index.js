@@ -185,6 +185,7 @@ const Header = () => {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
+            onClick={handleNavCollapse}
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
@@ -198,6 +199,7 @@ const Header = () => {
           >
             <ul
               className="navbar-nav w-100 justify-content-end"
+              onClick={handleNavCollapse}
               style={{ display: !isNavCollapsed ? "none" : "flex" }}
             >
               <li className="nav-item">
