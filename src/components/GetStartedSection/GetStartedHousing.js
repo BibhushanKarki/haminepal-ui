@@ -7,7 +7,7 @@ import "./getstarted.css";
 const GetStartedHousing = () => {
   return (
     <div className="container">
-      <div className="row d-flex align-items-center m-4  main-content">
+      <div className="row d-flex align-items-center justify-content-center m-4  main-content">
         <Fade left>
           <div className="col-lg-6 get-started-title">
             <h1 className=" text-start">{data.housing.title}</h1>

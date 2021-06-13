@@ -4,22 +4,22 @@ import { ProjectSectionData } from "../ProjectPageSection/ProjectSectionData";
 
 const Header = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-  const [width, setWidth] = useState(window.innerWidth);
+  // const [width, setWidth] = useState(window.innerWidth);
   
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [width]);
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setWidth(window.innerWidth);
+  //   }
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, [width]);
 
-  useEffect(() => {
-    width < 992 && handleNavCollapse();
-  });
+  // useEffect(() => {
+  //   width < 992 && handleNavCollapse();
+  // });
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
-  console.log(width); 
+  // console.log(width); 
   // const [isActive, setActive] = useState("false");
   // const [isIconActive, setIconActive] = useState("false");
   // // const [isDropdownActive, setDropdownActive] = useState("false");
@@ -199,7 +199,6 @@ const Header = () => {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            // onClick={handleNavCollapse}
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"

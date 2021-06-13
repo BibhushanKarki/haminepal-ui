@@ -7,7 +7,7 @@ import "./getstarted.css";
 const GetStartedCovid = () => {
   return (
     <div className="container">
-      <div className="row d-flex align-items-center m-4 main-content">
+      <div className="row d-flex justify-content-center align-items-center m-4 main-content">
         <Fade left>
           <div className="col-lg-6 get-started-title">
             <h1>{data.covid.title}</h1>
