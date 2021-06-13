@@ -238,6 +238,7 @@ margin-left: auto !important;
   }
   .downloadApp img{
     padding: 1rem;
+    height:auto !important;
   }
   .downloadDesc {
     margin-top: 1rem;
