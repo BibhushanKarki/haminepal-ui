@@ -24,6 +24,14 @@ const Header = () => {
   // const handleSmallDropdownToggle = () => {
   //   setSmallDropdownActive(!isSmallDropdownActive);
   // };
+
+  const getStarted = {
+    border: "1px solid #9F1718",
+    // borderRadius: "10px",
+    backgroundColor: "#9F1718",
+    padding: "9px ",
+  };
+
   return (
     <header id="header" className="fixed-top header-scrolled">
       {/* <div className="container d-flex align-items-center justify-content-between">
@@ -340,7 +348,11 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link getStarted" to="/sign-up">
+                <Link
+                  className="nav-link getStarted"
+                  to="/sign-up"
+                  style={getStarted}
+                >
                   Join Now
                 </Link>
               </li>
