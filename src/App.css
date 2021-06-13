@@ -165,6 +165,13 @@
   width: 110px;
 }
 
+.donation-details{ 
+  width: 100%;
+  justify-content:space-around;
+  transform: translateY(100px);
+}
+
+
 
 /* input number arrows hide */
 
@@ -231,6 +238,7 @@ margin-left: auto !important;
   }
   .downloadApp img{
     padding: 1rem;
+    height:auto !important;
   }
   .downloadDesc {
     margin-top: 1rem;
@@ -246,10 +254,20 @@ margin-left: auto !important;
   }
 }
 @media (max-width:600px){
-  .page-content .comm{
+  .page-content .comm,.donation-details{
     flex-direction:column !important;
 
   }
+  .donation-details{
+    align-items:center;
+  }
+  .donation-details>button{
+    width: 200px;
+  }
+  .donation-details button:nth-child(2){
+    margin:2rem 0;
+  }
+  
 }
 @media (max-width:576px){
   .my-xs-2{
@@ -273,13 +291,13 @@ margin-left: auto !important;
     font-size:28px;
   }
   #hero h1 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 26px;
 }
 #hero h2 {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0 5px 30px 5px;
 }
 }
 
