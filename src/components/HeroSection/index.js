@@ -24,13 +24,13 @@ const Hero = () => {
         </div>
         <div className="d-flex donation-details">
           <button type="button" className="btn btn-lg btn-donation ">
-            Collected Amount <br /> $0.00
+            Collected Amount <br /> Rs.30,081,614
           </button>
           <button type="button" className="btn btn-lg btn-donation-red">
-            Donated Amount <br /> $0.00
+            Donated Amount <br /> Rs.12,07,000
           </button>
           <button type="button" className="btn btn-lg btn-donation ">
-            Remaining Amount <br /> $0.00
+            Remaining Amount <br /> Rs.28,874,614
           </button>
         </div>
       </div>

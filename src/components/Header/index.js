@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ProjectSectionData } from "../ProjectPageSection/ProjectSectionData";
 
 const Header = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const [width, setWidth] = useState(window.innerWidth);
+  
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [width]);
+
+  useEffect(() => {
+    width < 992 && handleNavCollapse();
+  });
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+  console.log(width); 
   // const [isActive, setActive] = useState("false");
   // const [isIconActive, setIconActive] = useState("false");
   // // const [isDropdownActive, setDropdownActive] = useState("false");
