@@ -10,7 +10,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="testimonials mb-4">
       <div className="container" data-aos="zoom-in">
-        <div className="section-title">
+        <div className="section-title text-center">
           <h2>Behind The Name</h2>
           <p className="text-white">Behind The Name</p>
         </div>

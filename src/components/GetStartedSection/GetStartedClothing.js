@@ -7,10 +7,10 @@ import "./getstarted.css";
 const GetStartedClothing = () => {
   return (
     <div className="container">
-      <div className="row d-flex align-items-center m-4 main-content">
+      <div className="row d-flex justify-content-center align-items-center m-4 main-content">
         <Fade left>
           <div className="col-lg-6 get-started-title">
-            <h1>{data.clothing.title}</h1>
+            <h1 className=" text-start">{data.clothing.title}</h1>
             <h4 className="my-4" style={{ color: "gray" }}>
               {data.clothing.punchline}
             </h4>

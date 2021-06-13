@@ -7,11 +7,11 @@ const imglink =
 const DownloadApp = () => {
   const storeStyle = {
     width: "160px",
-    heigh: "50px",
+    height: "50px",
     marginRight: "1rem",
   };
   return (
-    <div className="row d-flex justify-content-center mt-5">
+    <div className="row d-flex justify-content-center mt-5 ">
       <div className="col-lg-8 d-flex align-items-center downloadApp">
         <div className=" col-md-6 mx-sm-2 ">
           <img

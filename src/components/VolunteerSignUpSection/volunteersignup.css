@@ -31,7 +31,9 @@
 .separator:not(:empty)::after {
   margin-left: 0.25em;
 }
-
+.volunteer-map-section {
+  overflow: hidden;
+}
 .volunteer-map-section iframe {
   border: 0;
   width: 540px;
@@ -61,7 +63,7 @@
 
 @media (max-width: 575.98px) {
   .volunteer-map-section iframe {
-    width: 300px;
+    width: 250px;
   }
   .card .input-section {
     margin-top: 15px;
@@ -85,12 +87,12 @@
 
 @media (max-width: 1199.98px) {
   .volunteer-map-section iframe {
-    width: 250px;
+    width: 400px;
   }
 }
 
 @media (max-width: 1399.98px) {
   .volunteer-map-section iframe {
-    width: 250px;
+    width: 400px;
   }
 }

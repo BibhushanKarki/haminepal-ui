@@ -39,10 +39,10 @@ const OurObjectiveSection = () => {
                 relief. As per the expertise that we have gained, our priorities
                 are to work for the betterment of the health sector of Nepal,
                 besides this Hami Nepal at the core will always be an emergency
-                response at the same time. Our vision as a team is to spread our
-                services throughout Nepal for which we are expanding our
-                chapters outside of Kathmandu which shall be governed by the
-                central board itself.
+                response at the same time. <br />
+                Our vision as a team is to spread our services throughout Nepal
+                for which we are expanding our chapters outside of Kathmandu
+                which shall be governed by the central board itself.
               </p>
               <p>
                 The organisation is currently working solely in the field
@@ -72,12 +72,12 @@ const OurObjectiveSection = () => {
                 Hami Nepal's vision is to upgrade the health facilities
                 available in every corner of Nepal as we believe basic health
                 rights should not be a luxury that the average Nepali citizen
-                cannot afford. Our future projects and plan will be in this
+                cannot afford and mobilize volunteers and impact local
+                communities through sustainable growth and empowering its
+                community members. Our future projects and plan will be in this
                 periphery and not only limiting our organization to this but
                 Hami Nepal will also continue to work in every area of
-                injustice. The vision of Hami Nepal is to mobilize volunteers
-                and impact local communities through sustainable growth and
-                empowering its community members.
+                injustice.
               </p>
             </div>
           </div>
@@ -99,10 +99,15 @@ const OurObjectiveSection = () => {
           <div className="row">
             <div className="col-md-12">
               <h4>
-                The vision of Hami Nepal is to mobilize volunteers and impact
-                local communities through sustainable growth and empowering its
-                community members.
+                Our main objective is to help anyone in need without any
+                hesitations and expectation of payback.
               </h4>
+              <p>
+                {" "}
+                The objectives of Hami Nepal is to mobilize volunteers and
+                impact local communities through sustainable growth and
+                empowering its community members.
+              </p>
             </div>
           </div>
         </div>

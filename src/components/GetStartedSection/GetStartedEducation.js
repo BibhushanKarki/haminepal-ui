@@ -7,9 +7,9 @@ import "./getstarted.css";
 const GetStartedEducation = () => {
   return (
     <div className="container">
-      <div className="row d-flex align-items-center m-4 main-content">
+      <div className="row d-flex justify-content-center align-items-center m-4 main-content">
         <Fade left>
-          <div className="col-lg-6 get-started-title">
+          <div className="col-lg-6 get-started-title text-start">
             <h1>{data.education.title}</h1>
             <h4 className="my-4" style={{ color: "gray" }}>
               {data.education.punchline}
