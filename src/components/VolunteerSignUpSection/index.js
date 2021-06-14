@@ -111,7 +111,7 @@ const SignUpSection = () => {
                 <div className="col-lg-6">
                   <input
                     type="text"
-                    className={`form-control insput-section formStyle ${
+                    className={`form-control input-section formStyle ${
                       errors.last_name ? "is-invalid" : ""
                     }`}
                     placeholder="LastName"
