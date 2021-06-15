@@ -100,7 +100,8 @@ const SignUpSection = () => {
                   {errors.first_name ? (
                     <div
                       id={`${errors.first_name}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.first_name}
                     </div>
@@ -128,7 +129,9 @@ const SignUpSection = () => {
                   {errors.last_name ? (
                     <div
                       id={`${errors.last_name}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
+                      role="alert"
                     >
                       {errors.last_name}
                     </div>
@@ -157,7 +160,8 @@ const SignUpSection = () => {
                   {errors.mobile_number ? (
                     <div
                       id={`${errors.mobile_number}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.mobile_number}
                     </div>
@@ -186,7 +190,8 @@ const SignUpSection = () => {
                   {errors.email ? (
                     <div
                       id={`${errors.email}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.email}
                     </div>
@@ -227,7 +232,8 @@ const SignUpSection = () => {
                   {errors.password ? (
                     <div
                       id={`${errors.password}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.password}
                     </div>
@@ -261,7 +267,8 @@ const SignUpSection = () => {
                   {errors.age ? (
                     <div
                       id={`${errors.age}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.age}
                     </div>
@@ -291,7 +298,8 @@ const SignUpSection = () => {
                   {errors.academic_qualification ? (
                     <div
                       id={`${errors.academic_qualification}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.academic_qualification}
                     </div>
@@ -321,7 +329,8 @@ const SignUpSection = () => {
                   {errors.field_expertise ? (
                     <div
                       id={`${errors.field_expertise}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.field_expertise}
                     </div>
@@ -350,7 +359,8 @@ const SignUpSection = () => {
                   {errors.country ? (
                     <div
                       id={`${errors.country}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.country}
                     </div>
@@ -377,7 +387,8 @@ const SignUpSection = () => {
                   {errors.state ? (
                     <div
                       id={`${errors.state}-error-messsage`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.state}
                     </div>
@@ -407,7 +418,8 @@ const SignUpSection = () => {
                   {errors.city ? (
                     <div
                       id={`${errors.city}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.city}
                     </div>
@@ -434,7 +446,8 @@ const SignUpSection = () => {
                   {errors.street_address ? (
                     <div
                       id={`${errors.street_address}-error-message`}
-                      className="invalid-feedback"
+                      // className="invalid-feedback"
+                      className="alert alert-danger"
                     >
                       {errors.street_address}
                     </div>
