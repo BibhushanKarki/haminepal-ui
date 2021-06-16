@@ -19,13 +19,13 @@ const GetStartedCovid = () => {
             <button
               className="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target={`#donateModal-${data.slug}`}
+              data-bs-target={`#donateModal-cause-covid`}
             >
               Get Started
             </button>
           </div>
         </Fade>
-        <DonationFormSection type="projects" slug={data.slug} />
+        <DonationFormSection type="cause" slug="cause-covid"/>
         <Fade right>
           <div className="col-md-6 text-center image-right">
             <img

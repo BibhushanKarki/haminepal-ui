@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DonationFormSection from "../../components/DonationFormSection";
 
 const Hero = () => {
   return (
@@ -11,9 +12,13 @@ const Hero = () => {
           a mosquito.
         </h2> */}
         <div className="d-flex">
-          <Link to="#" className="btn-get-started scrollto">
+          <button
+            className="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target={`#donateModal-admin-donate`}
+          >
             Donate
-          </Link>
+          </button>
           <a
             href="https://www.youtube.com/watch?v=bPny2PNWFxc"
             className="glightbox btn-watch-video"
@@ -34,6 +39,7 @@ const Hero = () => {
           </button>
         </div> */}
       </div>
+      <DonationFormSection type="admin" slug="admin-donate" />
     </section>
   );
 };

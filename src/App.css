@@ -181,7 +181,14 @@
 .phn{
   margin-left: 3.5rem;
 }
-
+.donation-form-heading h1 {
+    color: #9f1718 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    align-items: center !important;
+    font-size: 30px !important;
+    border-bottom: 2px solid #9f1718 !important;
+}
 /* input number arrows hide */
 
 /* Chrome, Safari, Edge, Opera */
