@@ -34,13 +34,13 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>Equipments Donation</h4>
+              <p>Social Work</p>
               <a
                 href="assets/img/portfolio/portfolio-1.jpg"
                 data-gallery="portfolioGallery"
                 className="portfolio-lightbox preview-link"
-                title="App 1"
+                title="Equipments Donation"
               >
                 <i className="bx bx-plus"></i>
               </a>
@@ -88,13 +88,13 @@ const OurWork = () => {
               alt=""
             />
             <div className="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
+              <h4>Covid Relief in Coordination with Nepal Police</h4>
+              <p>Volunteer</p>
               <a
                 href="/assets/img/portfolio/portfolio-3.jpg"
                 data-gallery="portfolioGallery"
                 className="portfolio-lightbox preview-link"
-                title="App 2"
+                title="Covid Relief in Coordination with Nepal Police"
               >
                 <i className="bx bx-plus"></i>
               </a>
