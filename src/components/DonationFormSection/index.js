@@ -2,14 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import haminepali from "../../assets/images/haminepalilogo1.png";
 import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
-import DonateAnonymouslySection from "../../components/DonateAnonymouslySection";
 import "./donationform.css";
 import { useDispatch, useSelector } from "react-redux";
 import { clearDonation, donate, uploadDonation } from "../../store/Actions/DonationActions";
 import KhaltiCheckout from "khalti-checkout-web";
 import Joi from "joi";
-import axios from "axios";
-import { $CombinedState } from "redux";
 
 const DonationFormSection = ({ slug, type }) => {
 
@@ -168,7 +165,6 @@ const DonationFormSection = ({ slug, type }) => {
             setErrors({
                 ...currentErrors
             });
-            console.log(currentErrors);
 
             if (Object.keys(currentErrors).length === 0) {
                 // store in redux and local storage
@@ -183,8 +179,8 @@ const DonationFormSection = ({ slug, type }) => {
                         handlePayWithKhalti();
                         break;
                     case 'GOFUNDME':
-                        break;
-                    case 'PAYPAL':
+                        dispatch(uploadDonation(donation.amount));
+                        dispatch(clearDonation())
                         break;
                     default:
                         break;
@@ -541,13 +537,6 @@ const DonationFormSection = ({ slug, type }) => {
                                                             <label for="gofundme"><img src="/img/gofundme_logo.png" alt="gofundme" /></label>
                                                         </div>
                                                     </div>
-
-                                                    <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                                        <div className="pay-with d-flex align-items-center form-check h-100">
-                                                            <input type="radio" className="form-check" name="payment_type" id="paypal" value="PAYPAL" />
-                                                            <label for="paypal"><img src="/img/paypal_logo.jpg" alt="paypal" /></label>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -597,8 +586,6 @@ const DonationFormSection = ({ slug, type }) => {
                                                         type="submit"
                                                         className=" btn btn-primary"
                                                         onClick={handleDonationSubmission}
-                                                    // data-bs-toggle="modal"
-                                                    // data-bs-target="#donationModal"
                                                     >
                                                         Donate Now
                                                 </button>
