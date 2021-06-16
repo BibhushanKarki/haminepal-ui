@@ -1,11 +1,11 @@
 import React from "react";
-import SwiperCore, { Pagination, Autoplay ,Navigation} from "swiper";
+import SwiperCore, { Pagination ,Navigation} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
-SwiperCore.use([Pagination, Autoplay, Navigation]);
+SwiperCore.use([Pagination, Navigation]);
 
 const Testimonials = () => {
   return (
@@ -27,10 +27,6 @@ const Testimonials = () => {
             }}
             navigation={true}
             className="mySwiper"
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
             scrollbar={{ draggable: true }}
           >
             <SwiperSlide>
