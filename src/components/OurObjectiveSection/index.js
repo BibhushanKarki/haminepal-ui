@@ -104,9 +104,8 @@ const OurObjectiveSection = () => {
               </h4>
               <p>
                 {" "}
-                The objectives of Hami Nepal is to mobilize volunteers and
-                impact local communities through sustainable growth and
-                empowering its community members.
+                Hami Nepal mobilizes its volunteers and impact local communities
+                through sustainable growth and empowering its community members.
               </p>
             </div>
           </div>

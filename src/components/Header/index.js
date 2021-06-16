@@ -203,6 +203,7 @@ const Header = () => {
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={handleNavCollapse}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -212,16 +213,24 @@ const Header = () => {
           >
             <ul
               className="navbar-nav w-100 justify-content-end"
-              // onClick={handleNavCollapse}
-              style={{ display: !isNavCollapsed ? "none" : "flex" }}
+              style={{ display: "flex" }}
             >
-              <li className="nav-item" >
-                <Link className="nav-link" aria-current="page" to="/" >
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  to="/"
+                  onClick={handleNavCollapse}
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/volunteer-signup">
+                <Link
+                  className="nav-link"
+                  to="/volunteer-signup"
+                  onClick={handleNavCollapse}
+                >
                   Be Volunteer
                 </Link>
               </li>
@@ -233,6 +242,7 @@ const Header = () => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  onClick={handleNavCollapse}
                 >
                   Cause
                 </Link>
@@ -241,39 +251,39 @@ const Header = () => {
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <Link className="dropdown-item" to="/covid">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/covid">
                       COVID
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/health">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/health">
                       Health
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/housing">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/housing">
                       Housing
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/clothing">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/clothing">
                       Clothing
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/food">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/food">
                       Food
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/education">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/education">
                       Education
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <Link onClick={handleNavCollapse}
                   className="nav-link dropdown-toggle"
                   to="/"
                   id="navbarDropdownMenuLink"
@@ -289,7 +299,7 @@ const Header = () => {
                 >
                   {ProjectSectionData.map((keyBundle) => (
                     <li>
-                      <Link
+                      <Link onClick={handleNavCollapse}
                         className="dropdown-item"
                         to={`/events/${keyBundle.key}`}
                         key={keyBundle.key}
@@ -301,7 +311,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <Link onClick={handleNavCollapse}
                   className="nav-link dropdown-toggle"
                   to="/"
                   id="navbarDropdownMenuLink"
@@ -316,54 +326,54 @@ const Header = () => {
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <Link className="dropdown-item" to="/donate-covid">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/donate-covid">
                       COVID
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/cause">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/cause">
                       Cause
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/volunteer">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/volunteer">
                       Volunteer
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/donate-administration">
+                    <Link onClick={handleNavCollapse} className="dropdown-item" to="/donate-administration">
                       Administration
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/transparency">
+                <Link onClick={handleNavCollapse} className="nav-link" to="/transparency">
                   Transparency
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/aboutus">
+                <Link onClick={handleNavCollapse} className="nav-link" to="/aboutus">
                   About Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/community">
+                <Link onClick={handleNavCollapse} className="nav-link" to="/community">
                   Our Community
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link onClick={handleNavCollapse} className="nav-link" to="/contact">
                   Contact
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/sign-in">
+                <Link onClick={handleNavCollapse} className="nav-link" to="/sign-in">
                   Sign In
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
+                <Link onClick={handleNavCollapse}
                   className="nav-link getStarted"
                   to="/sign-up"
                   style={getStarted}
