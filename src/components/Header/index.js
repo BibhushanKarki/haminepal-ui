@@ -208,7 +208,7 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div 
-            className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse collapsing`}
+            className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
             id="navbarNavDropdown"
           >
             <ul
