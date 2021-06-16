@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./utils/ScrollToTop";
+import { HashRouter } from "react-router-dom";
 
 AOS.init();
 
@@ -25,7 +26,6 @@ const App = () => {
         <>
             <Header />
             <div className="page-content">
-
                 <ScrollToTop />
                 <Routes />
             </div>

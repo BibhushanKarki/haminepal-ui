@@ -95,8 +95,8 @@ const DonationFormSection = ({ slug, type }) => {
             pdc: 0,
             scd: "NP-ES-NEPALI",
             pid: makeRandomString(20),
-            su: 'https://hami-nepali-newui.netlify.app/donation/success',
-            fu: 'https://hami-nepali-newui.netlify.app/donation/error',
+            su: 'https://haminepal.org/donation/success',
+            fu: 'https://haminepal.org/donation/error',
         }
 
         let form = document.createElement("form");
