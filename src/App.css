@@ -178,6 +178,9 @@
 .cmt-pic>img{
   object-fit: cover;
 }
+.phn{
+  margin-left: 3.5rem;
+}
 
 /* input number arrows hide */
 

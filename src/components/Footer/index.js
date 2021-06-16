@@ -10,15 +10,15 @@ const Footer = () => {
               <div className="footer-info">
                 <h3>Hami Nepal</h3>
                 <p>
-                  Ranibari-27 <br />
-                  Samakhusi Kathmandu
+                  Ranibari-27</p>
+                  <p>Samakhusi Kathmandu</p>
                   <br />
-                  <br />
-                  <strong>Phone:</strong> +977-9808543667 <br/> +977-9845628191
+                  <strong>Phone: &nbsp;</strong> 
+                  +977-9808543667 <br/>
+                  <p className="phn">+977-9845628191</p>
                   <br />
                   <strong>Email:</strong> info@haminepal.org
                   <br />
-                </p>
                 <div className="social-links mt-3">
                   <a
                     href="https://www.twitter.com"
