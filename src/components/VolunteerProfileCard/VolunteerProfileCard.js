@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import AppButton from "../UI/Buttons/AppButton";
 import { VolunteerProfileData as data } from "./VolunteerProfileData";
 import Zoom from "react-reveal/Zoom";
+import DonationFormSection from "../../components/DonationFormSection";
 import "./volunteer-profile.css";
 
 const VolunteerProfileCard = () => {
   const cardStyle = {
     width: "350px",
   };
-
+ 
   return (
     <div>
       <div className="container mt-3">
@@ -57,7 +58,13 @@ const VolunteerProfileCard = () => {
                         marginBottom: "20px",
                       }}
                     >
-                      <AppButton buttontext="Donate to motivate" />
+                      <button
+                        className="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target={`#donateModal-donatetomotivate`}
+                      >
+                        Donate to motivate
+                      </button>
                     </div>
                   </div>
                 </Zoom>
@@ -66,6 +73,7 @@ const VolunteerProfileCard = () => {
           })}
         </div>
       </div>
+      <DonationFormSection type="motivate" slug="donatetomotivate" />
     </div>
   );
 };

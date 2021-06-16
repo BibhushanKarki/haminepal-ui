@@ -207,8 +207,8 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+          <div 
+            className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse collapsing`}
             id="navbarNavDropdown"
           >
             <ul
@@ -242,7 +242,6 @@ const Header = () => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  onClick={handleNavCollapse}
                 >
                   Cause
                 </Link>
@@ -283,7 +282,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link onClick={handleNavCollapse}
+                <Link
                   className="nav-link dropdown-toggle"
                   to="/"
                   id="navbarDropdownMenuLink"
@@ -311,7 +310,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link onClick={handleNavCollapse}
+                <Link 
                   className="nav-link dropdown-toggle"
                   to="/"
                   id="navbarDropdownMenuLink"
