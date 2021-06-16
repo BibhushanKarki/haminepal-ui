@@ -233,7 +233,9 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
 }
 .swiper-button-next,.swiper-button-prev { color: #9f1718 !important; }
-
+#youtube .modal-dialog{
+ max-width: 60% !important;
+}
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;

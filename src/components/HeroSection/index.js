@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DonationFormSection from "../../components/DonationFormSection";
+import YoutubeEmbed from "./YoutubeHome";
 
 const Hero = () => {
   return (
@@ -20,8 +21,10 @@ const Hero = () => {
             Donate
           </button>
           <a
-            href="https://www.youtube.com/watch?v=bPny2PNWFxc"
+            href="#"
             className="glightbox btn-watch-video"
+            data-bs-toggle="modal"
+            data-bs-target="#youtube"
           >
             <i className="bi bi-play-circle"></i>
             <span>Watch Video</span>
@@ -40,6 +43,22 @@ const Hero = () => {
         </div> */}
       </div>
       <DonationFormSection type="admin" slug="admin-donate" />
+      {/* <!-- Modal --> */}
+      <div
+        class="modal fade "
+        id="youtube"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <YoutubeEmbed embedId="bPny2PNWFxc" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
