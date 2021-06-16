@@ -37,7 +37,7 @@ const Testimonials = () => {
                   alt=""
                 />
                 <h3>Sudan Gurung</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h4>President</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
                   On 25 April, 2015 an earthquake with a magnitude of 7.8
@@ -186,7 +186,7 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="testimonial-item">
                 <img
                   src="/assets/img/testimonials/testimonials-3.jpg"
@@ -247,7 +247,7 @@ const Testimonials = () => {
                   </a>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             <SwiperSlide>
               <div className="testimonial-item">
