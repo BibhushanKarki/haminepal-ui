@@ -1,36 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import DonationFormSection from "../../components/DonationFormSection";
 import YoutubeEmbed from "./YoutubeHome";
 
 const Hero = () => {
-  return (
-    <section id="hero">
-      <div className="hero-container" data-aos="fade-up" data-aos-delay="0.5">
-        <h1 className="mb-4">Your kindness is someone’s hope.</h1>
-        {/* <h2>
+    return (
+        <section id="hero">
+            <div className="hero-container" data-aos="fade-up" data-aos-delay="0.5">
+                <h1 className="mb-4">Your kindness is someone’s hope.</h1>
+                {/* <h2>
           If you think you’re too small to make an impact, try going to bed with
           a mosquito.
         </h2> */}
-        <div className="d-flex">
-          <button
-            className="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target={`#donateModal-admin-donate`}
-          >
-            Donate
+                <div className="d-flex">
+                    <button
+                        className="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target={`#donateModal-admin-donate`}
+                    >
+                        Donate
           </button>
-          <a
-            href="#"
-            className="glightbox btn-watch-video"
-            data-bs-toggle="modal"
-            data-bs-target="#youtube"
-          >
-            <i className="bi bi-play-circle"></i>
-            <span>Watch Video</span>
-          </a>
-        </div>
-        {/* <div className="d-flex donation-details">
+                    <a
+                        href="#"
+                        className="glightbox btn-watch-video"
+                        data-bs-toggle="modal"
+                        data-bs-target="#youtube"
+                    >
+                        <i className="bi bi-play-circle"></i>
+                        <span>Watch Video</span>
+                    </a>
+                </div>
+                {/* <div className="d-flex donation-details">
           <button type="button" className="btn btn-lg btn-donation ">
              Amount Collected<br /> Rs.30,081,614
           </button>
@@ -41,26 +40,46 @@ const Hero = () => {
              Amount Remaining<br /> Rs.28,874,614
           </button>
         </div> */}
-      </div>
-      <DonationFormSection type="admin" slug="admin-donate" />
-      {/* <!-- Modal --> */}
-      <div
-        class="modal fade "
-        id="youtube"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <YoutubeEmbed embedId="bPny2PNWFxc" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+            <DonationFormSection type="admin" slug="admin-donate" />
+            {/* <!-- Modal --> */}
+            <div
+                class="modal fade "
+                id="youtube"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <YoutubeEmbed embedId="bPny2PNWFxc" />
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div class="col-xl-6 col-md-12">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body cleartfix">
+               <div class="media align-items-stretch">
+                  <div class="align-self-center">
+                     <h4 class="mr-2" style={{color:'black'}}>Rs.36,000.00</h4>
+                  </div>
+                <div class="media-body">
+                <h4>Fund Raised</h4>
+                <span>Monthly Cost</span>
+                </div>
+
+               </div>
+               </div>
+              </div>
+            </div>
+          </div> */}
+
+            </div>
+        </section>
+    );
 };
 
 export default Hero;
