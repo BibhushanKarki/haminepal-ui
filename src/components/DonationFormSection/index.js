@@ -260,7 +260,6 @@ const DonationFormSection = ({ slug, type }) => {
                                                             type="text"
                                                             className={`form-control formStyle ${errors.first_name ? 'is-invalid' : ''}`}
                                                             placeholder="First Name"
-                                                            style={{ color: 'black' }}
                                                             value={donation.first_name}
                                                             onChange={e => {
                                                                 setDonation({
@@ -281,7 +280,7 @@ const DonationFormSection = ({ slug, type }) => {
                                                             type="text"
                                                             className={`form-control formStyle  ${errors.last_name ? 'is-invalid' : ''}`}
                                                             placeholder="Last Name"
-                                                            style={{ color: 'black' }}
+                                                            
                                                             value={donation.last_name}
                                                             onChange={e => {
                                                                 setDonation({
