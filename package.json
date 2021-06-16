@@ -11,6 +11,7 @@
         "bootstrap-icons": "^1.5.0",
         "boxicons": "^2.0.7",
         "joi": "^17.4.0",
+        "khalti-checkout-web": "^2.2.0",
         "query-string": "^7.0.0",
         "react": "^17.0.2",
         "react-copy-to-clipboard": "^5.0.3",
@@ -55,5 +56,5 @@
     "devDependencies": {
         "redux-devtools-extension": "^2.13.9"
     },
-    "proxy": "https://haminepalorg.herokuapp.com/api/v1"
+    "proxy": "http://localhost:5000/api/v1"
 }

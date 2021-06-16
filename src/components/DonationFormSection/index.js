@@ -5,54 +5,76 @@ import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
 import DonateAnonymouslySection from "../../components/DonateAnonymouslySection";
 import "./donationform.css";
 import { useDispatch, useSelector } from "react-redux";
-import { donate } from "../../store/Actions/DonationActions";
-
+import { clearDonation, donate, uploadDonation } from "../../store/Actions/DonationActions";
+import KhaltiCheckout from "khalti-checkout-web";
 import Joi from "joi";
+import axios from "axios";
+import { $CombinedState } from "redux";
 
 const DonationFormSection = ({ slug, type }) => {
+
+    const [anonymousDonor, setAnonymousDonor] = useState(false);
+
     const [donation, setDonation] = useState({
         type,
-        slug
+        slug,
+        is_anonymous: anonymousDonor
     });
-
     const [errors, setErrors] = useState({});
 
     const dispatch = useDispatch();
 
     const { donationSuccess, donationError } = useSelector((state) => state.donation);
 
-    const donationSchema = Joi.object({
-        first_name: Joi.string()
-            .pattern(/^[A-Za-z]+$/)
-            .min(3)
-            .max(30)
-            .required(),
-        last_name: Joi.string()
-            .pattern(/^[A-Za-z]+$/)
-            .min(3)
-            .max(30)
-            .required(),
+    let donationSchema;
 
-        email: Joi.string()
-            .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }).required(),
+    if (anonymousDonor) {
+        donationSchema = Joi.object({
+            is_anonymous: Joi.boolean().required(),
+            donation_amount: Joi.number().required(),
+            donation_message: Joi.string().required(),
 
-        phone_number: Joi.string().length(10).pattern(/^[0-9]+$/).required(),
+            payment_type: Joi.string().required(),
+            terms_and_conditions: Joi.boolean().invalid(false).required(),
 
-        street_address: Joi.string(),
-        city: Joi.string().required(),
-        state: Joi.string().required(),
-        zip_code: Joi.number().required(),
-        country: Joi.string().required(),
+            type: Joi.string().required(),
+            slug: Joi.string().required(),
+        });
+    } else {
+        donationSchema = Joi.object({
+            is_anonymous: Joi.boolean().required(),
+            first_name: Joi.string()
+                .pattern(/^[A-Za-z]+$/)
+                .min(3)
+                .max(30)
+                .required(),
+            last_name: Joi.string()
+                .pattern(/^[A-Za-z]+$/)
+                .min(3)
+                .max(30)
+                .required(),
 
-        donation_amount: Joi.number().required(),
-        donation_message: Joi.string().required(),
+            email: Joi.string()
+                .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }).required(),
 
-        payment_type: Joi.string().required(),
-        terms_and_conditions: Joi.boolean().invalid(false).required(),
+            phone_number: Joi.string().length(10).pattern(/^[0-9]+$/).required(),
 
-        type: Joi.string().required(),
-        slug: Joi.string().required(),
-    });
+            street_address: Joi.string(),
+            city: Joi.string().required(),
+            state: Joi.string().required(),
+            zip_code: Joi.number().required(),
+            country: Joi.string().required(),
+
+            donation_amount: Joi.number().required(),
+            donation_message: Joi.string().required(),
+
+            payment_type: Joi.string().required(),
+            terms_and_conditions: Joi.boolean().invalid(false).required(),
+
+            type: Joi.string().required(),
+            slug: Joi.string().required(),
+        });
+    }
 
     const makeRandomString = length => {
         var result = '';
@@ -96,6 +118,39 @@ const DonationFormSection = ({ slug, type }) => {
         form.submit();
     }
 
+    const handlePayWithKhalti = () => {
+        let khaltiConfig = {
+            // replace this key with yours
+            "publicKey": "test_public_key_abe3db04d5e9417a952f8b202d70ff96",
+            "productIdentity": makeRandomString(20),
+            "productName": slug,
+            "productUrl": "https://hami-nepali-newui.netlify.app/",
+            "eventHandler": {
+                onSuccess({ amount, token }) {
+                    dispatch(donate({
+                        ...donation,
+                        KHALTI_TOKEN: token
+                    }));
+                    dispatch(uploadDonation(amount / 100)); // BECAUSE KHALTI AMOUNT IS IN PAISA SO CONVERTING TO RUPPEE
+                },
+                // onError handler is optional
+                onError(error) {
+                    console.log(error);
+                    // handle errors
+                    dispatch(clearDonation())
+                },
+                onClose() {
+                    dispatch(clearDonation())
+                }
+            },
+            "paymentPreference": ["KHALTI", "EBANKING", "MOBILE_BANKING", "CONNECT_IPS", "SCT"],
+        };
+
+        let checkout = new KhaltiCheckout(khaltiConfig);
+
+        checkout.show({ amount: donation.donation_amount * 100 }); // BECAUSE KHALTI EXPECTS AMOUNT IN PAISAS SO CONVERTING USER INPUT OF RUPPEE TO PAISA
+    }
+
     const handleDonationSubmission = e => {
         e.preventDefault();
 
@@ -125,6 +180,7 @@ const DonationFormSection = ({ slug, type }) => {
                         handlePayWithEsewa();
                         break;
                     case 'KHALTI':
+                        handlePayWithKhalti();
                         break;
                     case 'GOFUNDME':
                         break;
@@ -133,13 +189,20 @@ const DonationFormSection = ({ slug, type }) => {
                     default:
                         break;
                 }
-
             }
         }
         catch (err) {
             console.log(err);
         }
     }
+
+    useEffect(() => {
+        console.log(donation);
+        setDonation({
+            ...donation,
+            is_anonymous: anonymousDonor
+        })
+    }, [anonymousDonor]);
 
     return (
         <>
@@ -165,19 +228,16 @@ const DonationFormSection = ({ slug, type }) => {
                             <button
                                 className="btn btn-primary my-2 my-sm-0"
                                 type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#donateanonymouslyModal"
+                                onClick={() => setAnonymousDonor(!anonymousDonor)}
                             >
-                                Donate Anonymously
-              </button>
-
-                            <DonateAnonymouslySection />
+                                Donate {anonymousDonor ? 'Publicly ' : 'Anynomously'}
+                            </button>
                         </nav>
 
                         <div className="row mt-5">
                             <div className="donate-form col-md-12 d-flex justify-content-center flex-column align-items-center">
-                                <div className="col-md-4 donation-form-heading">
-                                    <h1 className=" text-center">Donation Form</h1>
+                                <div className="col-md-6 donation-form-heading">
+                                    <h1 className=" text-center">{anonymousDonor ? 'Anynomous ' : ''}Donation Form</h1>
                                 </div>
                             </div>
                         </div>
@@ -193,200 +253,203 @@ const DonationFormSection = ({ slug, type }) => {
                                                 boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
                                             }}
                                         >
-                                            <div className="row mt-3">
-                                                <div className="col-md-6 form-group">
-                                                    <input
-                                                        type="text"
-                                                        className={`form-control formStyle ${errors.first_name ? 'is-invalid' : ''}`}
-                                                        placeholder="First Name"
-                                                        style={{ color: 'black' }}
-                                                        value={donation.first_name}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                first_name: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.first_name ?
-                                                        <div id={`${errors.first_name}-error-message`} className="invalid-feedback">
-                                                            {errors.first_name}
-                                                        </div> : ''
-                                                    }
+                                            {
+                                                !anonymousDonor ? <><div className="row mt-3">
+                                                    <div className="col-md-6 form-group">
+                                                        <input
+                                                            type="text"
+                                                            className={`form-control formStyle ${errors.first_name ? 'is-invalid' : ''}`}
+                                                            placeholder="First Name"
+                                                            style={{ color: 'black' }}
+                                                            value={donation.first_name}
+                                                            onChange={e => {
+                                                                setDonation({
+                                                                    ...donation,
+                                                                    first_name: e.target.value
+                                                                })
+                                                            }}
+                                                            required
+                                                        />
+                                                        {errors.first_name ?
+                                                            <div id={`${errors.first_name}-error-message`} className="invalid-feedback">
+                                                                {errors.first_name}
+                                                            </div> : ''
+                                                        }
+                                                    </div>
+                                                    <div className="col-md-6 card-input-section form-group">
+                                                        <input
+                                                            type="text"
+                                                            className={`form-control formStyle  ${errors.last_name ? 'is-invalid' : ''}`}
+                                                            placeholder="Last Name"
+                                                            style={{ color: 'black' }}
+                                                            value={donation.last_name}
+                                                            onChange={e => {
+                                                                setDonation({
+                                                                    ...donation,
+                                                                    last_name: e.target.value
+                                                                })
+                                                            }}
+                                                            required
+                                                        />
+                                                        {errors.last_name ?
+                                                            <div id={`${errors.last_name}-error-message`} className="invalid-feedback">
+                                                                {errors.last_name}
+                                                            </div> : ''
+                                                        }
+                                                    </div>
                                                 </div>
-                                                <div className="col-md-6 card-input-section form-group">
-                                                    <input
-                                                        type="text"
-                                                        className={`form-control formStyle  ${errors.last_name ? 'is-invalid' : ''}`}
-                                                        placeholder="Last Name"
-                                                        style={{ color: 'black' }}
-                                                        value={donation.last_name}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                last_name: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.last_name ?
-                                                        <div id={`${errors.last_name}-error-message`} className="invalid-feedback">
-                                                            {errors.last_name}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                            </div>
-                                            <div className="row mt-3">
-                                                <div className="col-md-6 form-group">
-                                                    <input
-                                                        type="email"
-                                                        className={`form-control formStyle  ${errors.email ? 'is-invalid' : ''}`}
-                                                        placeholder="Email Address"
-                                                        value={donation.email}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                email: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.email ?
-                                                        <div id={`${errors.email}-error-message`} className="invalid-feedback">
-                                                            {errors.email}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                                <div className="col-md-6 card-input-section form-group">
-                                                    <input
-                                                        type="number"
-                                                        className={`form-control formStyle  ${errors.phone_number ? 'is-invalid' : ''}`}
-                                                        placeholder="Phone Number"
-                                                        value={donation.phone_number}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                phone_number: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.phone_number ?
-                                                        <div id={`${errors.phone_number}-error-message`} className="invalid-feedback">
-                                                            {errors.phone_number}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                            </div>
+                                                    <div className="row mt-3">
+                                                        <div className="col-md-6 form-group">
+                                                            <input
+                                                                type="email"
+                                                                className={`form-control formStyle  ${errors.email ? 'is-invalid' : ''}`}
+                                                                placeholder="Email Address"
+                                                                value={donation.email}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        email: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.email ?
+                                                                <div id={`${errors.email}-error-message`} className="invalid-feedback">
+                                                                    {errors.email}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                        <div className="col-md-6 card-input-section form-group">
+                                                            <input
+                                                                type="number"
+                                                                className={`form-control formStyle  ${errors.phone_number ? 'is-invalid' : ''}`}
+                                                                placeholder="Phone Number"
+                                                                value={donation.phone_number}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        phone_number: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.phone_number ?
+                                                                <div id={`${errors.phone_number}-error-message`} className="invalid-feedback">
+                                                                    {errors.phone_number}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                    </div>
 
-                                            <div className="row mt-3">
-                                                <div className="col-md-12 form-group">
-                                                    <input
-                                                        type="text"
-                                                        className={`form-control formStyle  ${errors.street_address ? 'is-invalid' : ''}`}
-                                                        placeholder="Street Address"
-                                                        value={donation.street_address}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                street_address: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.street_address ?
-                                                        <div id={`${errors.street_address}-error-message`} className="invalid-feedback">
-                                                            {errors.street_address}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                            </div>
-                                            <div className="row mt-3">
-                                                <div className="col-md-6 form-group">
-                                                    <input
-                                                        type="text"
-                                                        className={`form-control formStyle  ${errors.city ? 'is-invalid' : ''}`}
-                                                        placeholder="City"
-                                                        value={donation.city}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                city: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.city ?
-                                                        <div id={`${errors.city}-error-message`} className="invalid-feedback">
-                                                            {errors.city}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                                <div className="col-md-6 card-input-section form-group">
-                                                    <input
-                                                        type="text"
-                                                        className={`form-control formStyle  ${errors.state ? 'is-invalid' : ''}`}
-                                                        placeholder="State/Province/Region"
-                                                        value={donation.state}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                state: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.state ?
-                                                        <div id={`${errors.state}-error-message`} className="invalid-feedback">
-                                                            {errors.state}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                            </div>
+                                                    <div className="row mt-3">
+                                                        <div className="col-md-12 form-group">
+                                                            <input
+                                                                type="text"
+                                                                className={`form-control formStyle  ${errors.street_address ? 'is-invalid' : ''}`}
+                                                                placeholder="Street Address"
+                                                                value={donation.street_address}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        street_address: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.street_address ?
+                                                                <div id={`${errors.street_address}-error-message`} className="invalid-feedback">
+                                                                    {errors.street_address}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                    <div className="row mt-3">
+                                                        <div className="col-md-6 form-group">
+                                                            <input
+                                                                type="text"
+                                                                className={`form-control formStyle  ${errors.city ? 'is-invalid' : ''}`}
+                                                                placeholder="City"
+                                                                value={donation.city}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        city: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.city ?
+                                                                <div id={`${errors.city}-error-message`} className="invalid-feedback">
+                                                                    {errors.city}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                        <div className="col-md-6 card-input-section form-group">
+                                                            <input
+                                                                type="text"
+                                                                className={`form-control formStyle  ${errors.state ? 'is-invalid' : ''}`}
+                                                                placeholder="State/Province/Region"
+                                                                value={donation.state}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        state: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.state ?
+                                                                <div id={`${errors.state}-error-message`} className="invalid-feedback">
+                                                                    {errors.state}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                    </div>
 
-                                            <div className="row mt-3">
-                                                <div className="col-md-6 form-group">
-                                                    <input
-                                                        type="number"
-                                                        className={`form-control formStyle  ${errors.zip_code ? 'is-invalid' : ''}`}
-                                                        placeholder="Zip/Postal code"
-                                                        value={donation.zip_code}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                zip_code: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.zip_code ?
-                                                        <div id={`${errors.zip_code}-error-message`} className="invalid-feedback">
-                                                            {errors.zip_code}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                                <div className="col-md-6 card-input-section form-group">
-                                                    <input
-                                                        type="text"
-                                                        className={`form-control formStyle  ${errors.country ? 'is-invalid' : ''}`}
-                                                        placeholder="Country"
-                                                        value={donation.country}
-                                                        onChange={e => {
-                                                            setDonation({
-                                                                ...donation,
-                                                                country: e.target.value
-                                                            })
-                                                        }}
-                                                        required
-                                                    />
-                                                    {errors.country ?
-                                                        <div id={`${errors.country}-error-message`} className="invalid-feedback">
-                                                            {errors.country}
-                                                        </div> : ''
-                                                    }
-                                                </div>
-                                            </div>
+                                                    <div className="row mt-3">
+                                                        <div className="col-md-6 form-group">
+                                                            <input
+                                                                type="number"
+                                                                className={`form-control formStyle  ${errors.zip_code ? 'is-invalid' : ''}`}
+                                                                placeholder="Zip/Postal code"
+                                                                value={donation.zip_code}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        zip_code: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.zip_code ?
+                                                                <div id={`${errors.zip_code}-error-message`} className="invalid-feedback">
+                                                                    {errors.zip_code}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                        <div className="col-md-6 card-input-section form-group">
+                                                            <input
+                                                                type="text"
+                                                                className={`form-control formStyle  ${errors.country ? 'is-invalid' : ''}`}
+                                                                placeholder="Country"
+                                                                value={donation.country}
+                                                                onChange={e => {
+                                                                    setDonation({
+                                                                        ...donation,
+                                                                        country: e.target.value
+                                                                    })
+                                                                }}
+                                                                required
+                                                            />
+                                                            {errors.country ?
+                                                                <div id={`${errors.country}-error-message`} className="invalid-feedback">
+                                                                    {errors.country}
+                                                                </div> : ''
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </> : ''
+                                            }
 
                                             <div
                                                 className="row mt-5"
