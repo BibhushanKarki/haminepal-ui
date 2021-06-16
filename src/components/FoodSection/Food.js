@@ -6,7 +6,6 @@ const FoodSection = () => {
   return (
     <div>
       <GetStartedFood />
-      <TopFundRaisers title="Trending Covid Fundraisers" />
       <TopFundRaisers title="Top Fundraisers" />
     </div>
   );

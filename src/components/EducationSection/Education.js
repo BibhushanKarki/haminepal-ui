@@ -6,9 +6,7 @@ const EducationSection = () => {
   return (
     <div>
       <GetStartedEducation />
-      <TopFundRaisers title="Trending Covid Fundraisers" />
       <TopFundRaisers title="Top Fundraisers" />
-      {/* {/* <TopFundRaisers/> */}
     </div>
   );
 };
