@@ -83,7 +83,7 @@ const Conatct = () => {
                   <textarea
                     className="form-control"
                     name="message"
-                    rows="5"
+                    rows="4"
                     placeholder="Message"
                     required
                   ></textarea>

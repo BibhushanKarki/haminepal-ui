@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
-        <div className="row justify-content-end">
+        {/* <div className="row justify-content-end">
           <div className="col-lg-11">
             <div className="row justify-content-end">
               <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
@@ -61,9 +61,9 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="row">
+        <div className="row mt-2">
           <div
             className="col-lg-6 video-box align-self-baseline"
             data-aos="zoom-in"

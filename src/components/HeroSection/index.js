@@ -5,12 +5,12 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="hero-container" data-aos="fade-up" data-aos-delay="0.5">
-        <h1>Your kindness is someone’s hope.</h1>
-        <h2>
+        <h1 className="mb-4">Your kindness is someone’s hope.</h1>
+        {/* <h2>
           If you think you’re too small to make an impact, try going to bed with
           a mosquito.
-        </h2>
-        <div className="d-flex mb-2">
+        </h2> */}
+        <div className="d-flex">
           <Link to="#" className="btn-get-started scrollto">
             Donate
           </Link>
@@ -22,7 +22,7 @@ const Hero = () => {
             <span>Watch Video</span>
           </a>
         </div>
-        <div className="d-flex donation-details">
+        {/* <div className="d-flex donation-details">
           <button type="button" className="btn btn-lg btn-donation ">
              Amount Collected<br /> Rs.30,081,614
           </button>
@@ -32,7 +32,7 @@ const Hero = () => {
           <button type="button" className="btn btn-lg btn-donation ">
              Amount Remaining<br /> Rs.28,874,614
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

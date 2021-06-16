@@ -82,10 +82,7 @@ const OurCommunityCard = () => {
             </div>
           </div>
         </div>
-        <div
-          className="col-md-12 d-flex flex-column  mb-4 align-items-center"
-          style={{ backgroundColor: "#ffeaea73" }}
-        >
+        <div className="col-md-12 d-flex flex-column  mb-4 align-items-center">
           <div className="col-lg-5 col-md-8  mx-2">
             <div className="card main-card my-4 panel">
               <div className="card m-3 p-3">
@@ -125,7 +122,7 @@ const OurCommunityCard = () => {
                     style={{ borderRadius: "22px" }}
                   />
                 </div>
-                <div className="d-flex align-items-center my-4">
+                <div className="d-flex align-items-center my-4 cmt-pic">
                   <img
                     style={profilePicStyle}
                     src={data.commenterPic}

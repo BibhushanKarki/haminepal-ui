@@ -89,7 +89,7 @@
 /* Glassmorphism */
 
 .panel {
-  background: rgba(0, 0, 0, 0.65);
+  background: #15222b;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -175,7 +175,7 @@
 .nav-item .getStarted:hover {
   color: #d6d4d4 !important;
 }
-.cmt-pic img{
+.cmt-pic>img{
   object-fit: cover;
 }
 
@@ -201,8 +201,26 @@ input::-webkit-inner-spin-button {
   width: 100%;
   position: absolute;
 }
-
-
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #9f1718;
+    color: #fff;
+    text-decoration: none;
+}
+.swiper-button-next,.swiper-button-prev { color: #9f1718 !important; }
 
 /* Firefox */
 input[type="number"] {

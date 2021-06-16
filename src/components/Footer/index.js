@@ -14,7 +14,7 @@ const Footer = () => {
                   Samakhusi Kathmandu
                   <br />
                   <br />
-                  <strong>Phone:</strong> +977-9808543667, +977-9845628191
+                  <strong>Phone:</strong> +977-9808543667 <br/> +977-9845628191
                   <br />
                   <strong>Email:</strong> info@haminepal.org
                   <br />
