@@ -103,7 +103,7 @@ const OurCommunityCard = () => {
                     style={{
                       width: "18px",
                       height: "18px",
-                      objectFit: "contain",
+                      objectFit: "cover",
                     }}
                     src="https://image.flaticon.com/icons/png/512/134/134783.png"
                     alt="img"
@@ -112,7 +112,7 @@ const OurCommunityCard = () => {
                 </div>
               </div>
               <div className="card comment-card m-3 p-3">
-                <div className="d-flex flex-row">
+                <div className="d-flex flex-row cmt-pic">
                   <img
                     style={profilePicStyle}
                     src="https://i.stack.imgur.com/l60Hf.png"
@@ -141,9 +141,13 @@ const OurCommunityCard = () => {
                     <p className="m-0">{data.comment}</p>
                   </div>
                 </div>
-                <div className="d-flex align-items-center mb-4">
+                <div className="d-flex align-items-center mb-4 cmt-pic">
                   <img
-                    style={profilePicStyle}
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                    }}
                     src={data.commenterPic}
                     alt="img"
                   />

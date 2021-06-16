@@ -72,7 +72,7 @@ const ProjectSection = () => {
                     <div className="row my-5 px-5" key={data.id}>
                         <div className="card card-event-section col-lg-12 mb-3">
                             <div className="row no-gutters">
-                                <div className="col-lg-2">
+                                <div className="col-lg-2"> 
                                     <div className="imageContainer d-flex justify-content-center align-items-center h-100">
                                         <img
                                             src={data.thumbnailImage}

@@ -175,6 +175,9 @@
 .nav-item .getStarted:hover {
   color: #d6d4d4 !important;
 }
+.cmt-pic img{
+  object-fit: cover;
+}
 
 /* input number arrows hide */
 
@@ -190,12 +193,12 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-@media (max-width: 1325px) {
+@media only screen and (max-width: 1325px) {
   .navbar > ul > li {
     white-space: nowrap;
     padding: 8px 5px;
   }
-  @media (max-width: 1190px) {
+  @media only screen and (max-width: 1190px) {
     .navbar li {
       margin: 0 !important;
     }
@@ -204,7 +207,7 @@ input[type="number"] {
     margin: 0 !important;
   }
 }
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .collapsing ul > li {
     margin: 0.5rem 0 !important;
   }
@@ -212,7 +215,7 @@ input[type="number"] {
     margin: 0.5rem 0 !important;
   }
 }
-@media (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   .navbar > ul > li {
     white-space: nowrap;
     padding: 8px 12px;
@@ -223,7 +226,7 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .downloadDesc p {
     font-size: 12px;
   }
@@ -234,7 +237,7 @@ input[type="number"] {
     font-size: 18px !important;
   }
 }
-@media (max-width: 630px) {
+@media only screen and (max-width: 630px) {
   .downloadApp {
     flex-direction: column !important;
   }
@@ -257,7 +260,7 @@ input[type="number"] {
     text-align: center;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .page-content .comm,
   .donation-details {
     flex-direction: column !important;
@@ -272,7 +275,7 @@ input[type="number"] {
     margin: 2rem 0;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .my-xs-2 {
     margin: 0.5rem 0;
   }
@@ -284,13 +287,13 @@ input[type="number"] {
     margin-top: 1rem;
   }
 }
-@media (max-width: 456px) {
+@media only screen and (max-width: 456px) {
   .section-title h2::after,
   .section-title h2::before {
     width: 60px;
   }
 }
-@media (max-width: 365px) {
+@media only screen and (max-width: 365px) {
   .section-title p {
     font-size: 28px;
   }
