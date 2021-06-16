@@ -82,10 +82,7 @@ const OurCommunityCard = () => {
             </div>
           </div>
         </div>
-        <div
-          className="col-md-12 d-flex flex-column  mb-4 align-items-center"
-          style={{ backgroundColor: "#ffeaea73" }}
-        >
+        <div className="col-md-12 d-flex flex-column  mb-4 align-items-center">
           <div className="col-lg-5 col-md-8  mx-2">
             <div className="card main-card my-4 panel">
               <div className="card m-3 p-3">
@@ -103,7 +100,7 @@ const OurCommunityCard = () => {
                     style={{
                       width: "18px",
                       height: "18px",
-                      objectFit: "contain",
+                      objectFit: "cover",
                     }}
                     src="https://image.flaticon.com/icons/png/512/134/134783.png"
                     alt="img"
@@ -112,7 +109,7 @@ const OurCommunityCard = () => {
                 </div>
               </div>
               <div className="card comment-card m-3 p-3">
-                <div className="d-flex flex-row">
+                <div className="d-flex flex-row cmt-pic">
                   <img
                     style={profilePicStyle}
                     src="https://i.stack.imgur.com/l60Hf.png"
@@ -125,7 +122,7 @@ const OurCommunityCard = () => {
                     style={{ borderRadius: "22px" }}
                   />
                 </div>
-                <div className="d-flex align-items-center my-4">
+                <div className="d-flex align-items-center my-4 cmt-pic">
                   <img
                     style={profilePicStyle}
                     src={data.commenterPic}
@@ -141,9 +138,13 @@ const OurCommunityCard = () => {
                     <p className="m-0">{data.comment}</p>
                   </div>
                 </div>
-                <div className="d-flex align-items-center mb-4">
+                <div className="d-flex align-items-center mb-4 cmt-pic">
                   <img
-                    style={profilePicStyle}
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                    }}
                     src={data.commenterPic}
                     alt="img"
                   />

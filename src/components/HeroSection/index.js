@@ -1,19 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DonationFormSection from "../../components/DonationFormSection";
 
 const Hero = () => {
   return (
     <section id="hero">
       <div className="hero-container" data-aos="fade-up" data-aos-delay="0.5">
-        <h1>Your kindness is someone’s hope.</h1>
-        <h2>
+        <h1 className="mb-4">Your kindness is someone’s hope.</h1>
+        {/* <h2>
           If you think you’re too small to make an impact, try going to bed with
           a mosquito.
-        </h2>
-        <div className="d-flex mb-2">
-          <Link to="#" className="btn-get-started scrollto">
+        </h2> */}
+        <div className="d-flex">
+          <button
+            className="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target={`#donateModal-admin-donate`}
+          >
             Donate
-          </Link>
+          </button>
           <a
             href="https://www.youtube.com/watch?v=bPny2PNWFxc"
             className="glightbox btn-watch-video"
@@ -22,18 +27,19 @@ const Hero = () => {
             <span>Watch Video</span>
           </a>
         </div>
-        <div className="d-flex donation-details">
+        {/* <div className="d-flex donation-details">
           <button type="button" className="btn btn-lg btn-donation ">
-            Collected Amount <br /> Rs.30,081,614
+             Amount Collected<br /> Rs.30,081,614
           </button>
           <button type="button" className="btn btn-lg btn-donation-red">
-            Donated Amount <br /> Rs.12,07,000
+            Amount Utilized <br /> Rs.12,07,000
           </button>
           <button type="button" className="btn btn-lg btn-donation ">
-            Remaining Amount <br /> Rs.28,874,614
+             Amount Remaining<br /> Rs.28,874,614
           </button>
-        </div>
+        </div> */}
       </div>
+      <DonationFormSection type="admin" slug="admin-donate" />
     </section>
   );
 };

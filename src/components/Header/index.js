@@ -215,8 +215,8 @@ const Header = () => {
               // onClick={handleNavCollapse}
               style={{ display: !isNavCollapsed ? "none" : "flex" }}
             >
-              <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/">
+              <li className="nav-item" >
+                <Link className="nav-link" aria-current="page" to="/" >
                   Home
                 </Link>
               </li>

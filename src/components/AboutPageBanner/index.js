@@ -3,7 +3,7 @@ import { AboutPageData as data } from "./AboutPageTextData/AboutPageData";
 import "./timeline.css";
 const AboutPageBanner = () => {
   const aboutBanner = {
-    background: `rgba( 0, 0, 0, 0.65 )`,
+    background: `rgba(21, 34, 43, 0.85)`,
     backdropFilter: `blur( 4px )`,
     height: "40vh",
     color: "#fff",

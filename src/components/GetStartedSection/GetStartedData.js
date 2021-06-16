@@ -1,6 +1,6 @@
 export const GetStarted=
   {
-    covid:{
+    covid:{ 
         title:'Get help with Covid Fundraising',
         punchline:'with HamiNepal, you can get immediate help to fight against Covid',
         imgCovid:'https://images.unsplash.com/photo-1608422050828-485141c98429?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=622&q=80'

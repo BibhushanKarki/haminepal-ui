@@ -72,7 +72,7 @@ const ProjectSection = () => {
                     <div className="row my-5 px-5" key={data.id}>
                         <div className="card card-event-section col-lg-12 mb-3">
                             <div className="row no-gutters">
-                                <div className="col-lg-2">
+                                <div className="col-lg-2"> 
                                     <div className="imageContainer d-flex justify-content-center align-items-center h-100">
                                         <img
                                             src={data.thumbnailImage}
@@ -113,7 +113,7 @@ const ProjectSection = () => {
                                             data-bs-target={`#donateModal-${data.slug}`}
                                             className="btn btn-danger w-100 my-md-2 my-sm-2 my-xs-2"
                                         >
-                                            Donate
+                                            Donate 
                     </button>
                                         <DonationFormSection type="projects" slug={data.slug} />
                                         <button

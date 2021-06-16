@@ -6,7 +6,6 @@ const ClothingSection = () => {
   return (
     <div>
       <GetStartedClothing />
-      <TopFundRaisers title="Trending Covid Fundraisers" />
       <TopFundRaisers title="Top Fundraisers" />
     </div>
   );

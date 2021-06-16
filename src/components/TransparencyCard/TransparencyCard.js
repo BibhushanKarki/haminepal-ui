@@ -20,7 +20,7 @@ const TransparencyCard = () => {
   };
   return (
       <div className="container">
-        <div className="TransparencyCardContainer my-4 ">
+        <div className="TransparencyCardContainer mt-4 mb-5 ">
           <div className="row d-flex justify-content-center my-4">
             <div className="col-md-6">
               <div className="input-group">

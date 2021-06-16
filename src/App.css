@@ -89,11 +89,11 @@
 /* Glassmorphism */
 
 .panel {
-  background: rgba(0, 0, 0, 0.65);
+  background: #15222b;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .objective-list li::before {
@@ -130,7 +130,9 @@
   width: 85% !important;
   display: inline !important;
 }
-
+.formStyle{
+  color:white ;
+}
 .search {
   position: relative;
   box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
@@ -175,7 +177,20 @@
 .nav-item .getStarted:hover {
   color: #d6d4d4 !important;
 }
-
+.cmt-pic>img{
+  object-fit: cover;
+}
+.phn{
+  margin-left: 3.5rem;
+}
+.donation-form-heading h1 {
+    color: #9f1718 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    align-items: center !important;
+    font-size: 30px !important;
+    border-bottom: 2px solid #9f1718 !important;
+}
 /* input number arrows hide */
 
 /* Chrome, Safari, Edge, Opera */
@@ -184,18 +199,52 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #9f1718;
+    color: #fff;
+    text-decoration: none;
+}
+.swiper-button-next,.swiper-button-prev { color: #9f1718 !important; }
 
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-@media (max-width: 1325px) {
+@media only screen and (max-width: 1325px) {
   .navbar > ul > li {
     white-space: nowrap;
     padding: 8px 5px;
   }
-  @media (max-width: 1190px) {
+  @media only screen and (max-width: 1190px) {
     .navbar li {
       margin: 0 !important;
     }
@@ -204,7 +253,7 @@ input[type="number"] {
     margin: 0 !important;
   }
 }
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .collapsing ul > li {
     margin: 0.5rem 0 !important;
   }
@@ -212,7 +261,7 @@ input[type="number"] {
     margin: 0.5rem 0 !important;
   }
 }
-@media (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   .navbar > ul > li {
     white-space: nowrap;
     padding: 8px 12px;
@@ -223,7 +272,7 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .downloadDesc p {
     font-size: 12px;
   }
@@ -234,7 +283,7 @@ input[type="number"] {
     font-size: 18px !important;
   }
 }
-@media (max-width: 630px) {
+@media only screen and (max-width: 630px) {
   .downloadApp {
     flex-direction: column !important;
   }
@@ -257,7 +306,7 @@ input[type="number"] {
     text-align: center;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .page-content .comm,
   .donation-details {
     flex-direction: column !important;
@@ -272,7 +321,7 @@ input[type="number"] {
     margin: 2rem 0;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .my-xs-2 {
     margin: 0.5rem 0;
   }
@@ -284,13 +333,13 @@ input[type="number"] {
     margin-top: 1rem;
   }
 }
-@media (max-width: 456px) {
+@media only screen and (max-width: 456px) {
   .section-title h2::after,
   .section-title h2::before {
     width: 60px;
   }
 }
-@media (max-width: 365px) {
+@media only screen and (max-width: 365px) {
   .section-title p {
     font-size: 28px;
   }

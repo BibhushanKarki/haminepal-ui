@@ -70,7 +70,7 @@ const SignUpSection = () => {
     <>
       <div className="container-sm  mb-5">
         <form className="row d-flex justify-content-center mx-2">
-          <div className="col-lg-6 col-sm-12 col-md-12">
+          <div className="col-lg-8 col-sm-12 col-md-12">
             <div
               className="card px-4 py-3 text-center panel"
               style={{
@@ -469,16 +469,14 @@ const SignUpSection = () => {
 
               <div className="row mt-3">
                 <div className="col-lg-12 d-flex flex-row">
-                  <div className="col-lg-2">
+                  <div className="col-lg-12 d-flex justify-content-center" style={{ color: "#fff" }}>
                     <input
-                      className="form-check-input "
+                      className="form-check-input"
                       type="checkbox"
                       value=""
                       id="defaultCheck1"
                     />
-                  </div>
-                  <div className="col-lg-10" style={{ color: "#fff" }}>
-                    I agree terms of service & privacy policy.
+                    <p >&nbsp; I agree terms of service & privacy policy.</p>
                   </div>
                 </div>
               </div>

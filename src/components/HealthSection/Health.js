@@ -6,7 +6,6 @@ const HealthSection = () => {
   return (
     <div>
       <GetStartedHealth />
-      <TopFundRaisers title="Trending Covid Fundraisers" />
       <TopFundRaisers title="Top Fundraisers" />
     </div>
   );

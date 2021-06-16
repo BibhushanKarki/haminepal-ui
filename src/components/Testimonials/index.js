@@ -1,10 +1,11 @@
 import React from "react";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
+import SwiperCore, { Pagination ,Navigation} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/navigation/navigation.min.css";
 
-SwiperCore.use([Pagination, Autoplay]);
+SwiperCore.use([Pagination, Navigation]);
 
 const Testimonials = () => {
   return (
@@ -20,12 +21,12 @@ const Testimonials = () => {
           data-aos-delay="100"
         >
           <Swiper
+            loop={true}
             pagination={{
-              dynamicBullets: true,
               clickable: true,
             }}
+            navigation={true}
             className="mySwiper"
-            autoplay={{ delay: 2000 }}
             scrollbar={{ draggable: true }}
           >
             <SwiperSlide>
@@ -36,7 +37,7 @@ const Testimonials = () => {
                   alt=""
                 />
                 <h3>Sudan Gurung</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h4>President</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
                   On 25 April, 2015 an earthquake with a magnitude of 7.8
@@ -58,6 +59,48 @@ const Testimonials = () => {
                   Organization.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <div className="social-links mt-3">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="twitter"
+                  >
+                    <i className="bx bxl-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/groups/769317927136629"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.skype.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="google-plus"
+                  >
+                    <i className="bx bxl-skype"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </SwiperSlide>
 
@@ -98,10 +141,52 @@ const Testimonials = () => {
                   board.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <div className="social-links mt-3">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="twitter"
+                  >
+                    <i className="bx bxl-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/groups/769317927136629"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.skype.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="google-plus"
+                  >
+                    <i className="bx bxl-skype"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="testimonial-item">
                 <img
                   src="/assets/img/testimonials/testimonials-3.jpg"
@@ -113,29 +198,54 @@ const Testimonials = () => {
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
                   Subani is also a Co-Founder of Hami Nepal who have been
-                  working extremely hard to fecilitate all the needy people.In
+                  working extremely hard to facilitate all the needy people.In
                   respect to Subani's contribution in Enough is Enough movement
                   , Momola Palpasa Cafe has also named a smoothie under her name
                   as Subani Smoothie.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-              </div>
-            </SwiperSlide>
-
-            {/* <SwiperSlide>
-              <div className="testimonial-item">
-                <img
-                  src="assets/img/behind-the-name/behind-the-name-4.jpg"
-                  className="testimonial-img"
-                  alt=""
-                />
-                <h3>Pragya Bajracharya</h3>
-                <h4>Secretary</h4>
-                <p>
-                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Pragya Bajracharya is the joint secretary of Hami Nepal .
-                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
+                <div className="social-links mt-3">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="twitter"
+                  >
+                    <i className="bx bxl-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/groups/769317927136629"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.skype.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="google-plus"
+                  >
+                    <i className="bx bxl-skype"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </SwiperSlide> */}
 
@@ -166,6 +276,48 @@ const Testimonials = () => {
                   Lead of Hami Nepal by the board members.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <div className="social-links mt-3">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="twitter"
+                  >
+                    <i className="bx bxl-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/groups/769317927136629"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.skype.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="google-plus"
+                  >
+                    <i className="bx bxl-skype"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </SwiperSlide>
 
@@ -203,6 +355,48 @@ const Testimonials = () => {
                   camps, social activism and connecting to youths.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <div className="social-links mt-3">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="twitter"
+                  >
+                    <i className="bx bxl-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/groups/769317927136629"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/haminepal_/?hl=en&fbclid=IwAR2-zSw6I-Wk9QNAdUl1W_z5_YQ2EfPY6v8nBzETWxyJTnpPadQlpHq5Oxg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.skype.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="google-plus"
+                  >
+                    <i className="bx bxl-skype"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </SwiperSlide>
           </Swiper>

@@ -79,7 +79,6 @@ const TransparencyDetailSection = () => {
                       <b>{data.fundReceived.fundAmount}</b>
                     </h6>
                     <button className="btn btn-primary mx-3">Bill</button>
-                    <img src="/img/download_icon.png" alt="download" />
                   </div>
                 </div>
               );
