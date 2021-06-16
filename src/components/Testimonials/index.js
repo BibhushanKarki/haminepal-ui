@@ -198,7 +198,7 @@ const Testimonials = () => {
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
                   Subani is also a Co-Founder of Hami Nepal who have been
-                  working extremely hard to fecilitate all the needy people.In
+                  working extremely hard to facilitate all the needy people.In
                   respect to Subani's contribution in Enough is Enough movement
                   , Momola Palpasa Cafe has also named a smoothie under her name
                   as Subani Smoothie.

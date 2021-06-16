@@ -2,6 +2,7 @@ import React from "react";
 import { GetStarted as data } from "./GetStartedData";
 // import GetStartedBtn from "./GetStartedBtn";
 import Fade from "react-reveal/Fade";
+import DonationFormSection from "../../components/DonationFormSection";
 import "./getstarted.css";
 
 const GetStartedCovid = () => {
@@ -15,9 +16,16 @@ const GetStartedCovid = () => {
               {data.covid.punchline}
             </h4>
             {/* <GetStartedBtn buttontitle="Get Started" /> */}
-            <button className="btn btn-primary">Get Started</button>
+            <button
+              className="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target={`#donateModal-${data.slug}`}
+            >
+              Get Started
+            </button>
           </div>
         </Fade>
+        <DonationFormSection type="projects" slug={data.slug} />
         <Fade right>
           <div className="col-md-6 text-center image-right">
             <img

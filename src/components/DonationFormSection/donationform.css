@@ -17,16 +17,16 @@
   color: #9f1718;
   font-size: 17px;
 }
-/* .formStyle::placeholder{
+.donation-card .formStyle::placeholder{
   color:#777879 !important;
 }
-.formStyle:focus{
+.donation-card .formStyle:focus{
   color: #495057 !important;
   background-color: #fff !important;
   border-color: #9f1718 !important;
   outline: 0;
   box-shadow: 0 0 0 1px #fff !important;
-} */
+}
 
 @media only screen and (max-width: 600px) {
   .donation-card .card-input-section input {

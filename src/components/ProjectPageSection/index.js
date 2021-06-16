@@ -113,7 +113,7 @@ const ProjectSection = () => {
                                             data-bs-target={`#donateModal-${data.slug}`}
                                             className="btn btn-danger w-100 my-md-2 my-sm-2 my-xs-2"
                                         >
-                                            Donate
+                                            Donate 
                     </button>
                                         <DonationFormSection type="projects" slug={data.slug} />
                                         <button
