@@ -1,4 +1,5 @@
 import React from "react";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 const About = () => {
   return (
@@ -68,12 +69,8 @@ const About = () => {
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <img src="/img/mission/about.jpg" className="img-fluid" alt="" />
-            <a
-              href="https://www.youtube.com/watch?v=bPny2PNWFxc&ab_channel=dekhapadhi"
-              className="glightbox play-btn mb-4"
-              rel="noopener noreferrer"
-            ></a>
+            {/* <img src="/img/mission/about.jpg" className="img-fluid" alt="" /> */}
+            <YoutubeEmbed embedId="bPny2PNWFxc" />
           </div>
 
           <div className="col-lg-6 pt-3 pt-lg-0 content">
