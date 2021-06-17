@@ -56,5 +56,5 @@
     "devDependencies": {
         "redux-devtools-extension": "^2.13.9"
     },
-    "proxy": "https://haminepalorg.heroku.app/api/v1"
+    "proxy": "https://haminepalorg.herokuapp.com/api/v1"
 }
