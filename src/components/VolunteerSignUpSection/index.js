@@ -4,15 +4,21 @@ import Joi from "joi";
 import MapContainer from './../MapContainer';
 import { useDispatch, useSelector } from "react-redux";
 import { volunteerSignUp } from "../../store/Actions/VolunteerActions";
+import { getGoogleMapsApiKey } from "../../store/Actions/ConfigActions";
 
 const SignUpSection = () => {
-    const [volunteer, setVolunteer] = useState({
-        lat: 0,
-        lon: 0,
-    });
+    const [volunteer, setVolunteer] = useState({});
     const [errors, setErrors] = useState({});
+    const [center, setCenter] = useState(null);
+
     const dispatch = useDispatch();
     const { volunteerSignUpSuccess, volunteerSignUpError, volunteerSignUpLoading } = useSelector((state) => state.volunteer);
+    const { googleMapsApiKeySuccess, googleMapsApiKey } = useSelector((state) => state.config);
+
+    const minBioLength = 50;
+    const maxBioLength = 400;
+    const minMotivationToJoinLength = 20;
+    const maxMotivationToJoinLength = 200;
 
     const volunteerSchema = Joi.object({
         first_name: Joi.string()
@@ -40,13 +46,13 @@ const SignUpSection = () => {
             .required(),
 
         bio: Joi.string()
-            .min(50)
-            .max(400)
+            .min(minBioLength)
+            .max(maxBioLength)
             .required(),
 
         motivation_to_join: Joi.string()
-            .min(20)
-            .max(200)
+            .min(minMotivationToJoinLength)
+            .max(maxMotivationToJoinLength)
             .required(),
 
         age: Joi.number().required(),
@@ -58,8 +64,42 @@ const SignUpSection = () => {
         street_address: Joi.string().required(),
         terms_and_condition: Joi.boolean().invalid(false).required(),
         lat: Joi.number().required(),
-        lon: Joi.number().required(),
+        lng: Joi.number().required(),
     });
+
+    useEffect(() => {
+        setVolunteer({
+            ...volunteer,
+            ...center,
+        })
+    }, [center]);
+
+    useEffect(() => {
+        if (!googleMapsApiKeySuccess) {
+            dispatch(getGoogleMapsApiKey());
+        }
+    }, []);
+
+    const handleLocationError = (hasGeolocation, center) => {
+        console.log(hasGeolocation, center)
+    }
+    const fetchMyLocation = (e) => {
+        e.preventDefault();
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                setCenter({
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                });
+
+            }, function () {
+                handleLocationError(true, center);
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, center);
+        }
+    }
 
     const handleVolunteerSubmission = (e) => {
         e.preventDefault();
@@ -316,7 +356,11 @@ const SignUpSection = () => {
 
                                     <div className="col-lg-12 mt-3">
                                         <div className="form-group d-flex flex-column align-items-start">
-                                            <label for="bio" class="form-label">Bio</label>
+                                            <label for="bio" class="form-label">Bio
+                                                <div style={{ float: 'right' }}>
+                                                    {volunteer.bio ? volunteer.bio.length : 0} / {minBioLength}
+                                                </div>
+                                            </label>
                                             <textarea
                                                 id="bio"
                                                 placeholder="Bio"
@@ -348,7 +392,11 @@ const SignUpSection = () => {
 
                                     <div className="col-lg-12 mt-3">
                                         <div className="form-group d-flex flex-column align-items-start">
-                                            <label for="motivation_to_join" class="form-label">Motivation To Join</label>
+                                            <label for="motivation_to_join" class="form-label">Motivation To Join
+                                                <div style={{ float: 'right' }}>
+                                                    {volunteer.bio ? volunteer.motivation_to_join.length : 0} / {minMotivationToJoinLength}
+                                                </div>
+                                            </label>
                                             <textarea
                                                 id="motivation_to_join"
                                                 placeholder="Motivation To Join"
@@ -620,7 +668,40 @@ const SignUpSection = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-12 volunteer-map-section">
-                                    <MapContainer />
+                                    {
+                                        googleMapsApiKeySuccess ?
+                                            <button className="btn btn-primary mb-4" onClick={fetchMyLocation}>Fetch my Location</button> : ''
+                                    }
+                                    {errors.lat || errors.lng ? (
+                                        <div
+                                            id={`${errors.lat}-error-message`}
+                                            // className="invalid-feedback"
+                                            className="alert alert-danger"
+                                        >
+                                            Location is required.
+                                        </div>
+                                    ) : (
+                                        ""
+                                    )}
+
+                                    {
+                                        !googleMapsApiKeySuccess ? <div id={`error-messages-present`} role="alert" className="alert alert-danger mt-3">
+
+                                            <h4 className="alert-heading">Something bad happened with the google maps. Please try again later.</h4>
+                                        </div> : ''
+                                    }
+                                    {
+                                        center ? <>
+
+                                            <p style={{ color: 'white' }} className="mb-3">Place a marker in your general location.</p>
+                                            <MapContainer apiKey={googleMapsApiKey} center={center || {}} handleMyLocationChange={coords => {
+                                                setVolunteer({
+                                                    ...volunteer,
+                                                    ...coords
+                                                })
+                                            }} />
+                                        </> : ''
+                                    }
                                 </div>
 
                                 <div className="row mt-3">

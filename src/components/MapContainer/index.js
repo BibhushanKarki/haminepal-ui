@@ -1,35 +1,54 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import GoogleMapReact from 'google-map-react';
+import './index.css';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
-const MapContainer = () => {
+const MapContainer = (props) => {
+    const { center, handleMyLocationChange, apiKey } = props;
     const defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: 26.45505,
+            lng: 87.27007
         },
-        zoom: 11
+        zoom: 10
     };
+    const [centerCoords, setCenterCoords] = useState(defaultProps.center);
+    const [myLocation, setMyLocation] = useState(null);
+
+    useEffect(() => {
+        setCenterCoords(center);
+        setMyLocation(center);
+    }, [center])
+
+    const handleMapClick = ({ lat, lng }) => {
+        setMyLocation({ lat, lng });
+        handleMyLocationChange({ lat, lng })
+    }
 
     return (
-        // Important! Always set the container height explicitly
-        <div style={{ height: '100vh', width: '100%' }}>
+        <div style={{ height: '400px', width: '100%' }}>
             <GoogleMapReact
+                onClick={handleMapClick}
                 bootstrapURLKeys={{
-                    key: 'AIzaSyA8yyji0eV-0jkNXg-yFhIRXUa5bIChX78'
+                    key: apiKey
                 }}
-                defaultCenter={defaultProps.center}
+                center={centerCoords}
                 defaultZoom={defaultProps.zoom}
             >
-                <AnyReactComponent
-                    lat={59.955413}
-                    lng={30.337844}
-                    text="My Marker"
-                />
+                {myLocation && JSON.stringify(center) !== '{}' ? <Marker lat={myLocation.lat} lng={myLocation.lng} /> : ''}
             </GoogleMapReact>
         </div>
     );
+}
+const Marker = () => {
+    const markerStyle = {
+        borderRadius: 15,
+        background: '#15222b',
+        color: 'white',
+        width: 105,
+        padding: '5px 5px',
+        transform: 'translate(15px, -50%)'
+    };
+    return <div style={markerStyle} id="google-map-marker"><img src="/assets/img/logo-only.png" height="30px" width="30px" alt="" class="img-fluid"></img> My Location</div>;
 }
 
 export default MapContainer;

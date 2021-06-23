@@ -5,6 +5,7 @@ import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
 import "./donationform.css";
 import { useDispatch, useSelector } from "react-redux";
 import { clearDonation, donate, uploadDonation } from "../../store/Actions/DonationActions";
+import { getKhaltiPublicKey } from "../../store/Actions/ConfigActions";
 import KhaltiCheckout from "khalti-checkout-web";
 import Joi from "joi";
 
@@ -22,6 +23,7 @@ const DonationFormSection = ({ slug, type }) => {
     const dispatch = useDispatch();
 
     const { donationSuccess, donationError, uploadDonationSuccess, uploadDonationData } = useSelector((state) => state.donation);
+    const { khaltiPublicKeySuccess, khaltiPublicKey } = useSelector((state) => state.config);
 
     let donationSchema;
 
@@ -116,9 +118,10 @@ const DonationFormSection = ({ slug, type }) => {
     }
 
     const handlePayWithKhalti = () => {
+        console.log(khaltiPublicKey)
         let khaltiConfig = {
             // replace this key with yours
-            "publicKey": "live_public_key_49ed4dbc80114acab3ae759e980597d6",
+            "publicKey": khaltiPublicKey,
             "productIdentity": makeRandomString(20),
             "productName": slug,
             "productUrl": "https://hami-nepali-newui.netlify.app/",
@@ -189,11 +192,15 @@ const DonationFormSection = ({ slug, type }) => {
     }
 
     useEffect(() => {
-        console.log(donation);
         setDonation({
             ...donation,
             is_anonymous: anonymousDonor
         })
+
+        if (!khaltiPublicKeySuccess) {
+            dispatch(getKhaltiPublicKey());
+        }
+
     }, [anonymousDonor]);
 
     return (
@@ -527,13 +534,18 @@ const DonationFormSection = ({ slug, type }) => {
                                                                     <label for="esewa"><img src="/img/esewa_logo.png" alt="esewa" /></label>
                                                                 </div>
                                                             </div>
-
                                                             <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                                 <div className="pay-with d-flex align-items-center form-check h-100">
-                                                                    <input type="radio" className="form-check" name="payment_type" id="khalti" value="KHALTI" />
+                                                                    <input type="radio" disabled={!khaltiPublicKeySuccess} className="form-check" name="payment_type" id="khalti" value="KHALTI" />
                                                                     <label for="khalti"><img src="/img/khalti_logo.png" alt="khalti" /></label>
                                                                 </div>
                                                             </div>
+                                                            {
+                                                                !khaltiPublicKeySuccess ? <div id={`error-messages-present`} role="alert" className="alert alert-danger mt-3">
+
+                                                                    <h4 className="alert-heading">Something bad happened with the payment method of Khalti.</h4>
+                                                                </div> : ''
+                                                            }
                                                             <div style={{
                                                                 letterSpacing: 2,
                                                                 fontSize: 20,
