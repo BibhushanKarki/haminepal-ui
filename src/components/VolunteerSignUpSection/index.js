@@ -55,6 +55,10 @@ const SignUpSection = () => {
             .max(maxMotivationToJoinLength)
             .required(),
 
+        avatar: Joi.any()
+            .meta({ swaggerType: 'file' })
+            .allow('image/png, image/gif, image/jpeg').required(),
+
         age: Joi.number().required(),
         academic_qualification: Joi.string().required(),
         field_expertise: Joi.string().required(),
@@ -73,6 +77,10 @@ const SignUpSection = () => {
             ...center,
         })
     }, [center]);
+
+    useEffect(() => {
+        console.log(volunteer)
+    }, [volunteer]);
 
     useEffect(() => {
         if (!googleMapsApiKeySuccess) {
@@ -387,6 +395,33 @@ const SignUpSection = () => {
                                             ""
                                         )}
                                     </div>
+
+                                    <div className="col-lg-12 mt-3">
+                                        <div className="form-group d-flex flex-column align-items-start">
+                                            <label for="avatar" class="form-label">Avatar
+                                            </label>
+                                            <input type="file" id="avatar" onChange={e => {
+                                                setVolunteer({
+                                                    ...volunteer,
+                                                    avatar: e.target.files
+                                                })
+                                            }}
+                                                accept="image/png, image/gif, image/jpeg"
+                                                className={`form-control formStyle  ${errors.avatar ? "is-invalid" : ""
+                                                    }`} />
+                                        </div>
+                                        {errors.avatar ? (
+                                            <div
+                                                id={`${errors.avatar}-error-message`}
+                                                // className="invalid-feedback"
+                                                className="alert alert-danger"
+                                            >
+                                                {errors.avatar}
+                                            </div>
+                                        ) : (
+                                            ""
+                                        )}
+                                    </div>
                                 </div>
                                 <div className="row">
 
@@ -394,7 +429,7 @@ const SignUpSection = () => {
                                         <div className="form-group d-flex flex-column align-items-start">
                                             <label for="motivation_to_join" class="form-label">Motivation To Join
                                                 <div style={{ float: 'right' }}>
-                                                    {volunteer.bio ? volunteer.motivation_to_join.length : 0} / {minMotivationToJoinLength}
+                                                    {volunteer.motivation_to_join ? volunteer.motivation_to_join.length : 0} / {minMotivationToJoinLength}
                                                 </div>
                                             </label>
                                             <textarea
